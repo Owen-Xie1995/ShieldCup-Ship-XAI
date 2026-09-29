@@ -1,0 +1,27 @@
+{
+  "baseline": "minimum scalar of each current input's complete CHW tensor",
+  "code_sha256": "0481ee5206da6cdb0f419975f25a091f9ea5d43a0658593996f2de03f88f4df2",
+  "inference_batch_size": 32,
+  "logit": "provided target class logit; signed original minus masked divided by tile area",
+  "method": "black_occlusion8_signed",
+  "method_version": "stage22-8x8-black-occlusion-signed-v1",
+  "noise": "none",
+  "numpy": "2.2.6",
+  "occlusion": "one channel and one nonoverlapping tile per masked input",
+  "occlusion_core_sha256": "13ab5aa3e5c51a40e396bf32b9fade66bec96f76a98d40fd23f4032a382757b4",
+  "ranking": "absolute value with original signs retained",
+  "schema": 2,
+  "smooth": "reflect padded per-channel spatial 5x5 arithmetic mean",
+  "stored_arrays": [
+    "raw_attribution",
+    "attribution"
+  ],
+  "tile_area": 64,
+  "tile_count": 2352,
+  "tile_size": 8,
+  "top_fraction_first": 0.25,
+  "top_fraction_last": 0.1,
+  "torch": "2.10.0",
+  "torch_num_threads": 8,
+  "weight_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+}

@@ -1,0 +1,250 @@
+{
+  "status": "PASS",
+  "scope": "first supplied official image and one deterministic tiny perturbation; no nine-image scoring",
+  "sources": {
+    "stage17": "/Users/xiefujun/Downloads/stage17",
+    "weights": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/開發環境/checkpoints/best_resnet50.pth",
+      "bytes": 282678575,
+      "sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+    },
+    "official_generator": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/vendor/kaggle/submmit/submmit.py",
+      "sha256": "3f0c8830e590f6ad46934c034a5bf75f2d2b1d89baf2dba6683cdc1d9dc61df1"
+    },
+    "official_metric": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/script/metrix.py",
+      "sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda"
+    },
+    "experiment": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/experiment.py",
+      "sha256": "0481ee5206da6cdb0f419975f25a091f9ea5d43a0658593996f2de03f88f4df2"
+    },
+    "probe": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/probe.py",
+      "sha256": "f13b864407e190717014b595fdc0963eaecc5fd65e104841dae50fff325eca61"
+    },
+    "official_image": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/2814884.jpg",
+      "sha256": "fc9dba30dd195b88461ecaf33c7b7364eb9d08336ed005ba681f36110685b0b4"
+    }
+  },
+  "environment": {
+    "python": "3.12.9",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "torch": "2.10.0",
+    "numpy": "2.2.6",
+    "torch_num_threads": 8,
+    "physical_memory_bytes": 17179869184
+  },
+  "perturbation": {
+    "seed": 314159,
+    "distribution": "independent normal noise added to transformed float32 CHW",
+    "std": 0.0005,
+    "realized_linf": 0.0022064372897148132,
+    "noise_sha256": "a13bb4712914150a63ea5a472f53a1dee4a6ebc3e5fc451754764531f0d2bf5d",
+    "baseline_changed": true
+  },
+  "original": {
+    "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+    "input_shape": [
+      3,
+      224,
+      224
+    ],
+    "input_dtype": "float32",
+    "baseline_from_entire_chw": -2.1179039478302,
+    "input_global_min": -2.1179039478302,
+    "input_channel_minima": [
+      -2.1179039478302,
+      -2.0357141494750977,
+      -1.804444432258606
+    ],
+    "target_zero_based": 0,
+    "original_target_logit": 8.008935928344727,
+    "raw_attribution_shape": [
+      1,
+      3,
+      224,
+      224
+    ],
+    "raw_attribution_dtype": "float32",
+    "raw_attribution_finite": true,
+    "raw_attribution_sha256": "6d986ef6162eef457b88b840e3cdb1a26dd2a191eaf7f3b81958faa7043e568a",
+    "all_tile_masks_audited": 2352,
+    "all_tiles_partition_complete_chw_once": true,
+    "selected_count_per_tile": 64,
+    "actual_changed_elements_min": 62,
+    "actual_changed_elements_max": 64,
+    "attribution_shape": [
+      1,
+      3,
+      224,
+      224
+    ],
+    "attribution_dtype": "float32",
+    "attribution_finite": true,
+    "attribution_nonzero_count": 15053,
+    "attribution_min": -0.010889261960983276,
+    "attribution_max": 0.012954545207321644,
+    "attribution_sha256": "3146a1538f5d86fae1f69955269dee7f863366777f62ad3b8f99ad66f6fec58c",
+    "tiles": [
+      {
+        "tile_index": 0,
+        "channel": 0,
+        "row_start": 0,
+        "row_stop": 8,
+        "col_start": 0,
+        "col_stop": 8,
+        "selected_count": 64,
+        "selected_replacement_exact": true,
+        "unselected_bytes_unchanged": true,
+        "selected_originally_at_baseline": 0,
+        "selected_actual_value_changes": 64,
+        "original_target_logit": 8.008935928344727,
+        "masked_target_logit": 8.018048286437988,
+        "expected_r_per_element": -0.00014238059520721436,
+        "actual_raw_r_per_element": -0.00014241039752960205,
+        "raw_tile_constant": true,
+        "raw_r_error": -2.9802322387695312e-08
+      },
+      {
+        "tile_index": 2351,
+        "channel": 2,
+        "row_start": 216,
+        "row_stop": 224,
+        "col_start": 216,
+        "col_stop": 224,
+        "selected_count": 64,
+        "selected_replacement_exact": true,
+        "unselected_bytes_unchanged": true,
+        "selected_originally_at_baseline": 0,
+        "selected_actual_value_changes": 64,
+        "original_target_logit": 8.008935928344727,
+        "masked_target_logit": 8.005049705505371,
+        "expected_r_per_element": 6.07222318649292e-05,
+        "actual_raw_r_per_element": 6.064772605895996e-05,
+        "raw_tile_constant": true,
+        "raw_r_error": -7.450580596923828e-08
+      }
+    ],
+    "benchmark": {
+      "wall_seconds": 348.07057079199876,
+      "inference_batch_size": 32,
+      "masked_inputs_expected": 2352,
+      "rss_before_bytes": 693977088,
+      "rss_after_bytes": 1308999680,
+      "rss_peak_sampled_bytes": 1672904704,
+      "process_maxrss_bytes": 1672904704,
+      "implementation_stats": {
+        "original_inputs_evaluated": 1,
+        "model_forward_calls": 75,
+        "masked_inputs_evaluated": 2352,
+        "computed_attributions": 1,
+        "attribution_elapsed_seconds": 348.0696419580054
+      }
+    }
+  },
+  "perturbed": {
+    "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+    "input_shape": [
+      3,
+      224,
+      224
+    ],
+    "input_dtype": "float32",
+    "baseline_from_entire_chw": -2.1190736293792725,
+    "input_global_min": -2.1190736293792725,
+    "input_channel_minima": [
+      -2.1190736293792725,
+      -2.036818027496338,
+      -1.8062442541122437
+    ],
+    "target_zero_based": 0,
+    "original_target_logit": 8.007186889648438,
+    "raw_attribution_shape": [
+      1,
+      3,
+      224,
+      224
+    ],
+    "raw_attribution_dtype": "float32",
+    "raw_attribution_finite": true,
+    "raw_attribution_sha256": "30c548d0de72aa9f22be85211d6baef150b529a2e44bbf11db2a84b58295e307",
+    "all_tile_masks_audited": 2352,
+    "all_tiles_partition_complete_chw_once": true,
+    "selected_count_per_tile": 64,
+    "actual_changed_elements_min": 63,
+    "actual_changed_elements_max": 64,
+    "attribution_shape": [
+      1,
+      3,
+      224,
+      224
+    ],
+    "attribution_dtype": "float32",
+    "attribution_finite": true,
+    "attribution_nonzero_count": 15053,
+    "attribution_min": -0.010884537361562252,
+    "attribution_max": 0.012964260764420033,
+    "attribution_sha256": "0ecae3fb30bdd8062dd930785910d9454552e64b909626e88e808666056872a8",
+    "tiles": [
+      {
+        "tile_index": 0,
+        "channel": 0,
+        "row_start": 0,
+        "row_stop": 8,
+        "col_start": 0,
+        "col_stop": 8,
+        "selected_count": 64,
+        "selected_replacement_exact": true,
+        "unselected_bytes_unchanged": true,
+        "selected_originally_at_baseline": 0,
+        "selected_actual_value_changes": 64,
+        "original_target_logit": 8.007186889648438,
+        "masked_target_logit": 8.015937805175781,
+        "expected_r_per_element": -0.0001367330551147461,
+        "actual_raw_r_per_element": -0.0001367032527923584,
+        "raw_tile_constant": true,
+        "raw_r_error": 2.9802322387695312e-08
+      },
+      {
+        "tile_index": 2351,
+        "channel": 2,
+        "row_start": 216,
+        "row_stop": 224,
+        "col_start": 216,
+        "col_stop": 224,
+        "selected_count": 64,
+        "selected_replacement_exact": true,
+        "unselected_bytes_unchanged": true,
+        "selected_originally_at_baseline": 0,
+        "selected_actual_value_changes": 64,
+        "original_target_logit": 8.007186889648438,
+        "masked_target_logit": 8.003719329833984,
+        "expected_r_per_element": 5.418062210083008e-05,
+        "actual_raw_r_per_element": 5.40316104888916e-05,
+        "raw_tile_constant": true,
+        "raw_r_error": -1.4901161193847656e-07
+      }
+    ],
+    "benchmark": {
+      "wall_seconds": 340.7723525420006,
+      "inference_batch_size": 32,
+      "masked_inputs_expected": 2352,
+      "rss_before_bytes": 1334312960,
+      "rss_after_bytes": 1351745536,
+      "rss_peak_sampled_bytes": 1351778304,
+      "process_maxrss_bytes": 1672904704,
+      "implementation_stats": {
+        "original_inputs_evaluated": 1,
+        "model_forward_calls": 75,
+        "masked_inputs_evaluated": 2352,
+        "computed_attributions": 1,
+        "attribution_elapsed_seconds": 340.7711564170022
+      }
+    }
+  },
+  "inference_batch_size_recommended": 32,
+  "all_checks_passed": true
+}

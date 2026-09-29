@@ -1,0 +1,325 @@
+{
+  "python": "3.12.9",
+  "interpreter": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "torch": "2.10.0",
+    "torchvision": "0.25.0",
+    "captum": null,
+    "quantus": "0.6.0",
+    "numpy": "2.2.6",
+    "pandas": "3.0.3",
+    "Pillow": "12.0.0"
+  },
+  "files": {
+    "weights": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/開發環境/checkpoints/best_resnet50.pth",
+      "bytes": 282678575,
+      "sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+    },
+    "stage17_quick_eval": {
+      "path": "/Users/xiefujun/Downloads/stage17/quick_eval.py",
+      "bytes": 8137,
+      "sha256": "166755dc8578d26e8c3440494760c4771aabb575ee32d3108675c20fd13aea17"
+    },
+    "official_wheel": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/dist/kaggle-0.1.0-py3-none-any.whl",
+      "bytes": 7124,
+      "sha256": "43986f644c383f255e73dcbd2305e311f15fd70b4aeec54deb346dab5d5cbfd7"
+    },
+    "official_generator": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/vendor/kaggle/submmit/submmit.py",
+      "bytes": 4509,
+      "sha256": "3f0c8830e590f6ad46934c034a5bf75f2d2b1d89baf2dba6683cdc1d9dc61df1"
+    },
+    "official_scorer": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/script/metrix.py",
+      "bytes": 2257,
+      "sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda"
+    },
+    "official_score_wrapper": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/score_c3.py",
+      "bytes": 2709,
+      "sha256": "a349191025fa061cf475eacc6dfe143f3b38f27cbec6dc32f314bfce126d6919"
+    },
+    "official_test_csv": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test.csv",
+      "bytes": 140,
+      "sha256": "292bf8cf64b4db3a64def4a27ec02f082bd7b222e8ae939e2d620d8409a8e83e"
+    },
+    "official_solution": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/script/solution_all_public.csv",
+      "bytes": 115,
+      "sha256": "243c7b4457380e8f43e8baa5d1e7e7d52aaafb9239c3c02d28e6c803c614a75d"
+    },
+    "quantus_baseline_utils": {
+      "path": "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/quantus/helpers/utils.py",
+      "bytes": 35376,
+      "sha256": "795878b6b082ded9c9b56a68ba47b68a12b61a619b3dd45778a38483922a8500"
+    },
+    "quantus_perturb_func": {
+      "path": "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/quantus/functions/perturb_func.py",
+      "bytes": 24966,
+      "sha256": "cd119bf6f8e087001fba664bd2280f7055a8274941da950b1a06f1757de2a6e5"
+    },
+    "quantus_faithfulness": {
+      "path": "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/quantus/metrics/faithfulness/faithfulness_correlation.py",
+      "bytes": 16334,
+      "sha256": "77e63fe039d42aba7ed24dabb45366c2b89170745465b2764eb7b5b55889e0e8"
+    },
+    "prior_control_csv": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_next/runs/control.csv",
+      "bytes": 587,
+      "sha256": "2e177fff03991c529767393b4aceb796cc380d7a724d6c0e31d5fbe829cfe196"
+    },
+    "prior_control_run": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_next/runs/control.run.json",
+      "bytes": 2564,
+      "sha256": "d12c6bb6f3ee476e65a43731fa8333337b534dc1fdd3b3f0f565c947a04d0be0"
+    },
+    "prior_control_experiment": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_next/experiment.py",
+      "bytes": 15481,
+      "sha256": "950d740c3fefebe3349872dcae8960a6b9ec1f01a9c2a63e645aef4140c8eccb"
+    },
+    "prior_checkpoint_zip": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_next.zip",
+      "bytes": 5163404,
+      "sha256": "66f7b405136f6cbb1a17c00c83ccff0d9a2801aeadc3fef58a79bb19af9850cb"
+    },
+    "stage20_verification": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage20/verification.json",
+      "bytes": 2390,
+      "sha256": "d8278ae9076ba80a3fd69bfa07a4fd581c5394774e15a562f7b49bf50473d415"
+    },
+    "stage20_summary": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage20/summary.json",
+      "bytes": 2919,
+      "sha256": "f03df7ba279203c5cc9c0764c13b3f6168193862091eaeaf28fc778e79394da4"
+    },
+    "stage20_experiment": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage20/experiment.py",
+      "bytes": 22674,
+      "sha256": "3cb6ec81c0214012ff85833020a0f2fddee175b452c492412129a470cdcd08fd"
+    },
+    "stage20_checkpoint_zip": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage20.zip",
+      "bytes": 10083094,
+      "sha256": "416927931fa74d5c0deec4282e333c03d124eeadf7dead0b6eccde8d9dd76dc2"
+    },
+    "stage21_checkpoint_zip": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage21.zip",
+      "bytes": 510091,
+      "sha256": "9b36d2b568019da9809ef534d181f266dace0f042ede37ecdf0dbdfae57a7fee"
+    },
+    "stage21_experiment": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage21/experiment.py",
+      "bytes": 25058,
+      "sha256": "5264364073961e5c3f8de1e1982fe2856de4eeecca40aca4ca5ca459784360f5"
+    },
+    "stage21_csv": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage21/runs/black_occlusion16_signed.csv",
+      "bytes": 589,
+      "sha256": "c63544390619d5b83b85d2c81ac356985364c9235c254998ac34efb0eae3d267"
+    },
+    "stage21_run": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage21/runs/black_occlusion16_signed.run.json",
+      "bytes": 3813,
+      "sha256": "168eef7518d8755b7d257133c53f8dc0b187b14a217fb50a57874b911d12616c"
+    },
+    "stage21_score": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage21/runs/black_occlusion16_signed.score.json",
+      "bytes": 1087,
+      "sha256": "03fecda39dcf4a5c8ae20d027e570cea3b46a2cf8e1457167c4122c1b5c2c726"
+    },
+    "stage21_cache_config": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage21/cache/black_occlusion16_signed/config.json",
+      "bytes": 838,
+      "sha256": "3843e0e6d2f4b3ec639b61cf77bbff92781e778b00849411f8ec6b7c6170e4dc"
+    },
+    "stage21_verification": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage21/verification.json",
+      "bytes": 1652,
+      "sha256": "e09c3a0dd3fe4537f0f3c093fac6e171140ce3215bc0d5e4d71b4cb3832301b3"
+    },
+    "stage21_summary": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage21/summary.json",
+      "bytes": 1428,
+      "sha256": "2c95b83f1f083fa82de209ca9495f7e378d8c419f620f4f881f0a34df0e9fbbd"
+    },
+    "stage22_instruction": {
+      "path": "/Users/xiefujun/Downloads/給Mac本地Codex_第22階段8x8遮蔽與熱區驗證指令.md",
+      "bytes": 8672,
+      "sha256": "b6592808aac0254d349b413415a538e0e0afb12e31bae2e28a9859af910b3ca6"
+    },
+    "stage20_csv/black_grad_signed": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage20/runs/black_grad_signed.csv",
+      "bytes": 579,
+      "sha256": "7cee8c3e9add0dee9649744ff72c5fc3508566e2ff183f960cddc509559daa97"
+    },
+    "stage20_csv/black_grad_abs": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage20/runs/black_grad_abs.csv",
+      "bytes": 585,
+      "sha256": "22fdd77ae1ed06c871d4174d870426a2a5160de3480e4cfa001100a662526ba0"
+    },
+    "stage20_csv/black_ig50_mean5": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage20/runs/black_ig50_mean5.csv",
+      "bytes": 584,
+      "sha256": "30ec989e248f5b0f28909f9c3a2859f4bc02ece4071814205289e83f758943cf"
+    },
+    "test_image/2814884.jpg": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/2814884.jpg",
+      "bytes": 10867,
+      "sha256": "fc9dba30dd195b88461ecaf33c7b7364eb9d08336ed005ba681f36110685b0b4"
+    },
+    "test_image/643776.jpg": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/643776.jpg",
+      "bytes": 9898,
+      "sha256": "7e9e9793979e53b76c190cef833b4e03ae14bc3d4318c628d2c3117620072636"
+    },
+    "test_image/2839095.jpg": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/2839095.jpg",
+      "bytes": 11437,
+      "sha256": "a2e69bf2dcf5f03de5a03d97234bbd38359532f140cf4a49d9a2bbceaca88fd1"
+    },
+    "test_image/2865030.jpg": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/2865030.jpg",
+      "bytes": 11726,
+      "sha256": "f5d09552eebf5a482afd2e5a26ef61dc0de1e134ee97874da13de2b7ff0a75fe"
+    },
+    "test_image/2819054.jpg": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/2819054.jpg",
+      "bytes": 12699,
+      "sha256": "2126c3caed42f46ead14599ae0bf05c1874ebccf6ee0f111b9ab6a4828460ebe"
+    },
+    "test_image/2246769.jpg": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/2246769.jpg",
+      "bytes": 10020,
+      "sha256": "12220f8a5a1d7173ceee23b1b844db9a66b4b2f909075303d7474df5eed2ad94"
+    },
+    "test_image/2833370.jpg": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/2833370.jpg",
+      "bytes": 4574,
+      "sha256": "5bcca973f5d4628131390b0727a757f6741af887295fc585768cda951589a898"
+    },
+    "test_image/2818897.jpg": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/2818897.jpg",
+      "bytes": 13073,
+      "sha256": "4022c31d87b42c3beaab52dda41e54c60eb114b72f5d1e5156c9f05a189b26a1"
+    },
+    "test_image/2904658.jpg": {
+      "path": "/Users/xiefujun/Downloads/stage17/official/data/test_images/2904658.jpg",
+      "bytes": 7057,
+      "sha256": "9f20235629fc944103383d6734c758f69e4ee5bdbc103fe713e71244e844c16c"
+    },
+    "stage22_code/experiment.py": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/experiment.py",
+      "bytes": 28616,
+      "sha256": "0481ee5206da6cdb0f419975f25a091f9ea5d43a0658593996f2de03f88f4df2"
+    },
+    "stage22_code/heatmaps.py": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/heatmaps.py",
+      "bytes": 23536,
+      "sha256": "eb9120a8d4ffd277a78d42cd633dba999b8b8a63a3f749687dd351017e58a5ce"
+    },
+    "stage22_code/package.py": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/package.py",
+      "bytes": 8664,
+      "sha256": "d3e80b58ecbaeff9d1a730e4085cee010830a6523929d190a9e13908bd8dcef0"
+    },
+    "stage22_code/paired_summary.py": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/paired_summary.py",
+      "bytes": 3486,
+      "sha256": "193d166290ef315c7386549f8c47f72030ca3a282b88eafdde6e5b78958f7dcf"
+    },
+    "stage22_code/probe.py": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/probe.py",
+      "bytes": 16964,
+      "sha256": "f13b864407e190717014b595fdc0963eaecc5fd65e104841dae50fff325eca61"
+    },
+    "stage22_code/record_environment.py": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/record_environment.py",
+      "bytes": 7100,
+      "sha256": "e659ec31ea70eebe921f253c8b215fa8ae0ddaf33a5dea9dd8e156161810bf07"
+    },
+    "stage22_code/summarize.py": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/summarize.py",
+      "bytes": 6977,
+      "sha256": "1178b618c54a78dfb67a80b35968ab6e4852c1958f1df30ef52410467b528793"
+    },
+    "stage22_code/verify_outputs.py": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/verify_outputs.py",
+      "bytes": 44723,
+      "sha256": "f441f2470b66a8465b200847224d1e8d0bfa2cb8574fe6d2a3ad391d21ce0655"
+    },
+    "stage22_doc/README.md": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/README.md",
+      "bytes": 3795,
+      "sha256": "062f7774c71a9616c9b8ad387d8bd29a1c2ec684fc04e3a17989e661f42774b6"
+    },
+    "stage22_doc/instruction.md": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/instruction.md",
+      "bytes": 8672,
+      "sha256": "b6592808aac0254d349b413415a538e0e0afb12e31bae2e28a9859af910b3ca6"
+    },
+    "stage22_doc/literature.md": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/literature.md",
+      "bytes": 7115,
+      "sha256": "331fe5960ce45f9bb6df7643e7501ee50130890ef396c8f2ab2901b4120fcd04"
+    },
+    "stage22_doc/report.md": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/report.md",
+      "bytes": 4769,
+      "sha256": "c1f81b00b624fb2a536293299d28108a9130dbcf2af6e857d201368a44c53791"
+    },
+    "stage22/probe.json": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/probe.json",
+      "bytes": 8573,
+      "sha256": "58187b6624995a9cfb34317e6012b3a646545a2890e15609c512b9f07b7cd232"
+    },
+    "stage22/probe.log": {
+      "path": "/Users/xiefujun/Downloads/AI研討會競賽規則(船舶影像辨識可解釋 AI)/output_mac_stage22/probe.log",
+      "bytes": 724,
+      "sha256": "cb40317e74b1c208250e570a6b19dec8cfd8e6e809aa5e0aaa9d1e0b72ab24f4"
+    }
+  },
+  "test_order": [
+    {
+      "image": "2814884.jpg",
+      "category": 1
+    },
+    {
+      "image": "643776.jpg",
+      "category": 4
+    },
+    {
+      "image": "2839095.jpg",
+      "category": 3
+    },
+    {
+      "image": "2865030.jpg",
+      "category": 3
+    },
+    {
+      "image": "2819054.jpg",
+      "category": 5
+    },
+    {
+      "image": "2246769.jpg",
+      "category": 2
+    },
+    {
+      "image": "2833370.jpg",
+      "category": 1
+    },
+    {
+      "image": "2818897.jpg",
+      "category": 1
+    },
+    {
+      "image": "2904658.jpg",
+      "category": 1
+    }
+  ],
+  "scope": "nine organizer-supplied images; unseen platform result unknown"
+}

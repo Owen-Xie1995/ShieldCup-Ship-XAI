@@ -1,0 +1,403 @@
+{
+  "status": "NINE_ORIGINAL_INPUT_CACHE_MAPS_VERIFIED",
+  "scope": "supplied nine organizer images; visual inspection only",
+  "official_generator_sha256": "3f0c8830e590f6ad46934c034a5bf75f2d2b1d89baf2dba6683cdc1d9dc61df1",
+  "official_metrix_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+  "weight_sha256_from_scored_runs": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473",
+  "program_sha256": {
+    "stage21_16x16": "5264364073961e5c3f8de1e1982fe2856de4eeecca40aca4ca5ca459784360f5"
+  },
+  "official_test_csv_sha256": "292bf8cf64b4db3a64def4a27ec02f082bd7b222e8ae939e2d620d8409a8e83e",
+  "observations_file": "heatmaps/observations.json",
+  "observations_sha256": "285a2789b0be49ceae9b6b1325cd989b0ab59aff274800d9b94c874b6eacb7f2",
+  "methods": [
+    "stage21_16x16"
+  ],
+  "scale_rule": "One shared 99th percentile of all positive per-pixel values across requested methods and images; linear clipping followed by power 0.6 for display. Absolute heat is channelwise sum(abs(final attribution)); signed heat is channelwise sum(final attribution).",
+  "stage22_raw_to_final_postprocess_verified": false,
+  "stage22_raw_to_final_postprocess_check": null,
+  "absolute_scale": 0.015921354293823242,
+  "signed_scale": 0.015921354293823242,
+  "raw_signed_scale": null,
+  "entries": [
+    {
+      "method": "stage21_16x16",
+      "Id": 1,
+      "filename": "2814884.jpg",
+      "target_class_zero_based": 0,
+      "target_category_one_based": 1,
+      "source_jpeg_sha256": "fc9dba30dd195b88461ecaf33c7b7364eb9d08336ed005ba681f36110685b0b4",
+      "preserved_original_jpeg": "heatmaps/official_sources/2814884.jpg",
+      "transformed_input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "transformed_input_dtype": "<f4",
+      "transformed_input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+      "target_shape": [
+        1
+      ],
+      "target_dtype": "<i8",
+      "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+      "cache_key": "9a645a5b22c0ad880653ad44338b1d53ecf4342549b40780b3000179941e627d",
+      "cache_file": "output_mac_stage21/cache/black_occlusion16_signed/9a/9a645a5b22c0ad880653ad44338b1d53ecf4342549b40780b3000179941e627d.npz",
+      "cache_file_sha256": "7f11bc8f37a4d3e19da4ada8cff8591e76a8bbd1e894ca52d01a044729916a60",
+      "final_attribution_sha256": "88229ec48e71df83cc3df19818abdbe474c003da34c4279b9a31806ef936f7d8",
+      "raw_attribution_sha256": null,
+      "absolute_heat_total": 26.97813614248298,
+      "positive_signed_pixel_count": 5432,
+      "negative_signed_pixel_count": 5237,
+      "model_input_png": "heatmaps/stage21_16x16/id_01_2814884_model_input.png",
+      "overlay_png": "heatmaps/stage21_16x16/id_01_2814884_overlay.png",
+      "signed_png": "heatmaps/stage21_16x16/id_01_2814884_signed.png",
+      "raw_signed_png": null,
+      "triptych_png": "heatmaps/stage21_16x16/id_01_2814884_triptych.png",
+      "contact_sheet_png": "heatmaps/stage21_16x16/contact_sheet.png",
+      "observation": {
+        "Id": 1,
+        "filename": "2814884.jpg",
+        "visual_observation_zh": "主要亮區與紅色船體上方的甲板、白色上層結構及港口吊臂交疊；船體右側的岸邊／水面附近也見較淡色塊。紅藍帶符號圖在船體與上層結構附近混有正負值。",
+        "off_ship_heat_zh": "背景吊臂和船體下方水面附近可見熱區，不能把整片亮區都當成船舶像素。"
+      }
+    },
+    {
+      "method": "stage21_16x16",
+      "Id": 2,
+      "filename": "643776.jpg",
+      "target_class_zero_based": 3,
+      "target_category_one_based": 4,
+      "source_jpeg_sha256": "7e9e9793979e53b76c190cef833b4e03ae14bc3d4318c628d2c3117620072636",
+      "preserved_original_jpeg": "heatmaps/official_sources/643776.jpg",
+      "transformed_input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "transformed_input_dtype": "<f4",
+      "transformed_input_sha256": "adb3bfb111feae4884ef11f2b1488bb98a925e804bdbc2af7e1fa9cb45e2beec",
+      "target_shape": [
+        1
+      ],
+      "target_dtype": "<i8",
+      "target_sha256": "35be322d094f9d154a8aba4733b8497f180353bd7ae7b0a15f90b586b549f28b",
+      "cache_key": "c8eb673d0181792339f052db670e5e400b687c3bbc6cfdf5320f837fad86bd87",
+      "cache_file": "output_mac_stage21/cache/black_occlusion16_signed/c8/c8eb673d0181792339f052db670e5e400b687c3bbc6cfdf5320f837fad86bd87.npz",
+      "cache_file_sha256": "bce2c65e54893d1402904642d7ef67b8c75002cdc3ad496d078df1e0f2c5a1be",
+      "final_attribution_sha256": "adab7df919b759db5389e71106ec1eebca61a7bd796235302a4642eb06859d34",
+      "raw_attribution_sha256": null,
+      "absolute_heat_total": 26.97085435682675,
+      "positive_signed_pixel_count": 7405,
+      "negative_signed_pixel_count": 477,
+      "model_input_png": "heatmaps/stage21_16x16/id_02_643776_model_input.png",
+      "overlay_png": "heatmaps/stage21_16x16/id_02_643776_overlay.png",
+      "signed_png": "heatmaps/stage21_16x16/id_02_643776_signed.png",
+      "raw_signed_png": null,
+      "triptych_png": "heatmaps/stage21_16x16/id_02_643776_triptych.png",
+      "contact_sheet_png": "heatmaps/stage21_16x16/contact_sheet.png",
+      "observation": {
+        "Id": 2,
+        "filename": "643776.jpg",
+        "visual_observation_zh": "最強的連續亮區落在白色客船中段至右側甲板／上層結構；正向紅色為主，少量負向藍色分布於其上方。",
+        "off_ship_heat_zh": "右上天空有數塊亮區；靠岸背景與船舶交界也難以只靠覆圖精確分離。"
+      }
+    },
+    {
+      "method": "stage21_16x16",
+      "Id": 3,
+      "filename": "2839095.jpg",
+      "target_class_zero_based": 2,
+      "target_category_one_based": 3,
+      "source_jpeg_sha256": "a2e69bf2dcf5f03de5a03d97234bbd38359532f140cf4a49d9a2bbceaca88fd1",
+      "preserved_original_jpeg": "heatmaps/official_sources/2839095.jpg",
+      "transformed_input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "transformed_input_dtype": "<f4",
+      "transformed_input_sha256": "3838aafed35eb7769396a678f869d5bf3aa61ed653a0204f505db8f678c0fdd0",
+      "target_shape": [
+        1
+      ],
+      "target_dtype": "<i8",
+      "target_sha256": "d86e8112f3c4c4442126f8e9f44f16867da487f29052bf91b810457db34209a4",
+      "cache_key": "80234df8ee4f3a36f4f359ede9282c86840fbc55479673752ebc72d74ad2bd20",
+      "cache_file": "output_mac_stage21/cache/black_occlusion16_signed/80/80234df8ee4f3a36f4f359ede9282c86840fbc55479673752ebc72d74ad2bd20.npz",
+      "cache_file_sha256": "a6a5c1fc0dd87ddb9e88b461d91d1dd8c3855f3108ce2312bae6b9380ed4112d",
+      "final_attribution_sha256": "3aaa5c80101a6c0f872c93a70b84f16485ce55f1de674cf7702caef1b06acfdb",
+      "raw_attribution_sha256": null,
+      "absolute_heat_total": 56.08139804122038,
+      "positive_signed_pixel_count": 6368,
+      "negative_signed_pixel_count": 2562,
+      "model_input_png": "heatmaps/stage21_16x16/id_03_2839095_model_input.png",
+      "overlay_png": "heatmaps/stage21_16x16/id_03_2839095_overlay.png",
+      "signed_png": "heatmaps/stage21_16x16/id_03_2839095_signed.png",
+      "raw_signed_png": null,
+      "triptych_png": "heatmaps/stage21_16x16/id_03_2839095_triptych.png",
+      "contact_sheet_png": "heatmaps/stage21_16x16/contact_sheet.png",
+      "observation": {
+        "Id": 3,
+        "filename": "2839095.jpg",
+        "visual_observation_zh": "最大塊亮區覆蓋藍色貨船的中部及右側船身，帶符號圖在船身以紅色為主。",
+        "off_ship_heat_zh": "山體／海面背景和上方天空仍有零星紅藍塊，船體外亦有部分歸因。"
+      }
+    },
+    {
+      "method": "stage21_16x16",
+      "Id": 4,
+      "filename": "2865030.jpg",
+      "target_class_zero_based": 2,
+      "target_category_one_based": 3,
+      "source_jpeg_sha256": "f5d09552eebf5a482afd2e5a26ef61dc0de1e134ee97874da13de2b7ff0a75fe",
+      "preserved_original_jpeg": "heatmaps/official_sources/2865030.jpg",
+      "transformed_input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "transformed_input_dtype": "<f4",
+      "transformed_input_sha256": "d09c5e89e426fbfc56b5fed128738b270567021a378f291d6e245d24e49866b8",
+      "target_shape": [
+        1
+      ],
+      "target_dtype": "<i8",
+      "target_sha256": "d86e8112f3c4c4442126f8e9f44f16867da487f29052bf91b810457db34209a4",
+      "cache_key": "6f421de9fece7119ab606fedcdf52f9e8ab1f45da162d3bfcf6fbc60e890c6cb",
+      "cache_file": "output_mac_stage21/cache/black_occlusion16_signed/6f/6f421de9fece7119ab606fedcdf52f9e8ab1f45da162d3bfcf6fbc60e890c6cb.npz",
+      "cache_file_sha256": "b229beee724f72f1068f114f9bc791cc2794674db2f4a2e250c0522f9ca1fb7f",
+      "final_attribution_sha256": "4a9eb89df8e352c07173860c3e605bf918e42d1d7306b634b6c3a0228c8c4abf",
+      "raw_attribution_sha256": null,
+      "absolute_heat_total": 28.382314935559407,
+      "positive_signed_pixel_count": 7251,
+      "negative_signed_pixel_count": 799,
+      "model_input_png": "heatmaps/stage21_16x16/id_04_2865030_model_input.png",
+      "overlay_png": "heatmaps/stage21_16x16/id_04_2865030_overlay.png",
+      "signed_png": "heatmaps/stage21_16x16/id_04_2865030_signed.png",
+      "raw_signed_png": null,
+      "triptych_png": "heatmaps/stage21_16x16/id_04_2865030_triptych.png",
+      "contact_sheet_png": "heatmaps/stage21_16x16/contact_sheet.png",
+      "observation": {
+        "Id": 4,
+        "filename": "2865030.jpg",
+        "visual_observation_zh": "亮區橫跨大型藍白貨船的中央至右側船身、上層白色結構；右方吊機附近也有色塊。帶符號圖以船身內的紅色為主。",
+        "off_ship_heat_zh": "船身上方及右側吊機／背景區有少量歸因，不能視為完全聚焦船體。"
+      }
+    },
+    {
+      "method": "stage21_16x16",
+      "Id": 5,
+      "filename": "2819054.jpg",
+      "target_class_zero_based": 4,
+      "target_category_one_based": 5,
+      "source_jpeg_sha256": "2126c3caed42f46ead14599ae0bf05c1874ebccf6ee0f111b9ab6a4828460ebe",
+      "preserved_original_jpeg": "heatmaps/official_sources/2819054.jpg",
+      "transformed_input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "transformed_input_dtype": "<f4",
+      "transformed_input_sha256": "bed6659c79788c2d8c7b5842f96ce6be28e542c1b1e168eabfb06c745af2edc0",
+      "target_shape": [
+        1
+      ],
+      "target_dtype": "<i8",
+      "target_sha256": "f0a0278e4372459cca6159cd5e71cfee638302a7b9ca9b05c34181ac0a65ac5d",
+      "cache_key": "a3255405545e322712caf94e140a024b95533bd0b0ad256aee5602b5d279b875",
+      "cache_file": "output_mac_stage21/cache/black_occlusion16_signed/a3/a3255405545e322712caf94e140a024b95533bd0b0ad256aee5602b5d279b875.npz",
+      "cache_file_sha256": "eb4d8cceb3afebc512bae09c0490b81f49e11978f2d9b60a78185b21c0d49e8b",
+      "final_attribution_sha256": "2db7f954b9664e661bdbe92705a17ad2b2897ef2d16c80cf1b7187935a97a826",
+      "raw_attribution_sha256": null,
+      "absolute_heat_total": 25.593900391133502,
+      "positive_signed_pixel_count": 3666,
+      "negative_signed_pixel_count": 5823,
+      "model_input_png": "heatmaps/stage21_16x16/id_05_2819054_model_input.png",
+      "overlay_png": "heatmaps/stage21_16x16/id_05_2819054_overlay.png",
+      "signed_png": "heatmaps/stage21_16x16/id_05_2819054_signed.png",
+      "raw_signed_png": null,
+      "triptych_png": "heatmaps/stage21_16x16/id_05_2819054_triptych.png",
+      "contact_sheet_png": "heatmaps/stage21_16x16/contact_sheet.png",
+      "observation": {
+        "Id": 5,
+        "filename": "2819054.jpg",
+        "visual_observation_zh": "一條水平亮帶沿小型客船的客艙、甲板及船艏延伸，與船舶有明顯重合。",
+        "off_ship_heat_zh": "右上天空有孤立且明顯的橘紅色塊；岸邊樹木／房屋與船身交界亦有亮區。天空塊是目視可確認的非船熱區。"
+      }
+    },
+    {
+      "method": "stage21_16x16",
+      "Id": 6,
+      "filename": "2246769.jpg",
+      "target_class_zero_based": 1,
+      "target_category_one_based": 2,
+      "source_jpeg_sha256": "12220f8a5a1d7173ceee23b1b844db9a66b4b2f909075303d7474df5eed2ad94",
+      "preserved_original_jpeg": "heatmaps/official_sources/2246769.jpg",
+      "transformed_input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "transformed_input_dtype": "<f4",
+      "transformed_input_sha256": "2649786d76238334ea6cf0a7ae9c37f24a10d3c49ed75bfcc016e145f5352935",
+      "target_shape": [
+        1
+      ],
+      "target_dtype": "<i8",
+      "target_sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8",
+      "cache_key": "7e3678857866878c41469da7d71efaa03dee0fff251233d44a75b0d9be46ecf3",
+      "cache_file": "output_mac_stage21/cache/black_occlusion16_signed/7e/7e3678857866878c41469da7d71efaa03dee0fff251233d44a75b0d9be46ecf3.npz",
+      "cache_file_sha256": "8f751067fe401a6bb45ec39ed3077a6c1a0e0ed1debde488da37a7fcc5a1a176",
+      "final_attribution_sha256": "07d0899f956933ed67ed6a0fff1473abc13ede7ae55665349b9f6682299c4edd",
+      "raw_attribution_sha256": null,
+      "absolute_heat_total": 32.17567906528711,
+      "positive_signed_pixel_count": 9829,
+      "negative_signed_pixel_count": 180,
+      "model_input_png": "heatmaps/stage21_16x16/id_06_2246769_model_input.png",
+      "overlay_png": "heatmaps/stage21_16x16/id_06_2246769_overlay.png",
+      "signed_png": "heatmaps/stage21_16x16/id_06_2246769_signed.png",
+      "raw_signed_png": null,
+      "triptych_png": "heatmaps/stage21_16x16/id_06_2246769_triptych.png",
+      "contact_sheet_png": "heatmaps/stage21_16x16/contact_sheet.png",
+      "observation": {
+        "Id": 6,
+        "filename": "2246769.jpg",
+        "visual_observation_zh": "亮區集中在軍艦右側甲板、上層結構及高桅杆，與船舶主要結構重合；紅藍圖顯示不同部位符號不同。",
+        "off_ship_heat_zh": "船體右外側的背景和船艏旁水面有色塊，邊界需人工核對。"
+      }
+    },
+    {
+      "method": "stage21_16x16",
+      "Id": 7,
+      "filename": "2833370.jpg",
+      "target_class_zero_based": 0,
+      "target_category_one_based": 1,
+      "source_jpeg_sha256": "5bcca973f5d4628131390b0727a757f6741af887295fc585768cda951589a898",
+      "preserved_original_jpeg": "heatmaps/official_sources/2833370.jpg",
+      "transformed_input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "transformed_input_dtype": "<f4",
+      "transformed_input_sha256": "c74cd7fdb80213cb7c5d9b22c847f34ade7d1eb378f1ac74ea4fcc33f1a8a312",
+      "target_shape": [
+        1
+      ],
+      "target_dtype": "<i8",
+      "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+      "cache_key": "2e86ca07badc5f49b493c17aa073a0ee0b0fe1556e0133c7b7bc34144627770d",
+      "cache_file": "output_mac_stage21/cache/black_occlusion16_signed/2e/2e86ca07badc5f49b493c17aa073a0ee0b0fe1556e0133c7b7bc34144627770d.npz",
+      "cache_file_sha256": "9a046da4d4f7244dfaf8deea97a2f223968090ba314d76493933f815862f3c91",
+      "final_attribution_sha256": "0fb80096df3f52d03e6861ff3464116461b97b72e060f0f23155259e867f017e",
+      "raw_attribution_sha256": null,
+      "absolute_heat_total": 33.97893377253786,
+      "positive_signed_pixel_count": 8466,
+      "negative_signed_pixel_count": 2199,
+      "model_input_png": "heatmaps/stage21_16x16/id_07_2833370_model_input.png",
+      "overlay_png": "heatmaps/stage21_16x16/id_07_2833370_overlay.png",
+      "signed_png": "heatmaps/stage21_16x16/id_07_2833370_signed.png",
+      "raw_signed_png": null,
+      "triptych_png": "heatmaps/stage21_16x16/id_07_2833370_triptych.png",
+      "contact_sheet_png": "heatmaps/stage21_16x16/contact_sheet.png",
+      "observation": {
+        "Id": 7,
+        "filename": "2833370.jpg",
+        "visual_observation_zh": "亮區覆蓋貨船中右側貨櫃與船體，也沿船舶上緣延伸；紅藍帶符號圖在貨櫃附近有正負混合。",
+        "off_ship_heat_zh": "天空有數個明顯的孤立紅色塊，船體下方海面亦有淺色塊。既有手繪輪廓未完整涵蓋貨櫃，因此輪廓量化只能事後參考。"
+      }
+    },
+    {
+      "method": "stage21_16x16",
+      "Id": 8,
+      "filename": "2818897.jpg",
+      "target_class_zero_based": 0,
+      "target_category_one_based": 1,
+      "source_jpeg_sha256": "4022c31d87b42c3beaab52dda41e54c60eb114b72f5d1e5156c9f05a189b26a1",
+      "preserved_original_jpeg": "heatmaps/official_sources/2818897.jpg",
+      "transformed_input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "transformed_input_dtype": "<f4",
+      "transformed_input_sha256": "b06632c2ef54d6683cbe01ac3a624a42e36b777596f5e0b285e1e369981a16b2",
+      "target_shape": [
+        1
+      ],
+      "target_dtype": "<i8",
+      "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+      "cache_key": "bc06f3e25b5f108f8b6e7db14434c6f531db94409672dec4e0aea08228340389",
+      "cache_file": "output_mac_stage21/cache/black_occlusion16_signed/bc/bc06f3e25b5f108f8b6e7db14434c6f531db94409672dec4e0aea08228340389.npz",
+      "cache_file_sha256": "7827b747021aa86d8e900b52757f5790db8c930409e863770259de58896bdd52",
+      "final_attribution_sha256": "5434a2dcf6943f6aeafd22440b87704000609c624f53db1afd9995fe8ad30002",
+      "raw_attribution_sha256": null,
+      "absolute_heat_total": 57.60674310941249,
+      "positive_signed_pixel_count": 4672,
+      "negative_signed_pixel_count": 4179,
+      "model_input_png": "heatmaps/stage21_16x16/id_08_2818897_model_input.png",
+      "overlay_png": "heatmaps/stage21_16x16/id_08_2818897_overlay.png",
+      "signed_png": "heatmaps/stage21_16x16/id_08_2818897_signed.png",
+      "raw_signed_png": null,
+      "triptych_png": "heatmaps/stage21_16x16/id_08_2818897_triptych.png",
+      "contact_sheet_png": "heatmaps/stage21_16x16/contact_sheet.png",
+      "observation": {
+        "Id": 8,
+        "filename": "2818897.jpg",
+        "visual_observation_zh": "亮區覆蓋前景小船部分船身，同時伸到其後方碼頭與岸邊的大船／建物；帶符號圖中下方藍色區與上方紅色區並存。",
+        "off_ship_heat_zh": "碼頭建物與岸邊的大面積亮區無法歸為前景船體，這張屬船與岸邊混合熱區。"
+      }
+    },
+    {
+      "method": "stage21_16x16",
+      "Id": 9,
+      "filename": "2904658.jpg",
+      "target_class_zero_based": 0,
+      "target_category_one_based": 1,
+      "source_jpeg_sha256": "9f20235629fc944103383d6734c758f69e4ee5bdbc103fe713e71244e844c16c",
+      "preserved_original_jpeg": "heatmaps/official_sources/2904658.jpg",
+      "transformed_input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "transformed_input_dtype": "<f4",
+      "transformed_input_sha256": "1cf96197774ec5cb543516079646c74df8129464dea995a8f15b1c516df3632a",
+      "target_shape": [
+        1
+      ],
+      "target_dtype": "<i8",
+      "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+      "cache_key": "5ffa9d29bcb2c57d328328d6a81356e7f163a94490b787a86ff53a779b41cd2e",
+      "cache_file": "output_mac_stage21/cache/black_occlusion16_signed/5f/5ffa9d29bcb2c57d328328d6a81356e7f163a94490b787a86ff53a779b41cd2e.npz",
+      "cache_file_sha256": "9795d1d92b6c3bc5179aff692aaa5e4bff336cd6aaf92258537de0e08109e9fa",
+      "final_attribution_sha256": "0b10ecb30e95fd196e4af80fc2e5e24ea633b8ab0f3bbe98e848b259bf455e19",
+      "raw_attribution_sha256": null,
+      "absolute_heat_total": 34.846893692272715,
+      "positive_signed_pixel_count": 6822,
+      "negative_signed_pixel_count": 1967,
+      "model_input_png": "heatmaps/stage21_16x16/id_09_2904658_model_input.png",
+      "overlay_png": "heatmaps/stage21_16x16/id_09_2904658_overlay.png",
+      "signed_png": "heatmaps/stage21_16x16/id_09_2904658_signed.png",
+      "raw_signed_png": null,
+      "triptych_png": "heatmaps/stage21_16x16/id_09_2904658_triptych.png",
+      "contact_sheet_png": "heatmaps/stage21_16x16/contact_sheet.png",
+      "observation": {
+        "Id": 9,
+        "filename": "2904658.jpg",
+        "visual_observation_zh": "亮區聚在畫面中央小型客船的上層結構、船艙與部分船身；帶符號圖上半部偏紅、下半部有藍色。",
+        "off_ship_heat_zh": "船艙上方天空和船身右下側海面有零散熱區，邊緣並非完全限制於船體。"
+      }
+    }
+  ],
+  "observations_complete": true
+}

@@ -1,0 +1,67 @@
+# ==============================
+# macOS / IDE
+# ==============================
+.DS_Store
+.vscode/
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ==============================
+# Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ==============================
+# Official competition materials
+# Do not redistribute by default
+# ==============================
+2026 AI 研討會活動辦法_1150916.pdf
+報名文件/
+簡報範本/
+論文格式/
+開發環境/
+
+# ==============================
+# Existing generated / experiment outputs
+# Keep locally, don't commit whole packages
+# ==============================
+output_mac_next/
+output_mac_stage20/
+output_mac_stage21/
+output_mac_stage22/
+
+# ==============================
+# Archives
+# ==============================
+*.zip
+*.tar
+*.tar.gz
+
+# ==============================
+# Models / weights / large binaries
+# ==============================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+
+# ==============================
+# Generated runtime outputs
+# ==============================
+runs/
+logs/
+tmp/
+.cache/
