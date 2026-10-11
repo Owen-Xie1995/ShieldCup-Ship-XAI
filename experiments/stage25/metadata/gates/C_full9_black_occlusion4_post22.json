@@ -1,0 +1,15 @@
+{
+  "components_seconds": {
+    "full9_measured_official_metrics_and_cacheIO": 18.37868862596224,
+    "remaining36_cold_raw": 3214.2551925239386,
+    "source_scoring_validation_allowance": 10.0
+  },
+  "created_unix": 1790849396.750392,
+  "cumulative_model_seconds": 1633.1522345829871,
+  "entry_allowed": true,
+  "measured_estimate_seconds": 3242.633881149901,
+  "phase": "C_full9_black_occlusion4_post22",
+  "remaining_model_seconds": 3766.8477657920157,
+  "safe_estimate_seconds": 3729.0289633223856,
+  "safety_multiplier": 1.15
+}

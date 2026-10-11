@@ -1,0 +1,105 @@
+{
+  "acceptance": {
+    "all_logits_finite": true,
+    "denominator_floor": 1e-08,
+    "full_cpu_4x4_support_validation": "NOT_PERFORMED_IN_THIS_STAGE",
+    "logits_atol": 0.0001,
+    "logits_rtol": 0.001,
+    "predicted_class_same": true,
+    "sign_near_zero_threshold": 1e-06,
+    "tile_signed_drop_relative_l2_max": 0.01
+  },
+  "arrays": {
+    "group_indices": {
+      "dtype": "int64",
+      "sha256": "27d92c2b63387d73030af9a58b50a45e24b71660c05e216a48221975e270468f",
+      "shape": [
+        128,
+        50
+      ]
+    },
+    "single_indices": {
+      "dtype": "int64",
+      "sha256": "f5a978f0be2f87b2e85c156f8a443bd6fcb1dced57ea7c85d4e5393ba916c400",
+      "shape": [
+        384
+      ]
+    },
+    "tile_ids": {
+      "dtype": "int64",
+      "sha256": "150729678d3d96505259c7bee3242a835da248aa5c4cad4b4b62a4922be8e032",
+      "shape": [
+        128
+      ]
+    }
+  },
+  "diagnostic_source_sha256": "63e4f146d4eb15ae6ba1c7b4a0a644c0b13035a07a9fafff26c9dcaa1fd1f726",
+  "frozen_before_new_forward": true,
+  "independent_of_official_evaluation_seed": true,
+  "indices_file_sha256": "ebac214c59f7b8cadaecb74b8a9f08bc6ca4ec7d7b2fb8563cbb08b77995a5ea",
+  "inputs_file_sha256": "d193b5468b96c7c3490af02df4fbdf368d034bf702b7f370c162355fc96fa3f6",
+  "sampling": {
+    "group_indices": {
+      "generator": "Generator(PCG64(20261002))",
+      "rule": "128 sequential independent draws; each 50 distinct flattened CHW elements"
+    },
+    "single_indices": {
+      "generator": "Generator(PCG64(20261001))",
+      "rule": "c=0,1,2; 128 distinct HW positions per channel, preserving draw order"
+    },
+    "tile_ids": {
+      "generator": "Generator(PCG64(20261003))",
+      "rule": "128 distinct IDs in c,y,x order among 9408 nonoverlap 4x4 tiles"
+    }
+  },
+  "schema": 1,
+  "source_inputs": {
+    "stage23_input_file_sha256": "f98772eb98aa2c50698d3f3ab4b513e785df03cc561f4de7ea28b86315ac6c64",
+    "stage23_input_path": "$WORKSPACE/output_mac_stage23/device/probe_inputs.npz",
+    "stage24_input_checks": {
+      "original": {
+        "device": "mps",
+        "file_sha256": "fc88649bdb72b5dc32141880f6dec76a7007ec6eaea77df955eec0a2d3a4fad0",
+        "input": {
+          "dtype": "float32",
+          "sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+          "shape": [
+            1,
+            3,
+            224,
+            224
+          ]
+        },
+        "path": "$WORKSPACE/output_mac_stage24/probes/mps_original.npz",
+        "result": "PASS",
+        "target": 0,
+        "target_source": "Stage23 complete int64 target; Stage24 record target equality"
+      },
+      "perturbed": {
+        "device": "mps",
+        "file_sha256": "c09037397df7084d416f3d66c6e1b603da22dcaf99f4a78217217da3c674175f",
+        "input": {
+          "dtype": "float32",
+          "sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+          "shape": [
+            1,
+            3,
+            224,
+            224
+          ]
+        },
+        "path": "$WORKSPACE/output_mac_stage24/probes/mps_perturbed.npz",
+        "result": "PASS",
+        "target": 0,
+        "target_source": "Stage23 complete int64 target; Stage24 record target equality"
+      }
+    },
+    "target": {
+      "dtype": "int64",
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+      "shape": [
+        1
+      ]
+    }
+  }
+}

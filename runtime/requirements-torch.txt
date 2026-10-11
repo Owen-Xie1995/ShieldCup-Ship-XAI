@@ -1,0 +1,3 @@
+# Official CPU index binary versions.
+torch==2.13.0+cpu
+torchvision==0.28.0+cpu

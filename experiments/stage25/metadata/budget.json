@@ -1,0 +1,19 @@
+{
+  "A_limit_seconds": 600,
+  "A_seconds": 175.80414041600307,
+  "active_session": null,
+  "finished_unix": 1790852589.862217,
+  "limit_seconds": 5400,
+  "model_seconds": 4826.173873874999,
+  "remaining_seconds": 573.8261261250009,
+  "sessions": [
+    {
+      "A_elapsed_seconds": 175.80414041600307,
+      "elapsed_seconds": 4826.173873874999,
+      "pid": 92556,
+      "started_unix": 1790847763.442086,
+      "status": "COMPLETE"
+    }
+  ],
+  "status": "COMPLETE"
+}

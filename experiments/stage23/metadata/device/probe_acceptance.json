@@ -1,0 +1,35 @@
+{
+  "status": "PREREGISTERED_BEFORE_CPU_MPS_LOGIT_COMPARISON",
+  "scope": "Stage23 engineering equivalence check, not an official competition threshold",
+  "fixed_inputs": {
+    "official_image_index_zero_based": 0,
+    "official_image": "2814884.jpg",
+    "official_image_sha256": "fc9dba30dd195b88461ecaf33c7b7364eb9d08336ed005ba681f36110685b0b4",
+    "transformed_float32_chw_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+    "target_zero_based": 0,
+    "perturbation": {
+      "seed": 314159,
+      "distribution": "numpy default_rng.normal",
+      "mean": 0.0,
+      "std": 0.0005,
+      "noise_float32_sha256": "a13bb4712914150a63ea5a472f53a1dee4a6ebc3e5fc451754764531f0d2bf5d",
+      "perturbed_float32_chw_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b"
+    }
+  },
+  "occlusion8_masked_inputs_per_case": 2352,
+  "devices": ["cpu", "mps"],
+  "model_dtype": "float32",
+  "mask_inference_batch_sizes_for_speed_test": [32, 64],
+  "correctness": {
+    "predicted_class_must_match": true,
+    "all_original_and_masked_target_logits": {"rtol": 0.001, "atol": 0.0001},
+    "raw_relative_l2_max": 0.01,
+    "raw_relative_l2_denominator": "max(norm(cpu_raw),1e-8)",
+    "final_nonzero_support_iou_min": 0.95,
+    "official_single_image_three_metrics_each_finite": true,
+    "official_single_image_weighted_score_abs_delta_max": 0.5,
+    "official_single_image_formula": "20*(1+F)+30*max(1-M/2,0)+30*S"
+  },
+  "official_metric_settings": {"seed": 42, "batch_size": 1, "shuffle": false, "image_count": 1},
+  "run_policy": "MPS must be truly available; no PYTORCH_ENABLE_MPS_FALLBACK and no silent CPU model execution. Synchronize MPS before/after timing. Accept MPS for long runs only if all correctness limits pass and measured end-to-end time is faster."
+}

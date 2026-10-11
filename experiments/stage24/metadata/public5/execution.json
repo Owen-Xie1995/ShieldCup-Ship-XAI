@@ -1,0 +1,30 @@
+{
+  "budget_exceeded_at_safe_boundary": false,
+  "budget_seconds": 1800.0,
+  "budget_sha256": "4b877fd3d94d466c6d8831234aa6c652ffcf41b233fdd65b5f942bce72a78b06",
+  "cumulative_model_wall_seconds": 861.8986384159944,
+  "deadline_monotonic": 182090.726572875,
+  "device": "mps",
+  "evaluation_wall_seconds": 861.8986384159944,
+  "finished_at_unix": 1790786856.27358,
+  "first_pair_full_official_elapsed_seconds": 142.0577206670132,
+  "first_pair_with_reliability_probe_elapsed_seconds": 164.55658050000784,
+  "ig50_device_probe_elapsed_seconds": 22.49885983299464,
+  "ig50_device_probe_sha256": "393f12ae5186438bed0ce7b27835daaaf6fc3930a51c96eddeb55f8520dbca14",
+  "ig50_device_probe_status": "PASS",
+  "methods": [
+    "black_occlusion8_signed",
+    "control_ig50_smooth_abs_top25_mean5_top10"
+  ],
+  "model_wall_seconds": 861.8986384159944,
+  "pid": 88812,
+  "preparation_elapsed_seconds_charged_to_model_budget": 0,
+  "prior_actual_model_wall_seconds": 0.0,
+  "prior_stage23_status_remains_readonly": "0/5",
+  "remaining_budget_after_first_pair_seconds": 1631.87794174999,
+  "remaining_four_pairs_estimate_seconds": 568.2308826680528,
+  "started_at_unix": 1790785994.372266,
+  "started_monotonic": 180290.726572875,
+  "status": "COMPLETE",
+  "wrapper_sha256": "3de7049918d0322abbcb2e0004431e20705fcfcc9725dc7c204a425677739a46"
+}

@@ -1,0 +1,57 @@
+{
+  "batch32_batch64_bank_identity": true,
+  "callback_target_dtype_and_shape_bound_in_key": true,
+  "completed_cache_cleared_partial": true,
+  "elapsed_seconds": 1.317464833991835,
+  "hand_covariance_expected": [
+    4.0,
+    -2.0,
+    0.0
+  ],
+  "hand_covariance_observed": [
+    4.0,
+    -2.0,
+    0.0
+  ],
+  "independently_checked_pixels": [
+    {
+      "direct": 0.04714509374854417,
+      "index": [
+        0,
+        0,
+        0
+      ],
+      "observed": 0.047145094722509384
+    },
+    {
+      "direct": 0.011641651122847704,
+      "index": [
+        1,
+        80,
+        100
+      ],
+      "observed": 0.011641651391983032
+    },
+    {
+      "direct": 0.005314263686632278,
+      "index": [
+        2,
+        223,
+        223
+      ],
+      "observed": 0.005314263515174389
+    }
+  ],
+  "mask_bank_sha256": "ea80e29c1d91fabdbcdd9a0201ee163c591b7d38d0a08ff278f365cf995345b7",
+  "mask_stream_sha256": "48602e4b4a000d290ff567cce19d97aaa90f6850efbdfbd2c24714f4d5a1740b",
+  "perturbed_cache_key_distinct": true,
+  "q_sha256": "b3ccfdf565b795da55a7ddb4e5f206dbc09524495aca15f11f24392dcd7c876e",
+  "stage22_postprocess_byte_identical": true,
+  "status": "PASS",
+  "synthetic_cache_key": "8785af3549d17e16e144fd149266c4397de6294cfa96b699e610217e24e6aebf",
+  "synthetic_final_sha256": "8e4ba099b2d456ea3269dede83ca6640478e340ce81702ccd8bebc4901065116",
+  "synthetic_full_mask_count": 1024,
+  "synthetic_input_sha256": "75da5182e93b6d5d54221504d83f99fed55456911aa534573a1815f94e8ada83",
+  "synthetic_masked_logits_sha256": "df5b31b02a048470b48d5706990754beb4fdcdfc66433f896a73ebdd8f77ba3c",
+  "synthetic_raw_sha256": "f25207392d0ebb09f9ca47b983e320566998725ec3c6f7fbc84eaee93faa6184"
+}

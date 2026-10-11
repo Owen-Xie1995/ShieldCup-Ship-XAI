@@ -1,0 +1,97 @@
+{
+  "snapshot_date": "2026-10-06",
+  "curated_date": "2026-10-11",
+  "scope": "Own deployment code and hash-only official source bindings; official wheel, weights and scorer are supplied locally and not distributed.",
+  "files": [
+    {
+      "path": "Dockerfile",
+      "source": "output_mac_docker_20261006/submission_bundle/model/Dockerfile",
+      "sha256": "4f8275234f01441f2a37ebac29082865d1dbe5603852ef010176a8fd7e3700e2",
+      "byte_identical": true
+    },
+    {
+      "path": ".dockerignore",
+      "source": "output_mac_docker_20261006/submission_bundle/model/.dockerignore",
+      "sha256": "b40b13b125f65daf3561807de9f815e561704b13455022eadebe10d50bd5839b",
+      "byte_identical": true
+    },
+    {
+      "path": "official_sources.json",
+      "source": "output_mac_docker_20261006/submission_bundle/model/official_sources.json",
+      "sha256": "0b7ea50e2bca9ca42a816e3a3332192aab8731a2f036cdd8ad7ee0f827663f4c",
+      "byte_identical": true
+    },
+    {
+      "path": "requirements-core.txt",
+      "source": "output_mac_docker_20261006/submission_bundle/model/requirements-core.txt",
+      "sha256": "e1af3995294f85e1234704a44fb9f15cbf2550df9a08cf5f88f2d51b4c7ca475",
+      "byte_identical": true
+    },
+    {
+      "path": "requirements-torch.txt",
+      "source": "output_mac_docker_20261006/submission_bundle/model/requirements-torch.txt",
+      "sha256": "4182aaf7716b0e4eea92c5d5409c2688e50429d302e43891c1df860ae04c6ad8",
+      "byte_identical": true
+    },
+    {
+      "path": "requirements-runtime.txt",
+      "source": "output_mac_docker_20261006/submission_bundle/model/requirements-runtime.txt",
+      "sha256": "18cc38714c1ca8bf21ba5c88ef89f8fa6f0a75be05b28dbd7bb2c3bd32bca83d",
+      "byte_identical": true
+    },
+    {
+      "path": "requirements-lock-runtime.txt",
+      "source": "output_mac_docker_20261006/submission_bundle/model/requirements-lock-runtime.txt",
+      "sha256": "2d3c9b9ce0bcbc74e25b2c560f0ddb625b0e94a9ce30e4b0a50a6db47b729e7f",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/build.sh",
+      "source": "output_mac_docker_20261006/submission_bundle/model/scripts/build.sh",
+      "sha256": "9ed11422c29b2013578bc61856e2118983d949821825e551cb9ad7cdb5e33c79",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/run.sh",
+      "source": "output_mac_docker_20261006/submission_bundle/model/scripts/run.sh",
+      "sha256": "7bb42d8eebbffcc1eb558f384508067c0f02329acc54b3f17bba86a7b2d799f7",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/export.sh",
+      "source": "output_mac_docker_20261006/submission_bundle/model/scripts/export.sh",
+      "sha256": "64076b5dc00ae629417b2bcf6051bf1d450889f0b806179c972af45460969e54",
+      "byte_identical": true
+    },
+    {
+      "path": "src/explainer.py",
+      "source": "output_mac_docker_20261006/submission_bundle/model/src/explainer.py",
+      "sha256": "1c036a17eec708b40c4516ad89af1469c6ab7a8189ce5f6ec222a23207ef3fdb",
+      "byte_identical": true
+    },
+    {
+      "path": "src/runner.py",
+      "source": "output_mac_docker_20261006/submission_bundle/model/src/runner.py",
+      "sha256": "87b573e1122394133fd0550dbf70ab8efab95eb03166fbb4d83fa6092cf3f4bf",
+      "byte_identical": true
+    },
+    {
+      "path": "src/runtime_support.py",
+      "source": "output_mac_docker_20261006/submission_bundle/model/src/runtime_support.py",
+      "sha256": "d8bc58af8f1b9cd3e7ba846290c1774c8bd278953f9104a9e14aaebbb8ca282b",
+      "byte_identical": true
+    },
+    {
+      "path": "src/smoke.py",
+      "source": "output_mac_docker_20261006/submission_bundle/model/src/smoke.py",
+      "sha256": "3e70f519d7b91e98196e8fac013288258f8060d0f2bd64d290fa02791746cb0c",
+      "byte_identical": true
+    },
+    {
+      "path": "src/device_probe.py",
+      "source": "output_mac_docker_20261006/submission_bundle/model/src/device_probe.py",
+      "sha256": "6db77d10a4b04f804c9ba8db7736ac0b71d02b3768a0864204ef464df0038abf",
+      "byte_identical": true
+    }
+  ]
+}

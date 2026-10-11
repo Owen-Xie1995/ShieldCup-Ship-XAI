@@ -1,0 +1,27 @@
+{
+  "baseline_mean": 77.15506268092251,
+  "candidate": "black_occlusion4_soft15",
+  "candidate_mean": 82.76170338401867,
+  "device": "mps",
+  "eval_seed": 314159,
+  "improved_images": 9,
+  "meets90": false,
+  "meets95": false,
+  "not_generalization_or_official_qualification": true,
+  "paired_deltas": [
+    10.128486629521632,
+    4.906042622660564,
+    2.5464842984038114,
+    3.4391112190026973,
+    7.904995812934715,
+    5.435341751818868,
+    6.371277727339034,
+    5.16356225004435,
+    4.564464016139752
+  ],
+  "paired_gain": 5.606640703096161,
+  "seed42_historical_baseline": 78.62195221134283,
+  "seed42_historical_candidate": 82.65370613379287,
+  "status": "GAIN_CONFIRMED_TWO_SEEDS_SAME_MPS",
+  "threshold": "strictly higher mean than new same-MPS8 AND >=6/9 improves"
+}

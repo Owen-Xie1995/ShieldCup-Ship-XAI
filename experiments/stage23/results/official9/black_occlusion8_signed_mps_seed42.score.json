@@ -1,0 +1,62 @@
+{
+  "csv_sha256": "c85760376736ffcf0ed597ffb98fb74cc0b0561cc071d464f60baceff603d70f",
+  "device": "mps",
+  "formula_mean": 78.62195221134282,
+  "image_index_zero_based": null,
+  "metric_values_finite": true,
+  "official_scorer": {
+    "column_order": [
+      "Id",
+      "Faithfulness",
+      "Max_Sensitivity",
+      "Sparsity"
+    ],
+    "metric_summary": {
+      "Faithfulness": {
+        "maximum": 0.4582526385784149,
+        "mean": 0.2478873050875134,
+        "minimum": 0.0204949155449867
+      },
+      "Max_Sensitivity": {
+        "maximum": 0.3857298493385315,
+        "mean": 0.26677170395851135,
+        "minimum": 0.1610462218523025
+      },
+      "Sparsity": {
+        "maximum": 0.9264765980081182,
+        "mean": 0.9221927222990074,
+        "minimum": 0.9149397599337364
+      }
+    },
+    "official_score_0_to_100": 78.62195221134283,
+    "row_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "sample_count": 9,
+    "scope": "supplied nine-image sample and solution_all_public.csv; not official qualification score",
+    "scorer_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+    "solution_sha256": "243c7b4457380e8f43e8baa5d1e7e7d52aaafb9239c3c02d28e6c803c614a75d",
+    "status": "C3_SAMPLE_SCORER_PASS",
+    "submission_sha256": "c85760376736ffcf0ed597ffb98fb74cc0b0561cc071d464f60baceff603d70f"
+  },
+  "row_formula_scores": [
+    73.28798374594069,
+    80.23521739033356,
+    81.74574083473559,
+    81.08688922519815,
+    77.61154908989425,
+    73.41141369234879,
+    78.3993007085493,
+    79.5599894868318,
+    82.2594857282532
+  ],
+  "scope": "nine supplied official images"
+}

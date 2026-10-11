@@ -1,0 +1,46 @@
+# Exact non-GPU runtime closure selected from the saved uv.lock.
+# Target: CPython 3.12.9, Linux aarch64 (Debian bookworm glibc 2.36).
+# Source lock SHA256: 73979f989f6b9a363da5f8dfca195882ca7b61458cc0f3b4106e90db0654d862
+# Selection and source provenance: lock_runtime_selection.json.
+# Install torch==2.13.0+cpu and torchvision==0.28.0+cpu separately
+# from https://download.pytorch.org/whl/cpu with --no-deps.
+# Constrain those two CPU versions during the following PyPI install.
+# Install this file using PyPI with --only-binary=:all:, then install
+# the supplied kaggle==0.1.0 wheel with --no-deps and run pip check.
+# This is version alignment plus two CPU binary-source overrides;
+# it is not an unchanged uv sync --frozen reproduction.
+cachetools==7.1.7
+captum==0.9.0
+contourpy==1.3.3
+cycler==0.12.1
+filelock==3.32.2
+fonttools==4.63.0
+fsspec==2026.7.0
+imageio==2.37.4
+jinja2==3.1.6
+joblib==1.5.3
+kiwisolver==1.5.0
+lazy-loader==0.5
+markupsafe==3.0.3
+matplotlib==3.11.1
+mpmath==1.3.0
+narwhals==2.24.0
+networkx==3.6.1
+numpy==2.5.2
+opencv-python==5.0.0.93
+packaging==26.3
+pandas==3.0.5
+pillow==12.3.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+quantus==0.6.0
+scikit-image==0.26.0
+scikit-learn==1.9.0
+scipy==1.18.0
+setuptools==84.0.0
+six==1.17.0
+sympy==1.14.0
+threadpoolctl==3.6.0
+tifffile==2026.7.31
+tqdm==4.70.0
+typing-extensions==4.16.0

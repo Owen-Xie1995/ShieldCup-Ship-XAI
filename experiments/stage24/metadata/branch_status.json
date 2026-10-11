@@ -1,0 +1,54 @@
+{
+  "A": {
+    "gradient_and_raw_CPU_MPS_gate": "PASS",
+    "model_budget_seconds": 1200,
+    "model_process_seconds": 25.697791457962012,
+    "status": "PASS"
+  },
+  "B": {
+    "model_budget_seconds": 2700,
+    "model_process_seconds": 43.932406749983784,
+    "official_nine": {
+      "gdd_black_post22": {
+        "gate_pass": false,
+        "improved_images": 0,
+        "mean_delta": -14.144083693362644,
+        "run_sha256": "e056ad606c8e931e38790259c3c8b6c4d24dce836cd3ab6c933c15093c5a3d1d",
+        "score": 64.47786851798017
+      },
+      "gdd_black_soft15": {
+        "gate_pass": false,
+        "improved_images": 0,
+        "mean_delta": -15.838370541549855,
+        "run_sha256": "a6d3c8ded5c4a057856ca8c47de22d1b967125d06dd5a29581fbf73cbd11a86a",
+        "score": 62.783581669792945
+      }
+    },
+    "reference_score": 78.62195221134283,
+    "retained_method": "black_occlusion8_signed",
+    "seed314159_status": "NOT_REQUIRED_NO_CANDIDATE_PASSES",
+    "selected_candidate": null,
+    "status": "COMPLETE_NEGATIVE_RESULT",
+    "user_target_90_reached": false
+  },
+  "C": {
+    "completed_pairs": 5,
+    "formula_means": {
+      "black_occlusion8_signed": 76.1126346064514,
+      "control_ig50_smooth_abs_top25_mean5_top10": 75.48715562785961
+    },
+    "historical_preparation_charge_seconds": 0,
+    "improved_images": 3,
+    "interpretation": "暫無明顯反轉",
+    "mean_delta": 0.6254789785917865,
+    "model_budget_seconds": 1800,
+    "model_process_seconds": 861.8986384159944,
+    "planned_pairs": 5,
+    "status": "PAIRED_SCORED"
+  },
+  "D": {
+    "archive": "output_mac_stage24.zip",
+    "integrity_receipt_outside_archive": "output_mac_stage24.package_receipt.json",
+    "status": "READY_FOR_INDEPENDENT_VERIFICATION_AND_PACKAGE"
+  }
+}

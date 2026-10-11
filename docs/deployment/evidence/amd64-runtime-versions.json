@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "python": "3.12.9 (main, Apr  8 2025, 01:41:13) [GCC 12.2.0]",
+  "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.36",
+  "machine": "x86_64",
+  "inside_container": true,
+  "torch_cuda_build": null,
+  "cuda_available": false,
+  "packages_checked": 38,
+  "versions": {
+    "cachetools": {
+      "expected": "7.1.7",
+      "installed": "7.1.7"
+    },
+    "captum": {
+      "expected": "0.9.0",
+      "installed": "0.9.0"
+    },
+    "contourpy": {
+      "expected": "1.3.3",
+      "installed": "1.3.3"
+    },
+    "cycler": {
+      "expected": "0.12.1",
+      "installed": "0.12.1"
+    },
+    "filelock": {
+      "expected": "3.32.2",
+      "installed": "3.32.2"
+    },
+    "fonttools": {
+      "expected": "4.63.0",
+      "installed": "4.63.0"
+    },
+    "fsspec": {
+      "expected": "2026.7.0",
+      "installed": "2026.7.0"
+    },
+    "imageio": {
+      "expected": "2.37.4",
+      "installed": "2.37.4"
+    },
+    "jinja2": {
+      "expected": "3.1.6",
+      "installed": "3.1.6"
+    },
+    "joblib": {
+      "expected": "1.5.3",
+      "installed": "1.5.3"
+    },
+    "kaggle": {
+      "expected": "0.1.0",
+      "installed": "0.1.0"
+    },
+    "kiwisolver": {
+      "expected": "1.5.0",
+      "installed": "1.5.0"
+    },
+    "lazy-loader": {
+      "expected": "0.5",
+      "installed": "0.5"
+    },
+    "markupsafe": {
+      "expected": "3.0.3",
+      "installed": "3.0.3"
+    },
+    "matplotlib": {
+      "expected": "3.11.1",
+      "installed": "3.11.1"
+    },
+    "mpmath": {
+      "expected": "1.3.0",
+      "installed": "1.3.0"
+    },
+    "narwhals": {
+      "expected": "2.24.0",
+      "installed": "2.24.0"
+    },
+    "networkx": {
+      "expected": "3.6.1",
+      "installed": "3.6.1"
+    },
+    "numpy": {
+      "expected": "2.5.2",
+      "installed": "2.5.2"
+    },
+    "opencv-python": {
+      "expected": "5.0.0.93",
+      "installed": "5.0.0.93"
+    },
+    "packaging": {
+      "expected": "26.3",
+      "installed": "26.3"
+    },
+    "pandas": {
+      "expected": "3.0.5",
+      "installed": "3.0.5"
+    },
+    "pillow": {
+      "expected": "12.3.0",
+      "installed": "12.3.0"
+    },
+    "pyparsing": {
+      "expected": "3.3.2",
+      "installed": "3.3.2"
+    },
+    "python-dateutil": {
+      "expected": "2.9.0.post0",
+      "installed": "2.9.0.post0"
+    },
+    "quantus": {
+      "expected": "0.6.0",
+      "installed": "0.6.0"
+    },
+    "scikit-image": {
+      "expected": "0.26.0",
+      "installed": "0.26.0"
+    },
+    "scikit-learn": {
+      "expected": "1.9.0",
+      "installed": "1.9.0"
+    },
+    "scipy": {
+      "expected": "1.18.0",
+      "installed": "1.18.0"
+    },
+    "setuptools": {
+      "expected": "84.0.0",
+      "installed": "84.0.0"
+    },
+    "six": {
+      "expected": "1.17.0",
+      "installed": "1.17.0"
+    },
+    "sympy": {
+      "expected": "1.14.0",
+      "installed": "1.14.0"
+    },
+    "threadpoolctl": {
+      "expected": "3.6.0",
+      "installed": "3.6.0"
+    },
+    "tifffile": {
+      "expected": "2026.7.31",
+      "installed": "2026.7.31"
+    },
+    "torch": {
+      "expected": "2.13.0+cpu",
+      "installed": "2.13.0+cpu"
+    },
+    "torchvision": {
+      "expected": "0.28.0+cpu",
+      "installed": "0.28.0+cpu"
+    },
+    "tqdm": {
+      "expected": "4.70.0",
+      "installed": "4.70.0"
+    },
+    "typing-extensions": {
+      "expected": "4.16.0",
+      "installed": "4.16.0"
+    }
+  },
+  "official_imports": "PASS",
+  "failures": []
+}

@@ -1,0 +1,30 @@
+{
+  "C_methods": [
+    "black_occlusion8_signed",
+    "control_ig50_smooth_abs_top25_mean5_top10"
+  ],
+  "C_third_method": null,
+  "confirmation_seed314159": "NOT_ENTERED_NO_SEED42_CANDIDATE_PASSES",
+  "created_at_unix": 1790785965.3908339,
+  "gate": "strictly higher mean and >=6/9 improved, highest mean thenB1tie",
+  "methods": {
+    "gdd_black_post22": {
+      "gate_pass": false,
+      "improved_images": 0,
+      "mean_delta": -14.144083693362644,
+      "run_sha256": "e056ad606c8e931e38790259c3c8b6c4d24dce836cd3ab6c933c15093c5a3d1d",
+      "score": 64.47786851798017
+    },
+    "gdd_black_soft15": {
+      "gate_pass": false,
+      "improved_images": 0,
+      "mean_delta": -15.838370541549855,
+      "run_sha256": "a6d3c8ded5c4a057856ca8c47de22d1b967125d06dd5a29581fbf73cbd11a86a",
+      "score": 62.783581669792945
+    }
+  },
+  "reference_method": "black_occlusion8_signed",
+  "reference_score": 78.62195221134282,
+  "selected_method": null,
+  "status": "FROZEN_BEFORE_SEED314159_AND_PUBLIC5_SCORES"
+}

@@ -1,0 +1,43 @@
+{
+  "baseline_mean": 78.19467843751505,
+  "contribution_means": {
+    "F": 30.638468265533447,
+    "M": 26.95980280637741,
+    "S": 28.04089465852927
+  },
+  "csv_sha256": "ea5dcaf743517f434f573678fef507a2bc71cdc8f8cd947ecd95c76e1f1e57fa",
+  "improved_count": 1,
+  "metric_means": {
+    "Faithfulness": 0.5319234132766724,
+    "Max_Sensitivity": 0.2026798129081726,
+    "Sparsity": 0.9346964886176424
+  },
+  "official_score": 85.63916573044013,
+  "paired_deltas": [
+    7.444487292925075
+  ],
+  "reference_file_sha256": "8ffa87b767eb614f7a5f022f254dfd7f564ab202423a05086f99ba8494524fb5",
+  "reference_kind": "STAGE25_SAME_POST_SEED42_SINGLE_IMAGE",
+  "reference_path": "$WORKSPACE/output_mac_stage25/official9/black_occlusion4_soft15_mps_seed42_full9.csv",
+  "row_formula_scores": [
+    85.63916573044013
+  ],
+  "rows": [
+    {
+      "F": 0.5319234132766724,
+      "F_points": 30.638468265533447,
+      "Id": 1,
+      "M": 0.2026798129081726,
+      "M_points": 26.95980280637741,
+      "S": 0.9346964886176424,
+      "S_points": 28.04089465852927,
+      "baseline8_total": 78.19467843751505,
+      "paired_delta": 7.444487292925075,
+      "total": 85.63916573044013
+    }
+  ],
+  "sample_count": 1,
+  "scope": "single-image exploration only; not a nine-image score",
+  "scorer_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+  "status": "UNMODIFIED_METRIX_AND_ROW_FORMULA_PASS"
+}

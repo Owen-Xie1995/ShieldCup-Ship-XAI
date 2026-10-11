@@ -1,0 +1,761 @@
+{
+  "cases": [
+    {
+      "checks": {
+        "finite": true,
+        "original_five_logits_allclose": true,
+        "predicted_class_same": true,
+        "probe_logits_allclose": true,
+        "tile_drop_relative_L2_le_1percent": true
+      },
+      "eligible_sign_count": 128,
+      "label": "original",
+      "legacy_file_sha256": "5df77fedc081ffad175b8d7c52b6f894bacee116d6acf65cb73d0ea64cc817de",
+      "legacy_inference_batch": 64,
+      "legacy_path": "$WORKSPACE/output_mac_stage26/reference/stage25/cache/raw/02/0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379.npz",
+      "masked_max_abs_difference": 0.0,
+      "model_parameter_device": "mps:0",
+      "near_zero_excluded_count": 0,
+      "new_inference_batch": 64,
+      "new_probe_file_sha256": "f41c947b2ed536675c5a56443e983007444f1edac680b4c4a3152d575cc96a00",
+      "new_probe_path": "$WORKSPACE/output_mac_stage26/probes/A_source_original_tile4_mps_batch64.npz",
+      "original5_max_abs_difference": 0.0,
+      "probe_comparison_scope": "all five masked logits",
+      "sign_mismatch_count": 0,
+      "source_identity": {
+        "hashes": {
+          "input": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+          "logits": "e83411e2a10c8787f4b7ad8c4246dd9e9142c24b0cc6b5a7663030145eb50e60",
+          "masked_logits": "7e715a68f434235742011687f055b225a2d9464d631f3946afd12d3a769da6b8",
+          "raw": "1db9023e88d0a97fb712a45e190fa170f5a33dc26d2762ba7b79e38343573fd4",
+          "target": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+        },
+        "legacy": {
+          "Id": 1,
+          "batch": 64,
+          "bytes": 356268,
+          "device": "mps",
+          "final_sources": [
+            {
+              "bytes": 61000,
+              "method": "black_occlusion4_post22",
+              "original_file_sha256": "66598f77eb82d39e6126df25e6d708ec483467f712ab179d1ed9fced8779e70d",
+              "original_path": "$WORKSPACE/output_mac_stage25/cache/black_occlusion4_post22/a1/a1f7fa26f755dbb83780fee3359053433adf0f13a14e42000014fb6898036a15.npz",
+              "original_relative": "cache/black_occlusion4_post22/a1/a1f7fa26f755dbb83780fee3359053433adf0f13a14e42000014fb6898036a15.npz",
+              "reference_relative": "stage25/cache/black_occlusion4_post22/a1/a1f7fa26f755dbb83780fee3359053433adf0f13a14e42000014fb6898036a15.npz",
+              "reuse_from_stage": 25
+            },
+            {
+              "bytes": 1424272,
+              "method": "black_occlusion4_soft15",
+              "original_file_sha256": "90399dad502856d95fe84f63678c7ae9c2d5725c9f2801ab2392332c2b4d56b9",
+              "original_path": "$WORKSPACE/output_mac_stage25/cache/black_occlusion4_soft15/6f/6fc6087216e36e1a1397f9e1adfef8fe05843fbb963f5731e45270c5e0c1f402.npz",
+              "original_relative": "cache/black_occlusion4_soft15/6f/6fc6087216e36e1a1397f9e1adfef8fe05843fbb963f5731e45270c5e0c1f402.npz",
+              "reference_relative": "stage25/cache/black_occlusion4_soft15/6f/6fc6087216e36e1a1397f9e1adfef8fe05843fbb963f5731e45270c5e0c1f402.npz",
+              "reuse_from_stage": 25
+            }
+          ],
+          "input_dtype": "<f4",
+          "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+          "input_shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "name": "original_Id1",
+          "original_common_sha256": "22c7ab24331e3982e77b266fad2e6d0b2a14fd26814ea5d9d71858aa6b9bde7d",
+          "original_file_sha256": "5df77fedc081ffad175b8d7c52b6f894bacee116d6acf65cb73d0ea64cc817de",
+          "original_identity": {
+            "input_dtype": "<f4",
+            "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+            "input_shape": [
+              1,
+              3,
+              224,
+              224
+            ],
+            "spec": {
+              "allocation": "float32(signed tile drop/16) repeated in its16elements; not exact individual interventions",
+              "baseline": "fixed current complete CHW minimum",
+              "common_source_sha256": "22c7ab24331e3982e77b266fad2e6d0b2a14fd26814ea5d9d71858aa6b9bde7d",
+              "device": "mps",
+              "difference": "float64(original supplied-target logit)-float64(masked supplied-target logit)",
+              "inference_batch": 64,
+              "method": "black_occlusion4_signed_v1",
+              "order": "channel, y_start, x_start; starts0,4,...,220",
+              "packages": {
+                "numpy": "2.2.6",
+                "quantus": "0.6.0",
+                "scipy": "1.17.1",
+                "torch": "2.10.0",
+                "torchvision": "0.25.0"
+              },
+              "precision": "float32",
+              "raw_source_sha256": "cd7f21e620b92229e75dc1827d80cdd3ad341f134c18f39e3539db6c7671dcba",
+              "schema": 1,
+              "stride": 4,
+              "tile": 4,
+              "tile_area": 16,
+              "tile_count": 9408,
+              "weights_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+            },
+            "target_dtype": "<i8",
+            "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+            "target_shape": [
+              1
+            ],
+            "target_values": [
+              0
+            ]
+          },
+          "original_key": "0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379",
+          "original_metadata": {
+            "hashes": {
+              "input": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+              "logits": "e83411e2a10c8787f4b7ad8c4246dd9e9142c24b0cc6b5a7663030145eb50e60",
+              "masked_logits": "7e715a68f434235742011687f055b225a2d9464d631f3946afd12d3a769da6b8",
+              "raw": "1db9023e88d0a97fb712a45e190fa170f5a33dc26d2762ba7b79e38343573fd4",
+              "target": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+            },
+            "identity": {
+              "input_dtype": "<f4",
+              "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+              "input_shape": [
+                1,
+                3,
+                224,
+                224
+              ],
+              "spec": {
+                "allocation": "float32(signed tile drop/16) repeated in its16elements; not exact individual interventions",
+                "baseline": "fixed current complete CHW minimum",
+                "common_source_sha256": "22c7ab24331e3982e77b266fad2e6d0b2a14fd26814ea5d9d71858aa6b9bde7d",
+                "device": "mps",
+                "difference": "float64(original supplied-target logit)-float64(masked supplied-target logit)",
+                "inference_batch": 64,
+                "method": "black_occlusion4_signed_v1",
+                "order": "channel, y_start, x_start; starts0,4,...,220",
+                "packages": {
+                  "numpy": "2.2.6",
+                  "quantus": "0.6.0",
+                  "scipy": "1.17.1",
+                  "torch": "2.10.0",
+                  "torchvision": "0.25.0"
+                },
+                "precision": "float32",
+                "raw_source_sha256": "cd7f21e620b92229e75dc1827d80cdd3ad341f134c18f39e3539db6c7671dcba",
+                "schema": 1,
+                "stride": 4,
+                "tile": 4,
+                "tile_area": 16,
+                "tile_count": 9408,
+                "weights_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+              },
+              "target_dtype": "<i8",
+              "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+              "target_shape": [
+                1
+              ],
+              "target_values": [
+                0
+              ]
+            },
+            "key": "0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379",
+            "record": {
+              "baseline": -2.1179039478302,
+              "compute_seconds": 68.33229758302332,
+              "device": "mps",
+              "inference_batch": 64,
+              "masks_completed": 9408,
+              "masks_planned": 9408,
+              "memory": {
+                "current_allocated_memory": 94299392,
+                "driver_allocated_memory": 1225506816,
+                "recommended_max_memory": 12713115648
+              },
+              "precision": "float32",
+              "predicted_class": 0,
+              "resumed_masks": 0,
+              "target": 0,
+              "this_session_compute_seconds": 68.33229795802617
+            }
+          },
+          "original_path": "$WORKSPACE/output_mac_stage25/cache/raw/02/0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379.npz",
+          "original_relative": "cache/raw/02/0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379.npz",
+          "original_source_sha256": "cd7f21e620b92229e75dc1827d80cdd3ad341f134c18f39e3539db6c7671dcba",
+          "packages": {
+            "numpy": "2.2.6",
+            "quantus": "0.6.0",
+            "scipy": "1.17.1",
+            "torch": "2.10.0",
+            "torchvision": "0.25.0"
+          },
+          "precision": "float32",
+          "reference_relative": "stage25/cache/raw/02/0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379.npz",
+          "reuse_from_stage": 25,
+          "target_dtype": "<i8",
+          "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+          "target_shape": [
+            1
+          ],
+          "target_values": [
+            0
+          ],
+          "tile": 4
+        },
+        "record": {
+          "baseline": -2.1179039478302,
+          "compute_seconds": 68.33229758302332,
+          "device": "mps",
+          "inference_batch": 64,
+          "legacy_compute_seconds": 68.33229758302332,
+          "masks_completed": 9408,
+          "masks_planned": 9408,
+          "precision": "float32",
+          "predicted_class": 0,
+          "target": 0,
+          "this_session_compute_seconds": 0.0
+        }
+      },
+      "status": "PASS",
+      "tile": 4,
+      "tile_drop_relative_L2": 0.0
+    },
+    {
+      "checks": {
+        "finite": true,
+        "original_five_logits_allclose": true,
+        "predicted_class_same": true,
+        "probe_logits_allclose": true,
+        "tile_drop_relative_L2_le_1percent": true
+      },
+      "eligible_sign_count": 128,
+      "label": "perturbed",
+      "legacy_file_sha256": "b59f0a06742117a119dd5e24cc2fc42a4907ad2aca57473d58c654324861ff5f",
+      "legacy_inference_batch": 64,
+      "legacy_path": "$WORKSPACE/output_mac_stage26/reference/stage25/cache/raw/21/21f55de2b5c1e2c1dca521cc12b82e9134ba4a814578c02a8363af1e64d8876e.npz",
+      "masked_max_abs_difference": 0.0,
+      "model_parameter_device": "mps:0",
+      "near_zero_excluded_count": 0,
+      "new_inference_batch": 64,
+      "new_probe_file_sha256": "8dd83c9e8409750f176934ae255e3e69971f7102c9e4f7d9e585cfb053f816ed",
+      "new_probe_path": "$WORKSPACE/output_mac_stage26/probes/A_source_perturbed_tile4_mps_batch64.npz",
+      "original5_max_abs_difference": 0.0,
+      "probe_comparison_scope": "all five masked logits",
+      "sign_mismatch_count": 0,
+      "source_identity": {
+        "hashes": {
+          "input": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+          "logits": "7a76f5bd13379e060136a164d9b989b17657a08a0f62c21a0de398e5df20e8d0",
+          "masked_logits": "dff59e90f5f0a02a9fa80558cb89f32e788e7630c059d594365d2a0e924a7f0f",
+          "raw": "1bbf46f37d6672e80143903b8ea33999f0a22316924398885da285e9be3d0914",
+          "target": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+        },
+        "legacy": {
+          "Id": null,
+          "batch": 64,
+          "bytes": 725003,
+          "device": "mps",
+          "final_sources": [],
+          "input_dtype": "<f4",
+          "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+          "input_shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "name": "fixed_perturbed",
+          "original_common_sha256": "22c7ab24331e3982e77b266fad2e6d0b2a14fd26814ea5d9d71858aa6b9bde7d",
+          "original_file_sha256": "b59f0a06742117a119dd5e24cc2fc42a4907ad2aca57473d58c654324861ff5f",
+          "original_identity": {
+            "input_dtype": "<f4",
+            "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+            "input_shape": [
+              1,
+              3,
+              224,
+              224
+            ],
+            "spec": {
+              "allocation": "float32(signed tile drop/16) repeated in its16elements; not exact individual interventions",
+              "baseline": "fixed current complete CHW minimum",
+              "common_source_sha256": "22c7ab24331e3982e77b266fad2e6d0b2a14fd26814ea5d9d71858aa6b9bde7d",
+              "device": "mps",
+              "difference": "float64(original supplied-target logit)-float64(masked supplied-target logit)",
+              "inference_batch": 64,
+              "method": "black_occlusion4_signed_v1",
+              "order": "channel, y_start, x_start; starts0,4,...,220",
+              "packages": {
+                "numpy": "2.2.6",
+                "quantus": "0.6.0",
+                "scipy": "1.17.1",
+                "torch": "2.10.0",
+                "torchvision": "0.25.0"
+              },
+              "precision": "float32",
+              "raw_source_sha256": "cd7f21e620b92229e75dc1827d80cdd3ad341f134c18f39e3539db6c7671dcba",
+              "schema": 1,
+              "stride": 4,
+              "tile": 4,
+              "tile_area": 16,
+              "tile_count": 9408,
+              "weights_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+            },
+            "target_dtype": "<i8",
+            "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+            "target_shape": [
+              1
+            ],
+            "target_values": [
+              0
+            ]
+          },
+          "original_key": "21f55de2b5c1e2c1dca521cc12b82e9134ba4a814578c02a8363af1e64d8876e",
+          "original_metadata": {
+            "hashes": {
+              "input": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+              "logits": "7a76f5bd13379e060136a164d9b989b17657a08a0f62c21a0de398e5df20e8d0",
+              "masked_logits": "dff59e90f5f0a02a9fa80558cb89f32e788e7630c059d594365d2a0e924a7f0f",
+              "raw": "1bbf46f37d6672e80143903b8ea33999f0a22316924398885da285e9be3d0914",
+              "target": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+            },
+            "identity": {
+              "input_dtype": "<f4",
+              "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+              "input_shape": [
+                1,
+                3,
+                224,
+                224
+              ],
+              "spec": {
+                "allocation": "float32(signed tile drop/16) repeated in its16elements; not exact individual interventions",
+                "baseline": "fixed current complete CHW minimum",
+                "common_source_sha256": "22c7ab24331e3982e77b266fad2e6d0b2a14fd26814ea5d9d71858aa6b9bde7d",
+                "device": "mps",
+                "difference": "float64(original supplied-target logit)-float64(masked supplied-target logit)",
+                "inference_batch": 64,
+                "method": "black_occlusion4_signed_v1",
+                "order": "channel, y_start, x_start; starts0,4,...,220",
+                "packages": {
+                  "numpy": "2.2.6",
+                  "quantus": "0.6.0",
+                  "scipy": "1.17.1",
+                  "torch": "2.10.0",
+                  "torchvision": "0.25.0"
+                },
+                "precision": "float32",
+                "raw_source_sha256": "cd7f21e620b92229e75dc1827d80cdd3ad341f134c18f39e3539db6c7671dcba",
+                "schema": 1,
+                "stride": 4,
+                "tile": 4,
+                "tile_area": 16,
+                "tile_count": 9408,
+                "weights_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+              },
+              "target_dtype": "<i8",
+              "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+              "target_shape": [
+                1
+              ],
+              "target_values": [
+                0
+              ]
+            },
+            "key": "21f55de2b5c1e2c1dca521cc12b82e9134ba4a814578c02a8363af1e64d8876e",
+            "record": {
+              "baseline": -2.1190736293792725,
+              "compute_seconds": 71.5305737919989,
+              "device": "mps",
+              "inference_batch": 64,
+              "masks_completed": 9408,
+              "masks_planned": 9408,
+              "memory": {
+                "current_allocated_memory": 94299392,
+                "driver_allocated_memory": 1225506816,
+                "recommended_max_memory": 12713115648
+              },
+              "precision": "float32",
+              "predicted_class": 0,
+              "resumed_masks": 0,
+              "target": 0,
+              "this_session_compute_seconds": 71.53057404200081
+            }
+          },
+          "original_path": "$WORKSPACE/output_mac_stage25/cache/raw/21/21f55de2b5c1e2c1dca521cc12b82e9134ba4a814578c02a8363af1e64d8876e.npz",
+          "original_relative": "cache/raw/21/21f55de2b5c1e2c1dca521cc12b82e9134ba4a814578c02a8363af1e64d8876e.npz",
+          "original_source_sha256": "cd7f21e620b92229e75dc1827d80cdd3ad341f134c18f39e3539db6c7671dcba",
+          "packages": {
+            "numpy": "2.2.6",
+            "quantus": "0.6.0",
+            "scipy": "1.17.1",
+            "torch": "2.10.0",
+            "torchvision": "0.25.0"
+          },
+          "precision": "float32",
+          "reference_relative": "stage25/cache/raw/21/21f55de2b5c1e2c1dca521cc12b82e9134ba4a814578c02a8363af1e64d8876e.npz",
+          "reuse_from_stage": 25,
+          "target_dtype": "<i8",
+          "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+          "target_shape": [
+            1
+          ],
+          "target_values": [
+            0
+          ],
+          "tile": 4
+        },
+        "record": {
+          "baseline": -2.1190736293792725,
+          "compute_seconds": 71.5305737919989,
+          "device": "mps",
+          "inference_batch": 64,
+          "legacy_compute_seconds": 71.5305737919989,
+          "masks_completed": 9408,
+          "masks_planned": 9408,
+          "precision": "float32",
+          "predicted_class": 0,
+          "target": 0,
+          "this_session_compute_seconds": 0.0
+        }
+      },
+      "status": "PASS",
+      "tile": 4,
+      "tile_drop_relative_L2": 0.0
+    },
+    {
+      "checks": {
+        "finite": true,
+        "original_five_logits_allclose": true,
+        "predicted_class_same": true,
+        "probe_logits_allclose": true,
+        "tile_drop_relative_L2_le_1percent": true
+      },
+      "eligible_sign_count": 128,
+      "label": "original",
+      "legacy_file_sha256": "b7f12450a3b452efe9e0b0b5d7da4563921bcd075c3c9071c094a979330eae3c",
+      "legacy_inference_batch": 64,
+      "legacy_path": "$WORKSPACE/output_mac_stage26/reference/stage23/device/cache/black_occlusion8_signed/mps/c5/c5b8806d33c7b6afd4ab5be204293f2a3d8e292de75839165ad4fa4d35b72ea8.npz",
+      "masked_max_abs_difference": 0.0,
+      "model_parameter_device": "mps:0",
+      "near_zero_excluded_count": 0,
+      "new_inference_batch": 64,
+      "new_probe_file_sha256": "999eea156ab9274e1076c8b2cb3772d84ad2c26fec07c32ea5730957a3d3142b",
+      "new_probe_path": "$WORKSPACE/output_mac_stage26/probes/A_source_original_tile8_mps_batch64.npz",
+      "original5_max_abs_difference": 0.0,
+      "probe_comparison_scope": "saved masked target logits only; other four legacy classes unavailable",
+      "sign_mismatch_count": 0,
+      "source_identity": {
+        "hashes": {
+          "input": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+          "logits": "e83411e2a10c8787f4b7ad8c4246dd9e9142c24b0cc6b5a7663030145eb50e60",
+          "masked_target_logits": "09e3b1a17b7554dc2223f464b9362332da0b1f443170cfc5cb047678447dbfb5",
+          "raw": "51c12f16cfb18bce5dc307a2134160089a85755ed3762601392074eb02987535",
+          "target": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+        },
+        "legacy": {
+          "Id": 1,
+          "batch": 64,
+          "bytes": 44847,
+          "device": "mps",
+          "final_sources": [],
+          "input_dtype": "<f4",
+          "input_reference_file_sha256": "3a4a8a111099d8a1dfc9171a60b8aadd888d7c8e4f5c0921f2760d28b6aeb282",
+          "input_reference_relative": "bound_inputs/ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55.npz",
+          "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+          "input_shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "name": "original_Id1",
+          "original_file_sha256": "b7f12450a3b452efe9e0b0b5d7da4563921bcd075c3c9071c094a979330eae3c",
+          "original_identity": {
+            "input_dtype": "<f4",
+            "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+            "input_shape": [
+              3,
+              224,
+              224
+            ],
+            "spec": {
+              "baseline": "complete-current-CHW-minimum",
+              "batch_size": 64,
+              "device": "mps",
+              "method": "black_occlusion8_signed",
+              "numpy": "2.2.6",
+              "postprocess": "CHW-abs-top25-reflect-mean5-CHW-abs-top10",
+              "precision": "float32",
+              "program_sha256": "525252f0b2a8e38f5dcd02e88d950a46f23e8bdbe9e678a408a664afbcee536a",
+              "tile_count": 2352,
+              "tile_size": 8,
+              "torch": "2.10.0",
+              "version": "stage23-port-stage22-exact-formula-v1",
+              "weight_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+            },
+            "target": 0,
+            "target_dtype": "<i8"
+          },
+          "original_key": "c5b8806d33c7b6afd4ab5be204293f2a3d8e292de75839165ad4fa4d35b72ea8",
+          "original_metadata": {
+            "final_sha256": "8efab37c87630638107868e7ce7d97c45d7c8d8a2d6738d65074138096eb4350",
+            "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+            "key": "c5b8806d33c7b6afd4ab5be204293f2a3d8e292de75839165ad4fa4d35b72ea8",
+            "masked_logits_sha256": "09e3b1a17b7554dc2223f464b9362332da0b1f443170cfc5cb047678447dbfb5",
+            "raw_sha256": "51c12f16cfb18bce5dc307a2134160089a85755ed3762601392074eb02987535",
+            "record": {
+              "baseline": -2.1179039478302,
+              "batch_size": 64,
+              "device": "mps",
+              "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+              "mask_count": 2352,
+              "memory": {
+                "mps_current_allocated_memory_bytes": 94300672,
+                "mps_driver_allocated_memory_bytes": 1225523200,
+                "mps_recommended_max_memory_bytes": 12713115648,
+                "physical_memory_bytes": 17179869184,
+                "process_rss_bytes": 1106886656
+              },
+              "original_logits": [
+                8.008934020996094,
+                -6.1354875564575195,
+                -1.105299711227417,
+                -5.541237831115723,
+                -1.9299366474151611
+              ],
+              "original_target_logit": 8.008934020996094,
+              "precision": "float32",
+              "predicted_class": 0,
+              "target": 0,
+              "wall_seconds": 16.036402166995686
+            },
+            "spec": {
+              "baseline": "complete-current-CHW-minimum",
+              "batch_size": 64,
+              "device": "mps",
+              "method": "black_occlusion8_signed",
+              "numpy": "2.2.6",
+              "postprocess": "CHW-abs-top25-reflect-mean5-CHW-abs-top10",
+              "precision": "float32",
+              "program_sha256": "525252f0b2a8e38f5dcd02e88d950a46f23e8bdbe9e678a408a664afbcee536a",
+              "tile_count": 2352,
+              "tile_size": 8,
+              "torch": "2.10.0",
+              "version": "stage23-port-stage22-exact-formula-v1",
+              "weight_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+            },
+            "target": 0
+          },
+          "original_path": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/c5/c5b8806d33c7b6afd4ab5be204293f2a3d8e292de75839165ad4fa4d35b72ea8.npz",
+          "original_relative": "device/cache/black_occlusion8_signed/mps/c5/c5b8806d33c7b6afd4ab5be204293f2a3d8e292de75839165ad4fa4d35b72ea8.npz",
+          "original_source_sha256": "525252f0b2a8e38f5dcd02e88d950a46f23e8bdbe9e678a408a664afbcee536a",
+          "packages": {
+            "numpy": "2.2.6",
+            "quantus": "0.6.0",
+            "scipy": "1.17.1",
+            "torch": "2.10.0",
+            "torchvision": "0.25.0"
+          },
+          "precision": "float32",
+          "reference_relative": "stage23/device/cache/black_occlusion8_signed/mps/c5/c5b8806d33c7b6afd4ab5be204293f2a3d8e292de75839165ad4fa4d35b72ea8.npz",
+          "reuse_from_stage": 23,
+          "target_dtype": "<i8",
+          "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+          "target_shape": [
+            1
+          ],
+          "target_values": [
+            0
+          ],
+          "tile": 8
+        },
+        "record": {
+          "baseline": -2.1179039478302,
+          "compute_seconds": 16.036402166995686,
+          "device": "mps",
+          "inference_batch": 64,
+          "legacy_compute_seconds": 16.036402166995686,
+          "masks_completed": 2352,
+          "masks_planned": 2352,
+          "precision": "float32",
+          "predicted_class": 0,
+          "target": 0,
+          "this_session_compute_seconds": 0.0
+        }
+      },
+      "status": "PASS",
+      "tile": 8,
+      "tile_drop_relative_L2": 0.0
+    },
+    {
+      "checks": {
+        "finite": true,
+        "original_five_logits_allclose": true,
+        "predicted_class_same": true,
+        "probe_logits_allclose": true,
+        "tile_drop_relative_L2_le_1percent": true
+      },
+      "eligible_sign_count": 128,
+      "label": "perturbed",
+      "legacy_file_sha256": "c5c92b0065c2af7ff57671173df91af968241b1bdf5514c11a48cf9b824f3bce",
+      "legacy_inference_batch": 32,
+      "legacy_path": "$WORKSPACE/output_mac_stage26/reference/stage23/device/cache/black_occlusion8_signed/mps/56/564f6e9132e0b73ce63fe27b6da238868c525f39889ff8354ce252de762203ff.npz",
+      "masked_max_abs_difference": 0.0,
+      "model_parameter_device": "mps:0",
+      "near_zero_excluded_count": 0,
+      "new_inference_batch": 32,
+      "new_probe_file_sha256": "e3a62cc6df9a86a98b2e3fd54794e9e6d7c2f83d8222d4cf0ad7141b06c92709",
+      "new_probe_path": "$WORKSPACE/output_mac_stage26/probes/A_source_perturbed_tile8_mps_batch32.npz",
+      "original5_max_abs_difference": 0.0,
+      "probe_comparison_scope": "saved masked target logits only; other four legacy classes unavailable",
+      "sign_mismatch_count": 0,
+      "source_identity": {
+        "hashes": {
+          "input": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+          "logits": "7a76f5bd13379e060136a164d9b989b17657a08a0f62c21a0de398e5df20e8d0",
+          "masked_target_logits": "929d7c9594b39947153b4d33c16f64877d382cc835b96790087d58bb35ced02a",
+          "raw": "369e8ea3c4e8d808767453330481ef90b1cd760846310be884846896dd2e7c9c",
+          "target": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+        },
+        "legacy": {
+          "Id": null,
+          "batch": 32,
+          "bytes": 44728,
+          "device": "mps",
+          "final_sources": [],
+          "input_dtype": "<f4",
+          "input_reference_file_sha256": "2de4278f8561f9af53947ddb785819c177c67a63ec184075727e8a6c1779061c",
+          "input_reference_relative": "bound_inputs/7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b.npz",
+          "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+          "input_shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "name": "fixed_perturbed",
+          "original_file_sha256": "c5c92b0065c2af7ff57671173df91af968241b1bdf5514c11a48cf9b824f3bce",
+          "original_identity": {
+            "input_dtype": "<f4",
+            "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+            "input_shape": [
+              3,
+              224,
+              224
+            ],
+            "spec": {
+              "baseline": "complete-current-CHW-minimum",
+              "batch_size": 32,
+              "device": "mps",
+              "method": "black_occlusion8_signed",
+              "numpy": "2.2.6",
+              "postprocess": "CHW-abs-top25-reflect-mean5-CHW-abs-top10",
+              "precision": "float32",
+              "program_sha256": "e4f498bf0335b4faa0c09602e5e12e4be4f5c33ce78f24777386f403b6e7295d",
+              "tile_count": 2352,
+              "tile_size": 8,
+              "torch": "2.10.0",
+              "version": "stage23-port-stage22-exact-formula-v1",
+              "weight_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+            },
+            "target": 0,
+            "target_dtype": "<i8"
+          },
+          "original_key": "564f6e9132e0b73ce63fe27b6da238868c525f39889ff8354ce252de762203ff",
+          "original_metadata": {
+            "final_sha256": "c5344d95dfd0f6859287881f79d8e64a3f795426fb534946b83ac4cb399dfb13",
+            "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+            "key": "564f6e9132e0b73ce63fe27b6da238868c525f39889ff8354ce252de762203ff",
+            "masked_logits_sha256": "929d7c9594b39947153b4d33c16f64877d382cc835b96790087d58bb35ced02a",
+            "raw_sha256": "369e8ea3c4e8d808767453330481ef90b1cd760846310be884846896dd2e7c9c",
+            "record": {
+              "baseline": -2.1190736293792725,
+              "batch_size": 32,
+              "device": "mps",
+              "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+              "mask_count": 2352,
+              "memory": {
+                "mps_current_allocated_memory_bytes": 94300160,
+                "mps_driver_allocated_memory_bytes": 1225523200,
+                "mps_recommended_max_memory_bytes": 12713115648,
+                "physical_memory_bytes": 17179869184,
+                "process_rss_bytes": 557826048
+              },
+              "original_logits": [
+                8.007185935974121,
+                -6.13350772857666,
+                -1.1052008867263794,
+                -5.539087772369385,
+                -1.9310688972473145
+              ],
+              "original_target_logit": 8.007185935974121,
+              "precision": "float32",
+              "predicted_class": 0,
+              "target": 0,
+              "wall_seconds": 16.84820262499852
+            },
+            "spec": {
+              "baseline": "complete-current-CHW-minimum",
+              "batch_size": 32,
+              "device": "mps",
+              "method": "black_occlusion8_signed",
+              "numpy": "2.2.6",
+              "postprocess": "CHW-abs-top25-reflect-mean5-CHW-abs-top10",
+              "precision": "float32",
+              "program_sha256": "e4f498bf0335b4faa0c09602e5e12e4be4f5c33ce78f24777386f403b6e7295d",
+              "tile_count": 2352,
+              "tile_size": 8,
+              "torch": "2.10.0",
+              "version": "stage23-port-stage22-exact-formula-v1",
+              "weight_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+            },
+            "target": 0
+          },
+          "original_path": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/56/564f6e9132e0b73ce63fe27b6da238868c525f39889ff8354ce252de762203ff.npz",
+          "original_relative": "device/cache/black_occlusion8_signed/mps/56/564f6e9132e0b73ce63fe27b6da238868c525f39889ff8354ce252de762203ff.npz",
+          "original_source_sha256": "e4f498bf0335b4faa0c09602e5e12e4be4f5c33ce78f24777386f403b6e7295d",
+          "packages": {
+            "numpy": "2.2.6",
+            "quantus": "0.6.0",
+            "scipy": "1.17.1",
+            "torch": "2.10.0",
+            "torchvision": "0.25.0"
+          },
+          "precision": "float32",
+          "reference_relative": "stage23/device/cache/black_occlusion8_signed/mps/56/564f6e9132e0b73ce63fe27b6da238868c525f39889ff8354ce252de762203ff.npz",
+          "reuse_from_stage": 23,
+          "target_dtype": "<i8",
+          "target_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+          "target_shape": [
+            1
+          ],
+          "target_values": [
+            0
+          ],
+          "tile": 8
+        },
+        "record": {
+          "baseline": -2.1190736293792725,
+          "compute_seconds": 16.84820262499852,
+          "device": "mps",
+          "inference_batch": 32,
+          "legacy_compute_seconds": 16.84820262499852,
+          "masks_completed": 2352,
+          "masks_planned": 2352,
+          "precision": "float32",
+          "predicted_class": 0,
+          "target": 0,
+          "this_session_compute_seconds": 0.0
+        }
+      },
+      "status": "PASS",
+      "tile": 8,
+      "tile_drop_relative_L2": 0.0
+    }
+  ],
+  "not_full_CPU_final_support_acceptance": true,
+  "status": "PASS"
+}

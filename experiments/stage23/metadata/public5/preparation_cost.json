@@ -1,0 +1,17 @@
+{
+  "exact_prior_data_preparation_elapsed_seconds": null,
+  "exact_prior_data_preparation_status": "unavailable_no_complete_timing_log",
+  "source_mtime_evidence_local": {
+    "train_zip": "2026-09-30 19:01 Asia/Taipei",
+    "train_csv_and_freeze_approximate": "2026-09-30 19:03 Asia/Taipei",
+    "initial_missing_data_record_approximate": "2026-09-30 18:38 Asia/Taipei"
+  },
+  "total_C_budget_seconds": 3600,
+  "reserved_prior_preparation_seconds": 1800,
+  "reserved_prior_preparation_note": "Conservative budget reservation specified by root; not measured elapsed time. B-wait time is excluded.",
+  "remaining_scoring_budget_seconds": 42,
+  "model_evaluation_status": "FROZEN_NOT_SCORED_BUDGET",
+  "current_preparation_conservative_budget_seconds": 1758,
+  "current_preparation_exact_elapsed_seconds": null,
+  "current_preparation_timing_basis": "Exact prior preparation and current dispatch/active-work elapsed are unavailable. Root reserves1800seconds for prior data preparation and uses root-resume22:39:07 to ready-report23:08:25 as a conservative current-preparation interval1758seconds. This is a budget estimate, not a measured model runtime. Pure waiting after readiness is excluded."
+}

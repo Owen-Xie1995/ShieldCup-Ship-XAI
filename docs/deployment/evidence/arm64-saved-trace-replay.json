@@ -1,0 +1,55 @@
+{
+  "scope": "Replay both saved full 9408-mask traces; no inference or new scoring",
+  "environment": {
+    "python": "3.12.9 (main, Apr  8 2025, 09:22:41) [GCC 12.2.0]",
+    "interpreter": "/usr/local/bin/python",
+    "platform": "Linux-6.8.0-117-generic-aarch64-with-glibc2.36",
+    "machine": "aarch64",
+    "packages": {
+      "torch": "2.13.0+cpu",
+      "torchvision": "0.28.0+cpu",
+      "numpy": "2.5.2",
+      "scipy": "1.18.0",
+      "quantus": "0.6.0",
+      "pandas": "3.0.5",
+      "captum": "0.9.0",
+      "kaggle": "0.1.0",
+      "Pillow": "12.3.0"
+    },
+    "torch_cuda_version": null,
+    "inside_container": true
+  },
+  "cases": {
+    "original": {
+      "checks": {
+        "signed_raw_bit_exact": true,
+        "final_fp32_bit_exact": true,
+        "s_close": true,
+        "tau_close": true,
+        "gate_close": true
+      },
+      "max_abs_differences": {
+        "s": 6.938893903907228e-18,
+        "tau": 0.0,
+        "gate": 4.440892098500626e-16
+      },
+      "reference_sha256": "7b5ccc3f49f4812871d290907c4fdec01ddad0d08bd3ec2620fe82c0795523fb"
+    },
+    "perturbed": {
+      "checks": {
+        "signed_raw_bit_exact": true,
+        "final_fp32_bit_exact": true,
+        "s_close": true,
+        "tau_close": true,
+        "gate_close": true
+      },
+      "max_abs_differences": {
+        "s": 6.938893903907228e-18,
+        "tau": 8.673617379884035e-19,
+        "gate": 5.551115123125783e-16
+      },
+      "reference_sha256": "91134b20758f5c8cda32dc7edf785959b9d7f63696091823873560b1d52f75cd"
+    }
+  },
+  "status": "PASS"
+}

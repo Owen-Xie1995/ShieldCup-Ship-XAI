@@ -1,0 +1,52 @@
+{
+  "A": {
+    "completed_at_unix": 1790785760.223629,
+    "entered_at_unix": 1790785546.001175,
+    "entered_monotonic": 179842.35696075,
+    "entry_gate": "quantus semanticsPASS and linear analyticPASS",
+    "model_budget_seconds": 1200,
+    "model_process_seconds": 25.697791457962012,
+    "official_single_seconds": 2.4745015829976182,
+    "status": "PASS"
+  },
+  "B": {
+    "B1_nine_estimate_seconds": 22.270514246978564,
+    "B2_conservative_nine_estimate_seconds": 44.54102849395713,
+    "budget_accounting": "Sum process monotonic intervals of formal model programs; preparation and dispatch waiting separate",
+    "confirmation_not_entered": "Neitherseed42variantpasses",
+    "entered_at_unix": 1790785760.2236311,
+    "entered_monotonic": 180056.578736166,
+    "entry_gate": "backward correctnessPASS and fullsingle-time pairedestimatewithinbudget",
+    "estimate_basis": "Measured full unchanged official cold-cache B1 single; B2 reserve2x this cost; future reference uses measured sameMPS8x8 nine time; recompute before any confirmation",
+    "maximum_expected_model_seconds": 1128.380079903931,
+    "model_budget_seconds": 2700,
+    "model_process_seconds": 43.932406749983784,
+    "possible_confirmation_same_MPS_8x8_reference_seconds": 1039.2980229160166,
+    "selected_method": null,
+    "single_official_seconds": 2.4745015829976182,
+    "status": "COMPLETE_NEGATIVE_RESULT"
+  },
+  "C": {
+    "actual_execution": "public5/execution.json",
+    "completed_pairs": 5,
+    "decision_sha256": "aa5118f48be926150956766a9906747a466902abf947e18f1ced26d7c0458264",
+    "entered_at_unix": 1790785965.393971,
+    "entered_monotonic": 180261.748433208,
+    "entry_gate": "fixedfive unchanged, new1800budgetpreflightPASS; exactIG50CPU/MPSprobe thenofficialpairs",
+    "finished_at_unix": 1790786856.27358,
+    "historical_preparation_seconds_charged": 0,
+    "model_budget_seconds": 1800,
+    "model_process_seconds": 861.8986384159944,
+    "new_budget_seconds": 1800,
+    "official_IG50_probe_seconds": 22.49885983299464,
+    "status": "COMPLETE"
+  },
+  "D": {
+    "archive": "output_mac_stage24.zip",
+    "status": "READY_FOR_FINAL_VERIFICATION_AND_PACKAGE"
+  },
+  "instruction_sha256": "f9a9c8466d2b1754bbb1c54087dab0aa1ec2fbbc87fb8d026bc8176feb566b13",
+  "preparation_seconds_before_A": 813.0011749267578,
+  "preparation_started_at_unix": 1790784733.0,
+  "status": "PREPARATION_COMPLETE_ENTERING_A"
+}

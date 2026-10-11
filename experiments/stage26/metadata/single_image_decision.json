@@ -1,0 +1,24 @@
+{
+  "Id": 1,
+  "best4_seed42_single_image_reference": 78.19467843751505,
+  "device": "mps",
+  "does_not_replace_A_nine_image_candidate": true,
+  "eval_seed": 42,
+  "image_count": 1,
+  "methods": {
+    "black_occlusion2_post22": {
+      "gain_vs_best4": 5.6063527928846355,
+      "passed": true,
+      "score": 83.80103123039969
+    },
+    "black_occlusion2_soft15": {
+      "gain_vs_best4": 7.444487292925075,
+      "passed": true,
+      "score": 85.63916573044013
+    }
+  },
+  "not_a_full9_score": true,
+  "selected_exploration_method": "black_occlusion2_soft15",
+  "status": "SINGLE_IMAGE_GAIN_REQUIRES_PREFIX3_AND_FULL9",
+  "threshold": "complete single-image score strictly higher than78.19467843751505; highermean then exacttiepost22"
+}

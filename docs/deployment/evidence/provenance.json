@@ -1,0 +1,65 @@
+{
+  "scope": "Historical executed results; not newly executed by the portfolio curation or CI. Sanitised files have new hashes; references within runtime_acceptance refer to original artifact hashes.",
+  "files": [
+    {
+      "file": "runtime_acceptance.json",
+      "original_sha256": "99cb4a27c440d037138c26d5366d265d3b6edf22d0c5cd3a5c9d03f20fb2500d",
+      "public_sha256": "99cb4a27c440d037138c26d5366d265d3b6edf22d0c5cd3a5c9d03f20fb2500d",
+      "transform": "JSON reformatting and local username/path redaction only"
+    },
+    {
+      "file": "arm64-runtime-versions.json",
+      "original_sha256": "7aba89d323eef4e95a259245b970ad88476948c071cbb951d05899a4a205bcbb",
+      "public_sha256": "7aba89d323eef4e95a259245b970ad88476948c071cbb951d05899a4a205bcbb",
+      "transform": "JSON reformatting and local username/path redaction only"
+    },
+    {
+      "file": "amd64-runtime-versions.json",
+      "original_sha256": "bb99629c963b9b36d7bfc387b2fd0451f2c6ab040e91032f256064a69bc02c12",
+      "public_sha256": "bb99629c963b9b36d7bfc387b2fd0451f2c6ab040e91032f256064a69bc02c12",
+      "transform": "JSON reformatting and local username/path redaction only"
+    },
+    {
+      "file": "arm64-smoke.json",
+      "original_sha256": "6187b6547bd6601d0c0a75f2c63ef69937f78fe0232f344fac404fd0f3c13cb9",
+      "public_sha256": "6187b6547bd6601d0c0a75f2c63ef69937f78fe0232f344fac404fd0f3c13cb9",
+      "transform": "JSON reformatting and local username/path redaction only"
+    },
+    {
+      "file": "amd64-smoke.json",
+      "original_sha256": "cf4beb4e1ea8d773d101c93e473f3edd99261a48162881fcfc88a560bff19497",
+      "public_sha256": "cf4beb4e1ea8d773d101c93e473f3edd99261a48162881fcfc88a560bff19497",
+      "transform": "JSON reformatting and local username/path redaction only"
+    },
+    {
+      "file": "arm64-after-load-smoke.json",
+      "original_sha256": "d36f96a07f039dc00bc773b45dd974d8518ca65cb56c68b6d0e9affd8dd16a6e",
+      "public_sha256": "d36f96a07f039dc00bc773b45dd974d8518ca65cb56c68b6d0e9affd8dd16a6e",
+      "transform": "JSON reformatting and local username/path redaction only"
+    },
+    {
+      "file": "amd64-after-load-smoke.json",
+      "original_sha256": "de889aa077985536a6eef6492adf2349454c4e167891f4d3044f4401ea1d691e",
+      "public_sha256": "de889aa077985536a6eef6492adf2349454c4e167891f4d3044f4401ea1d691e",
+      "transform": "JSON reformatting and local username/path redaction only"
+    },
+    {
+      "file": "arm64-saved-trace-replay.json",
+      "original_sha256": "b3987f1248ac8d578a7127a4cfb409ac94b8413b465d03cb7cc0f27f24067107",
+      "public_sha256": "b3987f1248ac8d578a7127a4cfb409ac94b8413b465d03cb7cc0f27f24067107",
+      "transform": "JSON reformatting and local username/path redaction only"
+    },
+    {
+      "file": "arm64-official-model-probe.json",
+      "original_sha256": "2d20c4ef321c1b8a7a7d9e5d3b9c1c6304ba356a3963f9b18a4b1c3fcb1e4f2b",
+      "public_sha256": "2d20c4ef321c1b8a7a7d9e5d3b9c1c6304ba356a3963f9b18a4b1c3fcb1e4f2b",
+      "transform": "JSON reformatting and local username/path redaction only"
+    },
+    {
+      "file": "package_receipt.json",
+      "original_sha256": "8efd7db9d20b5626316a212de66625f04d21440cf492efcb70384c2936628556",
+      "public_sha256": "627e63423c90ea5d026c639ce068ea76e1eac946c49fd7602273b62cc94c3278",
+      "transform": "JSON reformatting and local username/path/temporary-directory redaction only"
+    }
+  ]
+}

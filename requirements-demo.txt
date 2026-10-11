@@ -1,0 +1,4 @@
+# Synthetic demonstration, matching the original Mac numeric-library versions.
+# Install PyTorch separately from its official CPU wheel index; see README.
+numpy==2.2.6
+scipy==1.17.1

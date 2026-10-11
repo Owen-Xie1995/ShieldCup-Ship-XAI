@@ -1,0 +1,17 @@
+{
+  "components_seconds": {
+    "remaining5_native2_raw": 1906.265414180234,
+    "two_official_single_metrics_and_IO_allowance": 60.0
+  },
+  "created_unix": 1790865389.4379551,
+  "cumulative_model_seconds": 5120.284063041996,
+  "entry_allowed": true,
+  "gate": "B_single_official_entry",
+  "measured_estimate_seconds": 1966.265414180234,
+  "phase": "B",
+  "phase_model_seconds": 368.83704254199984,
+  "remaining_model_seconds": 5679.715937792003,
+  "remaining_phase_seconds": 3231.1629581250018,
+  "safe_estimate_seconds": 2261.205226307269,
+  "safety_multiplier": 1.15
+}

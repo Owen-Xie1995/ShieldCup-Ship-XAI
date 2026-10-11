@@ -1,0 +1,3 @@
+# Exact non-GPU transitive runtime closure from saved Python3.12 lock.
+-r requirements-lock-runtime.txt
+# Install supplied local kaggle wheel separately; never install PyPI kaggle.

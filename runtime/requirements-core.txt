@@ -1,0 +1,6 @@
+# Saved uv.lock Python3.12 versions; Torch official CPU binary override.
+torch==2.13.0+cpu
+torchvision==0.28.0+cpu
+numpy==2.5.2
+scipy==1.18.0
+quantus==0.6.0

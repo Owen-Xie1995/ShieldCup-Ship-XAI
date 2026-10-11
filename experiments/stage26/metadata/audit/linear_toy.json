@@ -1,0 +1,78 @@
+{
+  "core_source_sha256": "bd1bf376bd55408478a7029ece94964cc83cf170f02494c69721e5227e6a2367",
+  "model_forwards": 0,
+  "official_classifier_forwards": 0,
+  "postprocess_source_sha256": "b51578f0f18e9de4211b005dbeea62405feb28f639d9ae5c6ca62b9984181fd6",
+  "postprocessing_bridge": [
+    {
+      "fields_byte_identical": [
+        "final"
+      ],
+      "final_file_sha256": "66598f77eb82d39e6126df25e6d708ec483467f712ab179d1ed9fced8779e70d",
+      "final_source": "$WORKSPACE/output_mac_stage25/cache/black_occlusion4_post22/a1/a1f7fa26f755dbb83780fee3359053433adf0f13a14e42000014fb6898036a15.npz",
+      "method": "black_occlusion4_post22",
+      "raw_file_sha256": "5df77fedc081ffad175b8d7c52b6f894bacee116d6acf65cb73d0ea64cc817de",
+      "raw_source": "$WORKSPACE/output_mac_stage25/cache/raw/02/0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379.npz"
+    },
+    {
+      "fields_byte_identical": [
+        "s",
+        "tau",
+        "gate",
+        "final"
+      ],
+      "final_file_sha256": "90399dad502856d95fe84f63678c7ae9c2d5725c9f2801ab2392332c2b4d56b9",
+      "final_source": "$WORKSPACE/output_mac_stage25/cache/black_occlusion4_soft15/6f/6fc6087216e36e1a1397f9e1adfef8fe05843fbb963f5731e45270c5e0c1f402.npz",
+      "method": "black_occlusion4_soft15",
+      "raw_file_sha256": "5df77fedc081ffad175b8d7c52b6f894bacee116d6acf65cb73d0ea64cc817de",
+      "raw_source": "$WORKSPACE/output_mac_stage25/cache/raw/02/0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379.npz"
+    }
+  ],
+  "records": [
+    {
+      "all_tile_IDs_verified": 37632,
+      "area": 4,
+      "core_raw_rebuild": "byte_identical",
+      "joint_division_rule": "float64 target drop/4 then float32",
+      "mask_batch": "byte_identical",
+      "not_exact_individual_effect_proven": true,
+      "original_argmax": 4,
+      "positive_and_negative_present": true,
+      "raw_sha256": "a65bb5167b1a5d988ab25d39472cbaa81a14cd5ad424cfc3aaa39f9c092a369a",
+      "supplied_target": 1,
+      "tile": 2,
+      "tile_count": 37632
+    },
+    {
+      "all_tile_IDs_verified": 9408,
+      "area": 16,
+      "core_raw_rebuild": "byte_identical",
+      "joint_division_rule": "float64 target drop/16 then float32",
+      "mask_batch": "byte_identical",
+      "not_exact_individual_effect_proven": true,
+      "original_argmax": 4,
+      "positive_and_negative_present": true,
+      "raw_sha256": "e52e08a20349c67000841b66e7143463fd5381a79b2b90f64a07540874bd6132",
+      "supplied_target": 1,
+      "tile": 4,
+      "tile_count": 9408
+    },
+    {
+      "all_tile_IDs_verified": 2352,
+      "area": 64,
+      "core_raw_rebuild": "byte_identical",
+      "joint_division_rule": "float64 target drop/64 then float32",
+      "mask_batch": "byte_identical",
+      "not_exact_individual_effect_proven": true,
+      "original_argmax": 4,
+      "positive_and_negative_present": true,
+      "raw_sha256": "4be3f3de064a77161bc767100b07402a18f7cbbc0deabb463d79f684714117bf",
+      "supplied_target": 1,
+      "tile": 8,
+      "tile_count": 2352
+    }
+  ],
+  "status": "PASS",
+  "toy_npz_sha256": "2b905e5470b04577bb1e847441e55a749e05b262df7fbf8c793c830a30c72be3",
+  "toy_only": true
+}

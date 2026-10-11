@@ -1,0 +1,36 @@
+{
+  "bit_generator": "PCG64",
+  "grid_array_sha256": "c79e2969af77878e94d09410c20634ab710af93c400878e000791b2a6e3a8d84",
+  "grid_dtype": "uint8",
+  "grid_file_sha256": "b162e5926d617a4c493603403e939a9fe1a54b463ee04ee05133fec4ee307a98",
+  "grid_shape": [
+    1024,
+    3,
+    14,
+    14
+  ],
+  "mask_order": "mask-major, channel-major, row-major, column-major",
+  "method": "rise_cov1024_fixed14_post22",
+  "numpy": "2.2.6",
+  "q_array_sha256": "b3ccfdf565b795da55a7ddb4e5f206dbc09524495aca15f11f24392dcd7c876e",
+  "q_dtype": "float64",
+  "q_file_sha256": "c30b467a5fe39ece1e91315d0b4ff6c40852fc81cfa8a808af74acb9982ae14d",
+  "q_shape": [
+    3,
+    224,
+    224
+  ],
+  "sampling": "np.random.Generator(PCG64(20260930)).random((1024,3,14,14)) < 0.5",
+  "schema": 1,
+  "seed": 20260930,
+  "torch": "2.10.0",
+  "upsampled_stream_dtype": "float32",
+  "upsampled_stream_sha256": "48602e4b4a000d290ff567cce19d97aaa90f6850efbdfbd2c24714f4d5a1740b",
+  "upsampled_stream_shape": [
+    1024,
+    3,
+    224,
+    224
+  ],
+  "upsampling": "torch.nn.functional.interpolate on CPU float32; bilinear; size=(224,224); align_corners=False"
+}

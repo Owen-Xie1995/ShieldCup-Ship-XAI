@@ -1,0 +1,21 @@
+{
+  "argmax": 0,
+  "artifact_sha256": "db0e5d7e7e3d304d739bb9931503d2d9bc633626d4dc5c19090603a912d60d58",
+  "average_does_not_equal_individual_effect": {
+    "assigned_tile_average": 0.234375,
+    "first_pixel_true_effect": 0.0
+  },
+  "limitation": "Linear toy additivity does not establish additivity or per-element fidelity for nonlinear official ResNet50.",
+  "masking": "actual core.mask_batch modifies exact single-channel4x4 independent copies",
+  "masks": 9408,
+  "negative_drop_count": 4704,
+  "official_classifier_forwards": 0,
+  "partition": "all CHW elements covered exactly once in channel/y/x order",
+  "positive_drop_count": 4704,
+  "raw_rebuild": "actual core.reconstruct; all tile totals byte-identical to analytic signed drops",
+  "raw_sha256": "24877f1a684fbd1634f488a9542b0c545616cafd924dff9f2e96fbdb723689c1",
+  "source_sha256": "cd7f21e620b92229e75dc1827d80cdd3ad341f134c18f39e3539db6c7671dcba",
+  "status": "PASS",
+  "target": 3,
+  "target_is_non_argmax": true
+}

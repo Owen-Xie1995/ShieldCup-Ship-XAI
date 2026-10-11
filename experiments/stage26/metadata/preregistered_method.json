@@ -1,0 +1,161 @@
+{
+  "created_unix": 1790860224.6518981,
+  "frozen_sampling_files_sha256": {
+    "probes/fixed_inputs.npz": "d193b5468b96c7c3490af02df4fbdf368d034bf702b7f370c162355fc96fa3f6",
+    "probes/frozen_indices.npz": "d94f416adeeb41e1c0631d896b1c83464a509ef58e0465297d166663ace335dc",
+    "probes/frozen_sampling.json": "ee3055285770a8fc0e9b38812456a9ab58d3293bc0f501c8807b5e191774f7cf"
+  },
+  "method_selection_has_not_seen_new_results": true,
+  "official_order": [
+    "2814884.jpg",
+    "643776.jpg",
+    "2839095.jpg",
+    "2865030.jpg",
+    "2819054.jpg",
+    "2246769.jpg",
+    "2833370.jpg",
+    "2818897.jpg",
+    "2904658.jpg"
+  ],
+  "official_weights_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473",
+  "packages": {
+    "numpy": "2.2.6",
+    "quantus": "0.6.0",
+    "scipy": "1.17.1",
+    "torch": "2.10.0",
+    "torchvision": "0.25.0"
+  },
+  "program_sha256": {
+    "budget.py": "104b2e11bf70155956768359842be900dd577cb4918ea2649d91646648536ff6",
+    "cache.py": "38f7aefff436e203d1190f64ebdbbf810821e94b13f992e5bf819ca30f3387ba",
+    "common.py": "1f750c2ce42a1e26a691ddc9bc16e272f464ff224593969f79cc21e9a32779db",
+    "legacy.py": "d8727a84e46fed028b7873fd8f81e4026eef28495f3ff7f39afcc8ad0aaaaa82",
+    "occlusion_raw.py": "bd1bf376bd55408478a7029ece94964cc83cf170f02494c69721e5227e6a2367",
+    "postprocess.py": "b51578f0f18e9de4211b005dbeea62405feb28f639d9ae5c6ca62b9984181fd6",
+    "probes.py": "e900c1f61cb8be362c92b449d02db9bab59b9e1d156b92b907c655c9fe580f81",
+    "run_official.py": "96ab416f976eb81a5fa4ed9facb5ab403311a10f86df517c18fc2a0b88091f01",
+    "run_stage26.py": "e5bf2a7fa531942986fd63f06a8868dd04bb8615794794857e6e6a8050d9f734"
+  },
+  "rules": {
+    "A": {
+      "count": 9,
+      "methods": [
+        "black_occlusion8_signed",
+        "black_occlusion4_soft15"
+      ],
+      "original_legacy_candidates": 9,
+      "probe_count": 128,
+      "seed": 314159,
+      "source_probe_batches": {
+        "tile4_original": 64,
+        "tile4_perturbed": 64,
+        "tile8_original": 64,
+        "tile8_perturbed": 32
+      },
+      "source_probe_tile4_seed": 20261005,
+      "source_probe_tile8_seed": 20261006,
+      "threshold": "candidate mean strictly > newly completed same-MPS8 mean AND >=6/9 wins"
+    },
+    "B": {
+      "CPU_MPS_probe_seed": 20261004,
+      "Id": 1,
+      "best4_seed42_single_reference": 78.19467843751505,
+      "count": 1,
+      "cumulative_device_probe_limit_seconds": 120,
+      "filename": "2814884.jpg",
+      "full_CPU_final_support": "NOT_PERFORMED",
+      "methods": [
+        "black_occlusion2_post22",
+        "black_occlusion2_soft15"
+      ],
+      "probe_count": 128,
+      "seed": 42,
+      "target": 0,
+      "threshold": "complete single-image mean >78.19467843751505; highestmean; exacttiepost22"
+    },
+    "budget": {
+      "cost_safety_multiplier": 1.15,
+      "global_seconds": 10800,
+      "heartbeat_seconds": 30,
+      "persistent_single_ledger": true,
+      "phase_A_seconds": 7200,
+      "phase_B_seconds": 3600
+    },
+    "official": {
+      "RNG_reset": "Python/NumPy/torch immediately before unchanged generator after model/dataset/cache setup",
+      "data_loader_batch": 1,
+      "formula": "mean of per-row 20*(1+F)+30*max(1-M/2,0)+30*S",
+      "no_rng_draws_inside_attribution": true,
+      "num_workers": 0,
+      "shuffle": false
+    },
+    "post22": {
+      "ceil": true,
+      "fractions": [
+        0.25,
+        0.1
+      ],
+      "reflect_mean_size": 5,
+      "stable_argsort": true
+    },
+    "raw": {
+      "allocation_area": [
+        64,
+        16,
+        4
+      ],
+      "allowed_tiles": [
+        8,
+        4,
+        2
+      ],
+      "baseline": "min of current complete CHW, fixed within each raw",
+      "batch_fallback_sequence": [
+        64,
+        32,
+        16
+      ],
+      "complete_five_logits_for_new_raw": true,
+      "difference_dtype": "float64",
+      "independent_one_channel_masks": true,
+      "legacy8_has_target_column_only": true,
+      "renewed_device_acceptance_required": true,
+      "result_dtype": "float32",
+      "stride_equals_tile": true,
+      "supplied_target_original_logit": true
+    },
+    "soft15": {
+      "epsilon": 1e-12,
+      "mode": "reflect",
+      "quantile": 0.85,
+      "quantile_method": "linear",
+      "sigma": [
+        0,
+        1,
+        1
+      ],
+      "signed_raw_multiplied_back": true,
+      "truncate": 4
+    }
+  },
+  "source_sha256": {
+    "audit/baseline_reference.json": "202c7af49393381471b5abd9eb942fdc6a8e590b0af5350f7810e556f6978326",
+    "audit/prior_sources.json": "85394790a53b0bdd46972bf8496c5ce9f12d08fe0d8d3a51f94b01890f5e8f8d",
+    "audit/probe_reference_sources.json": "587426554bce4e5554fd3ba0353316284fcebaafb95a1c55ab604f885615342d",
+    "instruction.md": "f330d749db3e7ad7f8d2bd3478143d98589b682b47892240723e484dd7467aaa",
+    "official_sources/source_binding.json": "9905cd3ec5cc944aa5066f423ea436acd251e24365debec8fe0e2672fce10c38",
+    "reference/inventory.json": "46b75b10ff12159582779a6b72947946fd9ecdaec04b6e3d701f2ba5254c2ddf"
+  },
+  "status": "FROZEN_BEFORE_NEW_OFFICIAL_MODEL_FORWARD",
+  "supplied_categories": [
+    1,
+    4,
+    3,
+    3,
+    5,
+    2,
+    1,
+    1,
+    1
+  ]
+}

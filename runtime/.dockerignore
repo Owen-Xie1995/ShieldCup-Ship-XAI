@@ -1,0 +1,13 @@
+.DS_Store
+**/.DS_Store
+__pycache__/
+**/__pycache__/
+*.pyc
+build_evidence/
+image.tar
+*.tar
+*.tar.gz
+*.7z
+*.zip
+.git/
+.venv/

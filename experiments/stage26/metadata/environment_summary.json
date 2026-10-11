@@ -1,0 +1,20 @@
+{
+  "CUDA_status": "NOT_VERIFIED",
+  "hardware": "MacBook Air M4; 8-core Apple GPU; 16 GiB physical memory (Stage23 report)",
+  "kind": "derived_summary_of_historical_environment",
+  "model_forward_device": "Native MPS FP32; CPU acceptance subsets where documented",
+  "not_a_current_environment_probe": true,
+  "official_generator_sha256": "3f0c8830e590f6ad46934c034a5bf75f2d2b1d89baf2dba6683cdc1d9dc61df1",
+  "official_scorer_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+  "packages": {
+    "numpy": "2.2.6",
+    "quantus": "0.6.0",
+    "scipy": "1.17.1",
+    "torch": "2.10.0",
+    "torchvision": "0.25.0"
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "postprocessing_device": "CPU",
+  "python": "3.12.9",
+  "weights_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+}

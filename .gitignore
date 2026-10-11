@@ -65,3 +65,32 @@ runs/
 logs/
 tmp/
 .cache/
+
+# Curated portfolio lives in runtime/, experiments/ and docs/.
+# Original generated deliveries, downloads and reviews stay local.
+/output_mac_*/
+/output_mac_*.sha256
+/output_mac_*.json
+/output_paper_deck_*/
+/review_v*/
+/audit_*/
+/.chart-data-*/
+/experiments/stage23_public_source/
+/docs/GitHub同步稽核_*.md
+/docs/github_sync_audit_*.json
+
+# Locally supplied organizer dependencies; never redistribute.
+/runtime/checkpoints/
+/runtime/dist/
+/runtime/src/official_metrix.py
+
+# Large artifacts and generated computation/audio
+*.7z
+*.whl
+*.npz
+*.npy
+*.aiff
+*.aif
+/runtime/build_evidence/
+/runtime/runtime-requirements-resolved.txt
+/runtime/image.tar.*

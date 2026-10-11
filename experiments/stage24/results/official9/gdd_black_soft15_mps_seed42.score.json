@@ -1,0 +1,29 @@
+{
+  "contribution_means": {
+    "F": 21.41177865366141,
+    "M": 13.030873636404673,
+    "S": 28.340929379726877
+  },
+  "csv_sha256": "e3c9410d39cda2f309f93af68a8ecbe73cae38d4802b1255d0d869676bee8ec2",
+  "metric_means": {
+    "Faithfulness": 0.07058893268307051,
+    "Max_Sensitivity": 1.131305820412106,
+    "Sparsity": 0.9446976459908958
+  },
+  "official_score": 62.783581669792945,
+  "row_formula_scores": [
+    70.403223299672,
+    62.628780060740226,
+    70.26726440212042,
+    61.545875933640616,
+    55.60705048548644,
+    62.737408793076455,
+    50.39782986919957,
+    72.4929919175026,
+    58.97181026669831
+  ],
+  "sample_count": 9,
+  "scope": "official nine-image formula",
+  "scorer_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+  "status": "UNMODIFIED_METRIX_AND_ROW_FORMULA_PASS"
+}

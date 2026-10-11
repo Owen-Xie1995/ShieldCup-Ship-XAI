@@ -1,0 +1,240 @@
+{
+  "comparison": "sum of current signed a0 over each 8x8 single-channel tile versus saved exact replacement of those 64 elements by current CHW min",
+  "limitations": [
+    "These are collective 64-element finite interventions; they do not prove or disprove exact individual-element quality.",
+    "Taylor a0 is an endpoint derivative times a finite baseline displacement; it is not a path integral or completeness result.",
+    "Pearson here is over all deterministic 8x8 tiles, not the official FaithfulnessCorrelation random 50-element subsets.",
+    "This analysis was chosen after scores and is diagnostic only."
+  ],
+  "model_forwards": 0,
+  "per_image": [
+    {
+      "Id": 1,
+      "actual_drop_range": [
+        -0.6969156265258789,
+        0.8290925025939941
+      ],
+      "approximate_drop_range": [
+        -2.0506308946060017,
+        3.8174330549663864
+      ],
+      "both_nontrivial_or_one_nontrivial_tiles": 2352,
+      "gdd_raw_file": "cache/raw/12/12417981b7bfc06ecbf364000fc58cf39bcb678d21df18eba5f04dd0e8699920.npz",
+      "gdd_raw_file_sha256": "31cde1b644bef979ff7ffee1eb959277974cd5d3f64ff6cdc4589bfc9d3c86c7",
+      "gdd_vs_stage23_original_target_logit_difference": 0.0,
+      "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+      "max_abs_logit_error": 3.834848101658281,
+      "mean_abs_logit_error": 0.22893718357152384,
+      "pearson_signed_tile_drop": 0.03498654387149331,
+      "relative_l2_vs_actual_drop": 3.0459257644524604,
+      "sign_agreement_excluding_both_near_zero": 0.5085034013605442,
+      "stage23_cache_sha256": "b7f12450a3b452efe9e0b0b5d7da4563921bcd075c3c9071c094a979330eae3c",
+      "stage23_finite_intervention_cache": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/c5/c5b8806d33c7b6afd4ab5be204293f2a3d8e292de75839165ad4fa4d35b72ea8.npz",
+      "target": 0,
+      "tiles": 2352
+    },
+    {
+      "Id": 2,
+      "actual_drop_range": [
+        -0.5174560546875,
+        0.645442008972168
+      ],
+      "approximate_drop_range": [
+        -2.031519910971838,
+        3.0815356094390154
+      ],
+      "both_nontrivial_or_one_nontrivial_tiles": 2352,
+      "gdd_raw_file": "cache/raw/e0/e0677fdb19bbb6d341813b7cb2c6f65e9b5534369f5f3530c8a24ec39c8fc6ce.npz",
+      "gdd_raw_file_sha256": "6211ed243775959d8ba0725c499c31af78cc92d9d343ddba5aedcdc116e637d4",
+      "gdd_vs_stage23_original_target_logit_difference": 0.0,
+      "input_sha256": "adb3bfb111feae4884ef11f2b1488bb98a925e804bdbc2af7e1fa9cb45e2beec",
+      "max_abs_logit_error": 2.9615404922515154,
+      "mean_abs_logit_error": 0.21524238162640133,
+      "pearson_signed_tile_drop": 0.04566076064711948,
+      "relative_l2_vs_actual_drop": 4.186212554926213,
+      "sign_agreement_excluding_both_near_zero": 0.5106292517006803,
+      "stage23_cache_sha256": "759ee32d880ea0ef89571571bdfafb233e0ae9b15d3ecb3c453d971dc93032b3",
+      "stage23_finite_intervention_cache": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/0f/0fe31594dc312724d1d19a4d5cd64e962285e74071999805fc2d33dac1f87be3.npz",
+      "target": 3,
+      "tiles": 2352
+    },
+    {
+      "Id": 3,
+      "actual_drop_range": [
+        -0.6752357482910156,
+        2.6902527809143066
+      ],
+      "approximate_drop_range": [
+        -3.349126420886023,
+        2.9190123237785883
+      ],
+      "both_nontrivial_or_one_nontrivial_tiles": 2352,
+      "gdd_raw_file": "cache/raw/0a/0a9645167e461f4851be83c9ee1fdec761b94ae4c7ffcf57827fa263ae2c048f.npz",
+      "gdd_raw_file_sha256": "099cca7da43673ef5d5f794ba3aa489ef5a9541f9beedded4ebeaf559d788187",
+      "gdd_vs_stage23_original_target_logit_difference": 0.0,
+      "input_sha256": "3838aafed35eb7769396a678f869d5bf3aa61ed653a0204f505db8f678c0fdd0",
+      "max_abs_logit_error": 4.703734002978308,
+      "mean_abs_logit_error": 0.25641584148935803,
+      "pearson_signed_tile_drop": 0.07182632599042153,
+      "relative_l2_vs_actual_drop": 2.4809583559191037,
+      "sign_agreement_excluding_both_near_zero": 0.5263605442176871,
+      "stage23_cache_sha256": "8f27b01da346517f96acf851dadffedfd7422a01d3a14ae2d7284755701d7ac5",
+      "stage23_finite_intervention_cache": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/f1/f199b22e96a1de6b414340cd025c82186bb9e650eb4add168711569152f8fe0f.npz",
+      "target": 2,
+      "tiles": 2352
+    },
+    {
+      "Id": 4,
+      "actual_drop_range": [
+        -0.42498064041137695,
+        0.9557108879089355
+      ],
+      "approximate_drop_range": [
+        -2.7332841207971796,
+        3.3029483962163795
+      ],
+      "both_nontrivial_or_one_nontrivial_tiles": 2352,
+      "gdd_raw_file": "cache/raw/6e/6e3a6cfc66245357f4453ee6eafbdcb541958721334f9213262cebb79b69b98a.npz",
+      "gdd_raw_file_sha256": "6a5d590fc6fd6a367795f1f7a2b966a4399d1986f8781fd91b1ad50c0e18cab4",
+      "gdd_vs_stage23_original_target_logit_difference": 0.0,
+      "input_sha256": "d09c5e89e426fbfc56b5fed128738b270567021a378f291d6e245d24e49866b8",
+      "max_abs_logit_error": 3.292247216711985,
+      "mean_abs_logit_error": 0.2596725021556329,
+      "pearson_signed_tile_drop": -0.002466840234538382,
+      "relative_l2_vs_actual_drop": 4.736954380608975,
+      "sign_agreement_excluding_both_near_zero": 0.5131802721088435,
+      "stage23_cache_sha256": "88cf0a2c4a3d7a81a9a0a12152d3a11a244351c194ff50178d68965f591b9824",
+      "stage23_finite_intervention_cache": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/be/be5ced8ebcf7a6cf8fbad6f068d701749b478c2803ba7a50c06493680d705b75.npz",
+      "target": 2,
+      "tiles": 2352
+    },
+    {
+      "Id": 5,
+      "actual_drop_range": [
+        -0.5319070816040039,
+        0.44617223739624023
+      ],
+      "approximate_drop_range": [
+        -1.840421917848289,
+        1.8379486896446906
+      ],
+      "both_nontrivial_or_one_nontrivial_tiles": 2352,
+      "gdd_raw_file": "cache/raw/ab/ab0050bcc1e468c96fdaa9aaf176b68624c38dd1ce23cfa2d3a54fd2e95a9196.npz",
+      "gdd_raw_file_sha256": "0da7db4eedcbe35480b3aa89e3951c5f996a1440cc26e08c5b7d49a822c068e5",
+      "gdd_vs_stage23_original_target_logit_difference": 0.0,
+      "input_sha256": "bed6659c79788c2d8c7b5842f96ce6be28e542c1b1e168eabfb06c745af2edc0",
+      "max_abs_logit_error": 1.8507114746025763,
+      "mean_abs_logit_error": 0.19885589710542032,
+      "pearson_signed_tile_drop": 0.025104938936199788,
+      "relative_l2_vs_actual_drop": 3.9111983680099516,
+      "sign_agreement_excluding_both_near_zero": 0.5059523809523809,
+      "stage23_cache_sha256": "7f4547dc7292c0cfe7d92da745bacf3d72092f6f6bca587062ad7ec54d938010",
+      "stage23_finite_intervention_cache": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/68/68052079b5f87eb473c74614b20c100d14f540244f8101afa0ad5ab93d192b86.npz",
+      "target": 4,
+      "tiles": 2352
+    },
+    {
+      "Id": 6,
+      "actual_drop_range": [
+        -0.5016508102416992,
+        0.5860424041748047
+      ],
+      "approximate_drop_range": [
+        -3.420739992870949,
+        2.918241092003882
+      ],
+      "both_nontrivial_or_one_nontrivial_tiles": 2352,
+      "gdd_raw_file": "cache/raw/06/06b1445d22d26443814d2f0e5e70f4546b951d8764c8bf8b77c041421ff1581e.npz",
+      "gdd_raw_file_sha256": "3c821c2f80c08cfe8d18349af98ee5c2ad4878ca84f9cd296c8c2aa9a8bee7af",
+      "gdd_vs_stage23_original_target_logit_difference": 0.0,
+      "input_sha256": "2649786d76238334ea6cf0a7ae9c37f24a10d3c49ed75bfcc016e145f5352935",
+      "max_abs_logit_error": 3.4354899966856465,
+      "mean_abs_logit_error": 0.3181201682776384,
+      "pearson_signed_tile_drop": 0.016803112717727435,
+      "relative_l2_vs_actual_drop": 4.279487668655355,
+      "sign_agreement_excluding_both_near_zero": 0.5042517006802721,
+      "stage23_cache_sha256": "9bea56b876c8d2feab31f0902fe379ba7c9312896650b8e2211aa3ff07b50067",
+      "stage23_finite_intervention_cache": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/72/729aef124c111dd91337f027c5b63075399b5a04a96b22deb7b3aca378f48bf9.npz",
+      "target": 1,
+      "tiles": 2352
+    },
+    {
+      "Id": 7,
+      "actual_drop_range": [
+        -0.9362897872924805,
+        0.9216451644897461
+      ],
+      "approximate_drop_range": [
+        -10.078794727101922,
+        16.255410458892584
+      ],
+      "both_nontrivial_or_one_nontrivial_tiles": 2352,
+      "gdd_raw_file": "cache/raw/90/90df7b67d61c68af5a0c9c639c98de18c2dbd4ae2a1c592475a72883ec3c4919.npz",
+      "gdd_raw_file_sha256": "4f20f2ab3956e930162dd1cc823143e76215494eb82c0ec1875123092e016d4f",
+      "gdd_vs_stage23_original_target_logit_difference": 0.0,
+      "input_sha256": "c74cd7fdb80213cb7c5d9b22c847f34ade7d1eb378f1ac74ea4fcc33f1a8a312",
+      "max_abs_logit_error": 16.12716319784522,
+      "mean_abs_logit_error": 0.7697359821853319,
+      "pearson_signed_tile_drop": 0.023006184341299092,
+      "relative_l2_vs_actual_drop": 8.462110575347936,
+      "sign_agreement_excluding_both_near_zero": 0.5136054421768708,
+      "stage23_cache_sha256": "5affb788cb8ce232e23a96d3983a4c46ed9e6c25841be38e2901fdfc22842307",
+      "stage23_finite_intervention_cache": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/57/570748ba224d0aaf4c1645be2cef5d7568e6314dc6528c327ab28d1b24a37b02.npz",
+      "target": 0,
+      "tiles": 2352
+    },
+    {
+      "Id": 8,
+      "actual_drop_range": [
+        -2.0477094650268555,
+        2.7816779613494873
+      ],
+      "approximate_drop_range": [
+        -3.6998869363451377,
+        4.402450326830149
+      ],
+      "both_nontrivial_or_one_nontrivial_tiles": 2352,
+      "gdd_raw_file": "cache/raw/fb/fbf5d0201efdfb3216555db5277f15a52155e2d2f41f49bb9f74a70bdd4b269b.npz",
+      "gdd_raw_file_sha256": "3624e4304f7a055bcaa1d456f0254bb62601df996e91b1f76954284ff55c1e93",
+      "gdd_vs_stage23_original_target_logit_difference": 0.0,
+      "input_sha256": "b06632c2ef54d6683cbe01ac3a624a42e36b777596f5e0b285e1e369981a16b2",
+      "max_abs_logit_error": 5.957382444292307,
+      "mean_abs_logit_error": 0.32645866807913115,
+      "pearson_signed_tile_drop": 0.054099009079547476,
+      "relative_l2_vs_actual_drop": 2.1200670422979955,
+      "sign_agreement_excluding_both_near_zero": 0.5289115646258503,
+      "stage23_cache_sha256": "dcf186294ca6cc40c0c436c955bbfc9541cbd14b1e9661cb0e3719a7998ea6e7",
+      "stage23_finite_intervention_cache": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/6c/6c0bd5fac969019c60e1ed4fd72c181de379562a5886e865ad64993070c9eb6a.npz",
+      "target": 0,
+      "tiles": 2352
+    },
+    {
+      "Id": 9,
+      "actual_drop_range": [
+        -1.3066821098327637,
+        1.6135141849517822
+      ],
+      "approximate_drop_range": [
+        -17.12428085692227,
+        13.9744978742674
+      ],
+      "both_nontrivial_or_one_nontrivial_tiles": 2352,
+      "gdd_raw_file": "cache/raw/7e/7e8aa77d51cf6afe3bf836ea6ef284a168288a0f3051c875473555a44f7df730.npz",
+      "gdd_raw_file_sha256": "0c73b71cdf9b5375640aa34c47083017a4b2f344d7ac63eaad27aa7245aaf68f",
+      "gdd_vs_stage23_original_target_logit_difference": 0.0,
+      "input_sha256": "1cf96197774ec5cb543516079646c74df8129464dea995a8f15b1c516df3632a",
+      "max_abs_logit_error": 18.027449058368802,
+      "mean_abs_logit_error": 0.5666639769185491,
+      "pearson_signed_tile_drop": -0.026851632744927825,
+      "relative_l2_vs_actual_drop": 6.808291149197631,
+      "sign_agreement_excluding_both_near_zero": 0.5012755102040817,
+      "stage23_cache_sha256": "e700032bd087595e7ebf7c544b0d8415d47c5ee8e65291a66b9feb8b466552a1",
+      "stage23_finite_intervention_cache": "$WORKSPACE/output_mac_stage23/device/cache/black_occlusion8_signed/mps/b1/b122b92e9c77ef98e5cc20269fb0b485dcc9f698bd63300955099d9100113249.npz",
+      "target": 0,
+      "tiles": 2352
+    }
+  ],
+  "scope": "Post-score diagnostic using preserved original inputs only; no parameter selection or new candidate",
+  "status": "PASS",
+  "tiles_csv_sha256": "78802b689b7cca81c104f586b6e1563841e04111e88440e4aa57886558268d71"
+}

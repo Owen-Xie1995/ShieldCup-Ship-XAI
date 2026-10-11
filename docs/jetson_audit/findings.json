@@ -1,0 +1,73 @@
+{
+  "case": "Independent acceptance audit of a teammate ship-image XAI package",
+  "attribution": {
+    "audit_tools": "Project workspace audit tooling, developed with Codex assistance",
+    "explanation_algorithm_and_runner": "Teammate-provided",
+    "model_wheel_and_scorer": "Organizer-provided"
+  },
+  "historical_evidence_dates": [
+    "2026-10-08",
+    "2026-10-09"
+  ],
+  "historical_scope": "Existing acceptance records summarized; large archives not rehashed during public curation",
+  "historical_results": {
+    "status": "PASS_FOR_FILE_AND_FIX_AUDIT",
+    "archive_sha256": "9f60b2d7bf6810438401e55cccfc5525e1059d891af63b81cb491a3f504d413b",
+    "archive_bytes": 4908275437,
+    "manifest_passed": 11,
+    "manifest_entries": 11,
+    "image_layers_passed": 69,
+    "image_app_files_match": 7,
+    "admission_cases_passed": 34,
+    "scorer_cases_passed": 5
+  },
+  "finding": {
+    "v1": "Rejected finite Max_Sensitivity values above 2 before final output completion",
+    "v2": "Accepted finite nonnegative Max_Sensitivity values; scorer clips sensitivity contribution at zero above 2",
+    "attached_nine_rows_proven_to_trigger_defect": false
+  },
+  "public_tool_validation_date": "2026-10-11",
+  "public_tool_validation": {
+    "python_syntax_files": 4,
+    "synthetic_regression_tests": 8,
+    "synthetic_regression_fixes": [
+      "Reject CSV rows with extra or missing fields despite a valid four-column header",
+      "Remove stale selected files when a later image layer replaces them with directories; preserve lower children under ordinary directory entries"
+    ],
+    "status": "PASS",
+    "device": {
+      "system": "Darwin",
+      "machine": "arm64",
+      "python": "3.12.9",
+      "numpy": "2.2.6",
+      "pandas": "3.0.3"
+    },
+    "sources": {
+      "v1_runner": "869aa2ccf0fe8d035b07a6bf187b72dcc44efffa8f7f0078a37a64aa5a0e0f3c",
+      "v2_runner": "2e25a314e841630ac921897d998a5f0781814bc0d65d0218421843333a69b66e",
+      "scorer": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda"
+    },
+    "admission_function_ast_unchanged": true,
+    "admission_cases": 34,
+    "admission_passed": 34,
+    "scorer_cases": 5,
+    "scorer_passed": 5,
+    "runner_imported": false,
+    "torch_imported": false,
+    "model_or_weights_loaded": false,
+    "full_model_or_jetson_test": false
+  },
+  "runtime_limits": {
+    "container_executed": false,
+    "full_runner_executed": false,
+    "jetson_gpu_executed": false,
+    "full_nine_row_recomputation": false,
+    "abi_cuda_compatibility_verified": false,
+    "runtime_memory_or_performance_verified": false
+  },
+  "public_reproduction": {
+    "synthetic_tool_tests": "python3 -B tools/jetson_audit/test_tools.py -v",
+    "original_submission_required_for_package_image_and_ast_checks": true,
+    "original_submission_redistributed_here": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "execution_status": "COMPLETE",
+  "completed_pairs": 5,
+  "budget_seconds": 1800.0,
+  "actual_cumulative_model_wall_seconds": 861.8986384159944,
+  "sum_complete_official_single_elapsed_seconds": 835.7847185860446,
+  "official_ig50_probe_workflow_seconds": 22.49885983299464,
+  "preparation_seconds_charged": 0,
+  "within_model_budget": true,
+  "sequential_complete_run_order_verified": [
+    [
+      1,
+      "black_occlusion8_signed"
+    ],
+    [
+      1,
+      "control_ig50_smooth_abs_top25_mean5_top10"
+    ],
+    [
+      2,
+      "black_occlusion8_signed"
+    ],
+    [
+      2,
+      "control_ig50_smooth_abs_top25_mean5_top10"
+    ],
+    [
+      3,
+      "black_occlusion8_signed"
+    ],
+    [
+      3,
+      "control_ig50_smooth_abs_top25_mean5_top10"
+    ],
+    [
+      4,
+      "black_occlusion8_signed"
+    ],
+    [
+      4,
+      "control_ig50_smooth_abs_top25_mean5_top10"
+    ],
+    [
+      5,
+      "black_occlusion8_signed"
+    ],
+    [
+      5,
+      "control_ig50_smooth_abs_top25_mean5_top10"
+    ]
+  ],
+  "historical_preparation_estimates_not_charged": true
+}

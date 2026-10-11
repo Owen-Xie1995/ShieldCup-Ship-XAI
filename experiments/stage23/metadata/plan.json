@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "instruction_version": "v2.2",
+  "started_at_utc": "2026-09-30 10:24:21 UTC",
+  "stages": [
+    {
+      "stage": "A",
+      "name": "M4 MPS correctness and speed probe",
+      "entry_condition": "Stage22 source and ZIP hashes verified; GPU availability checked outside sandbox",
+      "budget_seconds": 3600,
+      "decision": "Use MPS for B/C only if fixed acceptance passes and full single-image official flow is faster than CPU"
+    },
+    {
+      "stage": "B",
+      "name": "One frozen RISE-inspired candidate",
+      "entry_condition": "A passes; candidate probe and paired official9 candidate/8x8 estimate including probe <= 10800 seconds",
+      "budget_seconds": 10800,
+      "decision": "No full CPU fallback run if A fails; no second candidate or repeat seeds"
+    },
+    {
+      "stage": "C",
+      "name": "Extra five original public images",
+      "entry_condition": "Original labeled JPEG dataset located or legally obtained; five names frozen before scores; same-device methods viable",
+      "budget_seconds": 3600,
+      "decision": "Stop at completed pairs within budget; no five-image mean until all five pairs complete"
+    },
+    {
+      "stage": "D",
+      "name": "Archive, verify and report",
+      "entry_condition": "A/B/C results or explicit budget/availability stop reasons saved",
+      "decision": "Package output_mac_stage23.zip with manifest and CRC/SHA checks"
+    }
+  ],
+  "source_status": {
+    "stage22_zip_crc": "PASS",
+    "stage22_zip_sha256": "917486cabd87a7a1969f489b2a66ca1694096e52711c673686fddb47976ab1df",
+    "stage22_verification": "PASS",
+    "official_weight_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473",
+    "official_generator_sha256": "3f0c8830e590f6ad46934c034a5bf75f2d2b1d89baf2dba6683cdc1d9dc61df1",
+    "official_metrix_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+    "official_test_csv_sha256": "292bf8cf64b4db3a64def4a27ec02f082bd7b222e8ae939e2d620d8409a8e83e",
+    "stage23_instruction_sha256": "188eff549aee81140c39396c6d05c7630eabb527f49f55dd65160295f3595cf6"
+  }
+}

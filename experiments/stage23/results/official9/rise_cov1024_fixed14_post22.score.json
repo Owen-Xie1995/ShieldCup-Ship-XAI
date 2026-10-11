@@ -1,0 +1,43 @@
+{
+  "status": "C3_SAMPLE_SCORER_PASS",
+  "scope": "supplied nine-image sample and solution_all_public.csv; not official qualification score",
+  "official_score_0_to_100": 74.09565904985564,
+  "sample_count": 9,
+  "submission_sha256": "c82e9e973ddf7fb5f65660e9e0eca6dfa94fc765ec55c038febc390901956d1b",
+  "scorer_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+  "solution_sha256": "243c7b4457380e8f43e8baa5d1e7e7d52aaafb9239c3c02d28e6c803c614a75d",
+  "column_order": [
+    "Id",
+    "Faithfulness",
+    "Max_Sensitivity",
+    "Sparsity"
+  ],
+  "row_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "metric_summary": {
+    "Faithfulness": {
+      "minimum": -0.1581806391477584,
+      "mean": -0.020681276710497,
+      "maximum": 0.0975360125303268
+    },
+    "Max_Sensitivity": {
+      "minimum": 0.1205115169286727,
+      "mean": 0.19248223139180076,
+      "maximum": 0.270421028137207
+    },
+    "Sparsity": {
+      "minimum": 0.9092953074973488,
+      "mean": 0.9132172684980868,
+      "maximum": 0.9177437744566
+    }
+  }
+}

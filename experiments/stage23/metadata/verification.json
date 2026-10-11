@@ -1,0 +1,233 @@
+{
+  "checks": {
+    "B_budget": {
+      "budget_seconds": 10800,
+      "estimated_seconds": 1675.1627949149697,
+      "idle_interruption_excluded": true,
+      "measured_available_run_seconds": 1799.0344084590033,
+      "status": "PASS"
+    },
+    "all_cache_artifacts": {
+      "complete_cache_count": 129,
+      "counts": [
+        {
+          "count": 1,
+          "device": "cpu",
+          "schema": "candidate",
+          "weight_scope": "historical_legacy_synthetic"
+        },
+        {
+          "count": 2,
+          "device": "cpu",
+          "schema": "candidate",
+          "weight_scope": "official_weights"
+        },
+        {
+          "count": 1,
+          "device": "cpu",
+          "schema": "candidate",
+          "weight_scope": "synthetic"
+        },
+        {
+          "count": 61,
+          "device": "mps",
+          "schema": "candidate",
+          "weight_scope": "official_weights"
+        },
+        {
+          "count": 2,
+          "device": "cpu",
+          "schema": "reference",
+          "weight_scope": "official_weights"
+        },
+        {
+          "count": 62,
+          "device": "mps",
+          "schema": "reference",
+          "weight_scope": "official_weights"
+        }
+      ],
+      "current_compatible_cache_count": 128,
+      "discovered_npz_count": 130,
+      "excluded": [
+        {
+          "path": "device/probe_inputs.npz",
+          "reason": "Frozen original/noise/perturbed inputs; not an attribution cache",
+          "sha256": "f98772eb98aa2c50698d3f3ab4b513e785df03cc561f4de7ea28b86315ac6c64"
+        }
+      ],
+      "excluded_count": 1,
+      "historical_legacy": [
+        {
+          "bytes": 528676,
+          "classification": "historical_legacy_synthetic_archive",
+          "current_cache_identity_verified": false,
+          "device": "cpu",
+          "final_sha256": "8e4ba099b2d456ea3269dede83ca6640478e340ce81702ccd8bebc4901065116",
+          "masked_logits_count": 1024,
+          "masked_logits_sha256": "df5b31b02a048470b48d5706990754beb4fdcdfc66433f896a73ebdd8f77ba3c",
+          "path": "candidate/synthetic_cache/rise_cov1024_fixed14_post22/1f/1fecd8f9e8567bb0beb2ba3a038cc04b9c6a959491a4482399f1dca1955ccbef.npz",
+          "raw_final_logits_byte_identical_to_current_validated_twin": "candidate/synthetic_cache/rise_cov1024_fixed14_post22/87/8785af3549d17e16e144fd149266c4397de6294cfa96b699e610217e24e6aebf.npz",
+          "raw_sha256": "f25207392d0ebb09f9ca47b983e320566998725ec3c6f7fbc84eaee93faa6184",
+          "reason": "Earlier toy cache lacks current callback identity and its old spec configuration is no longer available. Retained historical evidence; never used as a scored official-model result.",
+          "reusable_with_current_loader": false,
+          "sha256": "27db376caea6c469128d55f5d7dab79a33bd43ae130e0a4e18a30befbd76ad6e",
+          "stage22_postprocess_byte_identical": true,
+          "weight_scope": "synthetic"
+        }
+      ],
+      "historical_legacy_count": 1,
+      "new_model_forwards": 0,
+      "official_weight_cache_identity_exception_count": 0,
+      "partial_checkpoint_count": 0,
+      "rewritten_cache_files": 0,
+      "scope": "All recursively discovered Stage23 npz attribution archive content; current cache identities except one explicitly retained historical toy archive",
+      "status": "PASS"
+    },
+    "candidate_probe": {
+      "acceptance_sha256": "83c064cffdd1cc5993bac43a48dcfa4311d7b89ea1f4bd29f0454ff8aef4b5eb",
+      "bank_identity_sha256": "ea80e29c1d91fabdbcdd9a0201ee163c591b7d38d0a08ff278f365cf995345b7",
+      "cases": {
+        "original": {
+          "final_support_iou": 1.0,
+          "logit_fail_count": 0,
+          "logits_compared": 1025,
+          "pass": true,
+          "predicted_class_match": true,
+          "raw_relative_l2": 3.2585267175562267e-06
+        },
+        "perturbed": {
+          "final_support_iou": 1.0,
+          "logit_fail_count": 0,
+          "logits_compared": 1025,
+          "pass": true,
+          "predicted_class_match": true,
+          "raw_relative_l2": 3.281275654215811e-06
+        }
+      },
+      "preregistration_sha256": "343c7eaaee766c50c868954a4ca7eaf5ba9e9b5eb93d86e4f53198f585fc1d20",
+      "raw_reconstruction": [
+        {
+          "cache_key": "b8b15160087ea526c380471714ea5aeb265a676850093daa37e09d38b1509d0e",
+          "cache_sha256": "383388fd8e751ce9c2fcdf67fcd33785b36e1e8b0670544d7a2f044cb525fdda",
+          "device": "cpu",
+          "input": "original",
+          "maximum_raw_reconstruction_abs_error": 0.0
+        },
+        {
+          "cache_key": "42e33fdac10bad7945c0bd6eed787cbbfc308610a741dd26160a4819074f167d",
+          "cache_sha256": "0f3de567cf401ace4bd970599b849d24915ca4033652e94a790caf7e07f76622",
+          "device": "mps",
+          "input": "original",
+          "maximum_raw_reconstruction_abs_error": 0.0
+        },
+        {
+          "cache_key": "be382449916ebeed6258f4501ba5ac44ee7e0cb0a7745b643cd93ef912a28bc7",
+          "cache_sha256": "a9d214fb9187e45d9fb29542c783c322043a2a4507101a74f0cec9c3114d9e51",
+          "device": "cpu",
+          "input": "perturbed",
+          "maximum_raw_reconstruction_abs_error": 0.0
+        },
+        {
+          "cache_key": "a8b3263210c0802bc44a675a788ac9b830ef45e2ba206dbffa4fe004e05a28eb",
+          "cache_sha256": "ea82ce6318a5f95e48c3f3e65a6d284823dda85f19cf8d20ae90031d3a364bc7",
+          "device": "mps",
+          "input": "perturbed",
+          "maximum_raw_reconstruction_abs_error": 0.0
+        }
+      ],
+      "scope": "Independent read-only reconstruction of all 4096 saved masked logits",
+      "status": "PASS"
+    },
+    "device_probe": {
+      "cases": {
+        "original": true,
+        "perturbed": true
+      },
+      "mps_full_flow_seconds": 98.79448158299783,
+      "official_single_image_abs_difference": 6.692117037232492e-05,
+      "official_single_image_cpu_reference_score": 73.28791682477032,
+      "official_single_image_mps_score": 73.28798374594069,
+      "selected_reference_batch_size": 64,
+      "stage22_cpu_nine_mean_seconds": 1971.4705555555556,
+      "status": "PASS"
+    },
+    "environment": {
+      "stage23_source_files": 99,
+      "status": "PASS"
+    },
+    "mask_bank_and_synthetic": {
+      "global_q_sha256": "b3ccfdf565b795da55a7ddb4e5f206dbc09524495aca15f11f24392dcd7c876e",
+      "grid_sha256": "c79e2969af77878e94d09410c20634ab710af93c400878e000791b2a6e3a8d84",
+      "status": "PASS",
+      "upsampled_stream_sha256": "48602e4b4a000d290ff567cce19d97aaa90f6850efbdfbd2c24714f4d5a1740b"
+    },
+    "official_nine": {
+      "candidate": {
+        "csv_sha256": "c82e9e973ddf7fb5f65660e9e0eca6dfa94fc765ec55c038febc390901956d1b",
+        "device": "mps",
+        "per_image": [
+          72.40125118800461,
+          75.43813940953407,
+          71.50911083519955,
+          75.5006223071955,
+          73.5263941591839,
+          74.53593271994933,
+          73.81470024253883,
+          76.00053759392821,
+          74.13424299316688
+        ],
+        "score": 74.09565904985567
+      },
+      "candidate_gate_pass": false,
+      "candidate_minus_control": -4.526293161487146,
+      "control": {
+        "csv_sha256": "c85760376736ffcf0ed597ffb98fb74cc0b0561cc071d464f60baceff603d70f",
+        "device": "mps",
+        "per_image": [
+          73.28798374594069,
+          80.23521739033356,
+          81.74574083473559,
+          81.08688922519815,
+          77.61154908989425,
+          73.41141369234879,
+          78.3993007085493,
+          79.5599894868318,
+          82.2594857282532
+        ],
+        "score": 78.62195221134282
+      },
+      "heatmap_manifest_sha256": "bcaa1e9cee299347e40f050ccc82548647e027dda11742df0783e9598fecaac9",
+      "improved_image_count": 1,
+      "status": "PAIRED_SCORED",
+      "verified_original_input_maps": 18
+    },
+    "preregistration": {
+      "method": "rise_cov1024_fixed14_post22",
+      "sha256": "343c7eaaee766c50c868954a4ca7eaf5ba9e9b5eb93d86e4f53198f585fc1d20",
+      "status": "PASS"
+    },
+    "public_five": {
+      "completed_pairs": 0,
+      "five_image_mean": null,
+      "integrity": "PASS",
+      "manifest_sha256": "a99bfda1e0cfd8527b5b14448a09a184464cc21fff6c56c49e91d4ecb5f811aa",
+      "methods": [
+        "black_occlusion8_signed",
+        "control_ig50_smooth_abs_top25_mean5_top10"
+      ],
+      "original_data_available": true,
+      "original_images_and_transforms_verified": 5,
+      "preparation_elapsed_is_exact": false,
+      "remaining_budget_estimate_seconds": 42.0,
+      "status": "FROZEN_NOT_SCORED_BUDGET"
+    }
+  },
+  "experiment_completion": {
+    "A": "PASS",
+    "B": "PAIRED_SCORED",
+    "C": "FROZEN_NOT_SCORED_BUDGET"
+  },
+  "meaning": "Available artifact integrity and branch declarations",
+  "status": "PASS"
+}

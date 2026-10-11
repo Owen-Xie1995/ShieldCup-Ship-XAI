@@ -1,0 +1,53 @@
+{
+  "batch": 64,
+  "cases": {
+    "original": {
+      "batch": 64,
+      "checks": {
+        "finite": true,
+        "original_five_logits_allclose": true,
+        "predicted_class_same": true,
+        "probe_logits_allclose": true,
+        "tile_drop_relative_L2_le_1percent": true
+      },
+      "cpu_path": "$WORKSPACE/output_mac_stage26/probes/B_device_original_tile2_cpu_batch64.npz",
+      "cpu_sha256": "9be00f2495cc051112101c9212783aebee8fbfa7f0def5aeda61c182d2b2a56c",
+      "eligible_sign_count": 128,
+      "masked_max_abs_difference": 1.5735626220703125e-05,
+      "mps_path": "$WORKSPACE/output_mac_stage26/probes/B_device_original_tile2_mps_batch64.npz",
+      "mps_sha256": "0e27cb69a036267a9f1489410edca2fad2827448c475e0ddbff37b6cd63e8e20",
+      "near_zero_excluded_count": 0,
+      "original5_max_abs_difference": 3.337860107421875e-06,
+      "probe_comparison_scope": "all five masked logits",
+      "sign_mismatch_count": 0,
+      "status": "PASS",
+      "tile_drop_relative_L2": 0.00012977244026014795
+    },
+    "perturbed": {
+      "batch": 64,
+      "checks": {
+        "finite": true,
+        "original_five_logits_allclose": true,
+        "predicted_class_same": true,
+        "probe_logits_allclose": true,
+        "tile_drop_relative_L2_le_1percent": true
+      },
+      "cpu_path": "$WORKSPACE/output_mac_stage26/probes/B_device_perturbed_tile2_cpu_batch64.npz",
+      "cpu_sha256": "cab834cc1769bcf978e340604f60e42b8619de62f4508cd5fdb1d254e9d08d2b",
+      "eligible_sign_count": 128,
+      "masked_max_abs_difference": 1.811981201171875e-05,
+      "mps_path": "$WORKSPACE/output_mac_stage26/probes/B_device_perturbed_tile2_mps_batch64.npz",
+      "mps_sha256": "c52c2ee2bded1b95a32a1bff9b66c33597602ceef0b33a509bad63dba9c41f95",
+      "near_zero_excluded_count": 0,
+      "original5_max_abs_difference": 1.430511474609375e-06,
+      "probe_comparison_scope": "all five masked logits",
+      "sign_mismatch_count": 0,
+      "status": "PASS",
+      "tile_drop_relative_L2": 0.00018633344021628718
+    }
+  },
+  "cumulative_limit_seconds": 120,
+  "elapsed_seconds": 28.69057304202579,
+  "full_CPU_2x2_final_support_acceptance": "NOT_PERFORMED",
+  "status": "PASS"
+}

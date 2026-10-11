@@ -1,0 +1,46 @@
+{
+  "A": {
+    "actual_device": "mps",
+    "no_cpu_fallback": true,
+    "precision": "fp32",
+    "selected_reference_batch_size": 64,
+    "single_image_cpu_reference_kind": "verified Stage22 seed42 first row of unchanged official nine-image generator",
+    "single_image_official_seconds": 98.79448158299783,
+    "single_image_score_abs_device_delta": 6.692117037232492e-05,
+    "status": "PASS"
+  },
+  "B": {
+    "budget_seconds": 10800,
+    "candidate_gate_pass": false,
+    "candidate_minus_control": -4.526293161487189,
+    "candidate_nine_seconds": 474.80134587499197,
+    "candidate_score": 74.09565904985564,
+    "control_nine_seconds": 1039.2980229160166,
+    "control_score": 78.62195221134283,
+    "improved_image_count": 1,
+    "measured_available_run_seconds": 1799.0344084590033,
+    "planned_images": 9,
+    "retained_baseline": "black_occlusion8_signed",
+    "status": "PAIRED_SCORED"
+  },
+  "C": {
+    "completed_pairs": 0,
+    "five_image_mean": null,
+    "frozen_images": 5,
+    "methods": [
+      "black_occlusion8_signed",
+      "control_ig50_smooth_abs_top25_mean5_top10"
+    ],
+    "original_data_available": true,
+    "planned_pairs": 5,
+    "preparation_time_exactly_measured": false,
+    "reason": "Original data and frozen list are available; conservative prior and current preparation budget leaves42seconds, insufficient for a complete official first pair; no model scoring launched.",
+    "remaining_budget_estimate_seconds": 42,
+    "status": "FROZEN_NOT_SCORED_BUDGET"
+  },
+  "D": {
+    "archive": "output_mac_stage23.zip",
+    "status": "READY_FOR_INDEPENDENT_VERIFICATION_AND_PACKAGE",
+    "zip_crc_and_sha_result": "see external output_mac_stage23.package_receipt.json after packaging"
+  }
+}

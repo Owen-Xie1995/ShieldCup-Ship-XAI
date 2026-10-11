@@ -1,0 +1,62 @@
+{
+  "2x2_full9": {
+    "reason": "Stage26 permits one image only",
+    "status": "NOT_STARTED"
+  },
+  "A": {
+    "confirmation": "GAIN_CONFIRMED_TWO_SEEDS_SAME_MPS",
+    "phase_model_seconds": 4751.446776958008,
+    "reason": null,
+    "status": "COMPLETED"
+  },
+  "A_4x4": {
+    "elapsed_seconds": 3812.5820565000176,
+    "reason": null,
+    "recovered_completed": false,
+    "score": 82.76170338401867,
+    "status": "COMPLETED"
+  },
+  "A_8x8": {
+    "elapsed_seconds": 933.3939927089959,
+    "reason": null,
+    "recovered_completed": false,
+    "score": 77.15506268092251,
+    "status": "COMPLETED"
+  },
+  "B": {
+    "decision": "SINGLE_IMAGE_GAIN_REQUIRES_PREFIX3_AND_FULL9",
+    "phase_model_seconds": 2105.599880499998,
+    "reason": null,
+    "status": "COMPLETED"
+  },
+  "B_original_raw": {
+    "elapsed_seconds": 340.14261116599664,
+    "reason": null,
+    "reuse": null,
+    "status": "COMPLETED"
+  },
+  "B_post22": {
+    "elapsed_seconds": 1734.1915010420198,
+    "reason": null,
+    "score": 83.80103123039969,
+    "status": "COMPLETED"
+  },
+  "B_soft15": {
+    "elapsed_seconds": 2.308632625004975,
+    "reason": null,
+    "score": 85.63916573044013,
+    "status": "COMPLETED"
+  },
+  "Windows_CUDA": {
+    "reason": "Not verified on this Mac",
+    "status": "NOT_STARTED"
+  },
+  "candidate_public5": {
+    "reason": "Outside Stage26; Stage24 historical five-image evidence only",
+    "status": "NOT_STARTED"
+  },
+  "full_CPU_final_support": {
+    "reason": "Only fixed small subsets allowed",
+    "status": "NOT_STARTED"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "actual_device": "mps",
+  "batch32_mps_original_seconds": 18.03089500000351,
+  "batch64_benchmark_sha256": "ca39556c79f5f48a9641330ee37b620a4bba0c8557cd914dc831c84a841c4ad8",
+  "batch64_exact_same_mps_raw_as_batch32": true,
+  "batch64_mps_original_seconds": 16.142132499982836,
+  "cpu_reference": 73.28791682477032,
+  "cpu_single_metric_reference_kind": "verified Stage22 seed42 first row of unchanged official nine-image generator",
+  "estimated_nine_image_reference_seconds_from_single_image_batch32": 889.1503342469805,
+  "first_image_metrics": {
+    "Faithfulness": {
+      "cpu_stage22": 0.0417600721120834,
+      "mps_current": 0.0417591258883476,
+      "mps_minus_cpu": -9.462237358023873e-07
+    },
+    "Max_Sensitivity": {
+      "cpu_stage22": 0.3386075794696808,
+      "mps_current": 0.3386017084121704,
+      "mps_minus_cpu": -5.8710575103759766e-06
+    },
+    "Sparsity": {
+      "cpu_stage22": 0.9177276358191288,
+      "mps_current": 0.9177275618118764,
+      "mps_minus_cpu": -7.400725232642458e-08
+    }
+  },
+  "first_image_score_abs_delta": 6.692117037232492e-05,
+  "mps_first_image_score": 73.28798374594069,
+  "no_fallback": true,
+  "no_new_cpu_single_image_metric_rerun": true,
+  "official_mps_one_image_cache_hits": 2,
+  "official_mps_one_image_cache_writes": 6,
+  "official_mps_one_image_callbacks": 8,
+  "official_mps_one_image_computed_attribution_seconds": 97.21843245800119,
+  "official_mps_one_image_elapsed_seconds": 98.79448158299783,
+  "official_mps_one_image_generator_stdout_sha256": "ceca6630ba7b94edc3da86e7d89be29e6705d1fb67b284b53826d6d42fa83bdf",
+  "official_program_sha256": "525252f0b2a8e38f5dcd02e88d950a46f23e8bdbe9e678a408a664afbcee536a",
+  "probe_acceptance_sha256": "83c064cffdd1cc5993bac43a48dcfa4311d7b89ea1f4bd29f0454ff8aef4b5eb",
+  "probe_comparison_sha256": "82b756354d2b355ce818a5114ec06689990dbfc1899cdce52013e63e8ab8bc23",
+  "probe_program_sha256": "e4f498bf0335b4faa0c09602e5e12e4be4f5c33ce78f24777386f403b6e7295d",
+  "reason": "All preregistered original/masked logits, raw L2, support IoU, class, and first-image official score checks passed; MPS was measured faster.",
+  "sandbox_mps_detection_is_false_negative": true,
+  "selected_batch_reason": "Full 2,352-mask MPS original input was faster at 64 than 32 and gave the same raw/final SHA; both met CPU limits.",
+  "selected_occlusion8_reference_batch_size": 64,
+  "status": "A_ACCEPTED_MPS",
+  "timing_warm_up": "No warm-up was subtracted. The first MPS original forward is included in its wall time; later inputs use a warmed model."
+}

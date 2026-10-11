@@ -1,0 +1,2 @@
+# Historical CSV evidence keeps its original bytes, including CRLF.
+*.csv -text whitespace=cr-at-eol

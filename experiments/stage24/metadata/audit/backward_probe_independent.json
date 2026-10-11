@@ -1,0 +1,78 @@
+{
+  "acceptance_sha256": "47b4e984b0f32eaf40c6aca15909aef2711c62366b5f06b36528ee1c6566ec05",
+  "cases": {
+    "original": {
+      "classification_match": true,
+      "gdd_black_post22_support_iou": 0.992719089224252,
+      "gdd_black_soft15_support_iou": 0.997788099977881,
+      "gradient_relative_l2": 0.004249232021378612,
+      "logit_fail_count": 0,
+      "logit_max_abs_difference": 3.337860107421875e-06,
+      "pass": true,
+      "raw_relative_l2": 0.003735252321691702
+    },
+    "perturbed": {
+      "classification_match": true,
+      "gdd_black_post22_support_iou": 0.9997343075390236,
+      "gdd_black_soft15_support_iou": 1.0,
+      "gradient_relative_l2": 0.00036097044787495404,
+      "logit_fail_count": 0,
+      "logit_max_abs_difference": 1.430511474609375e-06,
+      "pass": true,
+      "raw_relative_l2": 0.0005007576596065845
+    }
+  },
+  "evidence_integrity": "PASS",
+  "model_forwards": 0,
+  "records": [
+    {
+      "all_hashes": "PASS",
+      "case": "original",
+      "device": "cpu",
+      "file": "probes/cpu_original.npz",
+      "file_sha256": "ea001d0e60329499dbe0faeb60e1a8dbc4a5dcee01c710751c09adc6ee2a361c",
+      "gradient_sha256": "1fcef80d3f29d49d10f8ea6bb2e3554241fba8809fce06c2d53e301e1438ab36",
+      "independent_multiplication": "byte_identical",
+      "independent_postprocessing": "all_fields_byte_identical",
+      "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+      "raw_sha256": "664a1adf31d549e77049404b433c985a5c6792a9c8c2d861c446fd85d7c70590"
+    },
+    {
+      "all_hashes": "PASS",
+      "case": "original",
+      "device": "mps",
+      "file": "probes/mps_original.npz",
+      "file_sha256": "fc88649bdb72b5dc32141880f6dec76a7007ec6eaea77df955eec0a2d3a4fad0",
+      "gradient_sha256": "5c9f336c1f91ce69491014d85fef69845570595be03b7e7928aada06cebca654",
+      "independent_multiplication": "byte_identical",
+      "independent_postprocessing": "all_fields_byte_identical",
+      "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+      "raw_sha256": "f5c4b2e60410749f463e05f24ac3ab52ebd1bfcd18c85364c8a4bfe87c81ce99"
+    },
+    {
+      "all_hashes": "PASS",
+      "case": "perturbed",
+      "device": "cpu",
+      "file": "probes/cpu_perturbed.npz",
+      "file_sha256": "f41f8a6379cbe429f11592851492ea0a386718b577a6a5f53b9fe3aa9a87e089",
+      "gradient_sha256": "6c381c3f2f8e4f665e2b54d52561ed641d1a6b89ded827bfe9e7a922b4406f47",
+      "independent_multiplication": "byte_identical",
+      "independent_postprocessing": "all_fields_byte_identical",
+      "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+      "raw_sha256": "22baf12d3a79ad33e2362c1c04361fa318652341cee30a70cb8825b612563ea7"
+    },
+    {
+      "all_hashes": "PASS",
+      "case": "perturbed",
+      "device": "mps",
+      "file": "probes/mps_perturbed.npz",
+      "file_sha256": "c09037397df7084d416f3d66c6e1b603da22dcaf99f4a78217217da3c674175f",
+      "gradient_sha256": "0aa903937503a97f6ce41f02b1edf1f97dac530a4e2baa8712f9a32f3953d596",
+      "independent_multiplication": "byte_identical",
+      "independent_postprocessing": "all_fields_byte_identical",
+      "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+      "raw_sha256": "50738d4d4993d86571a869ad0b0187a2d666ea8b57612678b73812c90f5a1a47"
+    }
+  ],
+  "status": "PASS"
+}

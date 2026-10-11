@@ -1,0 +1,49 @@
+{
+  "acceptance_sha256": "83c064cffdd1cc5993bac43a48dcfa4311d7b89ea1f4bd29f0454ff8aef4b5eb",
+  "cases": {
+    "original": {
+      "all_target_logits_close": true,
+      "cpu_final_sha256": "3146a1538f5d86fae1f69955269dee7f863366777f62ad3b8f99ad66f6fec58c",
+      "cpu_raw_sha256": "6d986ef6162eef457b88b840e3cdb1a26dd2a191eaf7f3b81958faa7043e568a",
+      "cpu_wall_seconds": 187.10778591700364,
+      "final_support_iou": 1.0,
+      "logit_abs_error_max": 2.193450927734375e-05,
+      "logit_abs_error_p50": 3.814697265625e-06,
+      "logit_abs_error_p95": 1.1444091796875e-05,
+      "logit_abs_error_p99": 1.4533996582031259e-05,
+      "logit_fail_count": 0,
+      "logits_compared": 2353,
+      "mps_final_sha256": "8efab37c87630638107868e7ce7d97c45d7c8d8a2d6738d65074138096eb4350",
+      "mps_raw_sha256": "51c12f16cfb18bce5dc307a2134160089a85755ed3762601392074eb02987535",
+      "mps_wall_seconds": 18.03089500000351,
+      "pass": true,
+      "predicted_class_match": true,
+      "raw_relative_l2": 5.097058639197926e-05,
+      "raw_sign_disagreement_count": 0,
+      "speedup_cpu_over_mps": 10.37706591475172
+    },
+    "perturbed": {
+      "all_target_logits_close": true,
+      "cpu_final_sha256": "0ecae3fb30bdd8062dd930785910d9454552e64b909626e88e808666056872a8",
+      "cpu_raw_sha256": "30c548d0de72aa9f22be85211d6baef150b529a2e44bbf11db2a84b58295e307",
+      "cpu_wall_seconds": 202.95598979099304,
+      "final_support_iou": 1.0,
+      "logit_abs_error_max": 2.7179718017578125e-05,
+      "logit_abs_error_p50": 5.7220458984375e-06,
+      "logit_abs_error_p95": 1.430511474609375e-05,
+      "logit_abs_error_p99": 1.811981201171875e-05,
+      "logit_fail_count": 0,
+      "logits_compared": 2353,
+      "mps_final_sha256": "c5344d95dfd0f6859287881f79d8e64a3f795426fb534946b83ac4cb399dfb13",
+      "mps_raw_sha256": "369e8ea3c4e8d808767453330481ef90b1cd760846310be884846896dd2e7c9c",
+      "mps_wall_seconds": 16.84820262499852,
+      "pass": true,
+      "predicted_class_match": true,
+      "raw_relative_l2": 6.22714880177923e-05,
+      "raw_sign_disagreement_count": 0,
+      "speedup_cpu_over_mps": 12.04615081550937
+    }
+  },
+  "comparison_time": "2026-09-30T18:47:51+0800",
+  "status": "PASS"
+}

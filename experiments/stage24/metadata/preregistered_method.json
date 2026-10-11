@@ -1,0 +1,36 @@
+{
+  "baseline": "fixed current full CHW min",
+  "created_at_unix": 1790785546.000395,
+  "no_parameter_search": true,
+  "program_sha256": {
+    "cache.py": "40a1feb8d7d0a6467c56a734c51c39006d7d110a5fa31b568abce72a0edfa4d4",
+    "common.py": "3a413e97c014621221da949f843153327746da289792eaa7eafd22aa9a819d9a",
+    "gdd_raw.py": "05c48ceaa4632bce963f2ccd6e67d80501c67cc5f88fae2881f6d181a0cbf76f",
+    "postprocess.py": "8c106a4988ec59d84540ee2f11e993f3d29f8a37d8ffc6bb725ebfdfcaa15f8b",
+    "run_official.py": "41d07411207c33c58d594b3fa0a5c477c1e1489c66d6ac4089e4e9cd0e26099c"
+  },
+  "raw_formula": "(x-b)*gradient",
+  "raw_method": "gdd_black_logit_v1",
+  "seed42_baseline": 78.62195221134283,
+  "selection_gate": "seed42 mean higher than same-MPS8x8 and >=6/9 improved; highestmean then B1tie; confirm bothmethods sameMPSseed314159 within2700modelsec",
+  "status": "FROZEN_BEFORE_ANY_NEW_MODEL_SCORE",
+  "target": "supplied original logit",
+  "variants": {
+    "gdd_black_post22": {
+      "fractions": [
+        0.25,
+        0.1
+      ],
+      "keep_rounding": "ceil",
+      "smoothing": "per-channel reflect average5",
+      "sort": "stable abs CHW"
+    },
+    "gdd_black_soft15": {
+      "amplitude_smoothing": "abs(a0) float64 Gaussian sigma(0,1,1) reflect truncate4",
+      "final": "signed a0 float64 times gate, returned float32",
+      "gate": "max(1-tau/max(s,1e-12),0)",
+      "no_additional_topk": true,
+      "tau": "full CHW quantile .85 linear"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "class_match_required": true,
+  "definition": "Target original logits, entire input gradient and a0; both fixed final supports",
+  "final_support_iou_min": 0.95,
+  "finite_required": true,
+  "gradient_and_raw_relative_l2_max": 0.01,
+  "inputs_file_sha256": "f98772eb98aa2c50698d3f3ab4b513e785df03cc561f4de7ea28b86315ac6c64",
+  "inputs_source": "output_mac_stage23/device/probe_inputs.npz",
+  "logit_atol": 0.0001,
+  "logit_rtol": 0.001,
+  "relative_l2_denominator_floor": 1e-08,
+  "status": "FROZEN_BEFORE_BACKWARD_COMPARISON"
+}

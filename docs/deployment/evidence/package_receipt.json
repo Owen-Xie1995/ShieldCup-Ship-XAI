@@ -1,0 +1,74 @@
+{
+  "archive": {
+    "bytes": 1895075789,
+    "format": "7z",
+    "path": "<local-project>/output_mac_docker_20261006/主題B_破霧者_4x4soft15_Docker完整包_20261006.7z",
+    "sha256": "5c342c60d665c96cc67c412c36a569b7b9670aca8da60fccf0a14a6e34cd4566",
+    "signature": "377abcaf271c"
+  },
+  "bundle_manifest_sha256": "55741a51071e695baa64fa01f0a55fd805c92eb1c8af9aec89a39db91ee09fa7",
+  "date": "2026-10-06",
+  "docker_export": {
+    "bytes": 1633193984,
+    "date": "2026-10-06",
+    "elapsed_seconds": 38.24451504199533,
+    "format": "actual docker save tar",
+    "gpu_scope": "No CUDA or Jetson GPU validation claimed",
+    "images": [
+      {
+        "architecture": "arm64",
+        "id": "sha256:c42deaab4fc339151646a38c685c85e27fad1308d90e6c068d8013077c2fbc0e",
+        "os": "linux",
+        "size": 784408563,
+        "tag": "ship-xai:20261006-lock-cpu-arm64"
+      },
+      {
+        "architecture": "amd64",
+        "id": "sha256:3ff6c37ae87e1681cefc4a5df01b0c2f6ed336b521386a3df36db3ad718f7b3c",
+        "os": "linux",
+        "size": 848747495,
+        "tag": "ship-xai:20261006-lock-cpu-amd64"
+      }
+    ],
+    "path": "<local-project>/output_mac_docker_20261006/submission_bundle/model/image.tar",
+    "roundtrip": {
+      "actual_docker_load": true,
+      "loaded_image_ids": {
+        "ship-xai:20261006-lock-cpu-amd64": "sha256:3ff6c37ae87e1681cefc4a5df01b0c2f6ed336b521386a3df36db3ad718f7b3c",
+        "ship-xai:20261006-lock-cpu-arm64": "sha256:c42deaab4fc339151646a38c685c85e27fad1308d90e6c068d8013077c2fbc0e"
+      },
+      "post_load_smoke": {
+        "amd64": "PASS",
+        "arm64": "PASS"
+      },
+      "status": "PASS"
+    },
+    "sha256": "b8ec262472a15c161d51df3316348b787677ef0d670d19ae52518d7e2772df0b",
+    "status": "PASS",
+    "tar_manifest_tags": [
+      "ship-xai:20261006-lock-cpu-amd64",
+      "ship-xai:20261006-lock-cpu-arm64"
+    ]
+  },
+  "elapsed_seconds": 137.63468200000352,
+  "file_count": 160,
+  "fresh_extract": {
+    "all_sha256": "PASS",
+    "bundle_verifier": "PASS",
+    "file_set": "PASS",
+    "path": "<fresh-extraction-directory>",
+    "sizes": "PASS"
+  },
+  "frozen_csv_sha256": "8ffa87b767eb614f7a5f022f254dfd7f564ab202423a05086f99ba8494524fb5",
+  "handoff_manifest_sha256": "b9a4b704821cbd1bcd695356df7db446cc0ba9fffd67939236e334fcf5b5a76e",
+  "old_archive_unchanged": true,
+  "receipt_outside_archive": "Avoids recursive archive hash",
+  "runtime_acceptance_sha256": "99cb4a27c440d037138c26d5366d265d3b6edf22d0c5cd3a5c9d03f20fb2500d",
+  "status": "PASS",
+  "test": "PASS",
+  "tool": {
+    "sha256": "74b0910e50ea44d9760a57fada2192cfd530ba8bffbe7b47c412a464b796cabf",
+    "version": "7-Zip26.03arm64"
+  },
+  "uncompressed_bytes": 1930474074
+}

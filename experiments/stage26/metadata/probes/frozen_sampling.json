@@ -1,0 +1,45 @@
+{
+  "B_probe_cumulative_limit_seconds": 120,
+  "acceptance": {
+    "atol": 0.0001,
+    "denominator_floor": 1e-08,
+    "near_zero_sign_exclude": 1e-06,
+    "relative_tile_drop_L2_max": 0.01,
+    "rtol": 0.001
+  },
+  "arrays": {
+    "tile2_ids128": {
+      "dtype": "<i8",
+      "sha256": "4ba76379915e45da482bd471b892dc9459d45ce5d7eb80652b94f3d2fbd7e3d8",
+      "shape": [
+        128
+      ]
+    },
+    "tile4_ids128": {
+      "dtype": "<i8",
+      "sha256": "92dad4c6eebb420ce31fbc9d3f2812a95c1a8092042c8b4f8d883c87609f06b7",
+      "shape": [
+        128
+      ]
+    },
+    "tile8_ids128": {
+      "dtype": "<i8",
+      "sha256": "e52774edc29c80559e096b0f0719803cd6aab0e521ed0a240beaa9f1cccaf4a9",
+      "shape": [
+        128
+      ]
+    }
+  },
+  "fixed_inputs_sha256": "d193b5468b96c7c3490af02df4fbdf368d034bf702b7f370c162355fc96fa3f6",
+  "indices_file_sha256": "d94f416adeeb41e1c0631d896b1c83464a509ef58e0465297d166663ace335dc",
+  "input_source": "$WORKSPACE/output_mac_stage25/probes/fixed_inputs.npz",
+  "input_source_sha256": "d193b5468b96c7c3490af02df4fbdf368d034bf702b7f370c162355fc96fa3f6",
+  "not_full_CPU_final_support_acceptance": true,
+  "sampling_uses_local_Generator_only": true,
+  "seeds": {
+    "tile2_ids128": 20261004,
+    "tile4_ids128": 20261005,
+    "tile8_ids128": 20261006
+  },
+  "status": "FROZEN_BEFORE_NEW_FORWARD"
+}

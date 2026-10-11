@@ -1,0 +1,211 @@
+{
+  "actual_inference_batch": 64,
+  "cases": {
+    "original": {
+      "acceptance": {
+        "all_logits_finite": true,
+        "denominator_floor": 1e-08,
+        "full_cpu_4x4_support_validation": "NOT_PERFORMED_IN_THIS_STAGE",
+        "logits_atol": 0.0001,
+        "logits_rtol": 0.001,
+        "predicted_class_same": true,
+        "sign_near_zero_threshold": 1e-06,
+        "tile_signed_drop_relative_l2_max": 0.01
+      },
+      "comparisons": {
+        "original_cpu_vs_mps_fullraw": {
+          "all_five_logits_allclose": true,
+          "atol": 0.0001,
+          "finite": true,
+          "max_abs_logit_difference": 3.337860107421875e-06,
+          "mismatching_logit_count": 0,
+          "predicted_class_same": true,
+          "rtol": 0.001,
+          "shape": [
+            1,
+            5
+          ]
+        },
+        "original_cpu_vs_mps_small": {
+          "all_five_logits_allclose": true,
+          "atol": 0.0001,
+          "finite": true,
+          "max_abs_logit_difference": 3.337860107421875e-06,
+          "mismatching_logit_count": 0,
+          "predicted_class_same": true,
+          "rtol": 0.001,
+          "shape": [
+            1,
+            5
+          ]
+        },
+        "single_first32": {
+          "all_five_logits_allclose": true,
+          "atol": 0.0001,
+          "finite": true,
+          "max_abs_logit_difference": 1.1444091796875e-05,
+          "mismatching_logit_count": 0,
+          "predicted_class_same": true,
+          "rtol": 0.001,
+          "shape": [
+            32,
+            5
+          ]
+        },
+        "tile_128": {
+          "all_five_logits_allclose": true,
+          "atol": 0.0001,
+          "finite": true,
+          "max_abs_logit_difference": 1.52587890625e-05,
+          "mismatching_logit_count": 0,
+          "predicted_class_same": true,
+          "rtol": 0.001,
+          "shape": [
+            128,
+            5
+          ]
+        }
+      },
+      "full_cpu_4x4_support_validation": "NOT_PERFORMED_IN_THIS_STAGE",
+      "input_sha256": "ea4b08c3a5a18254ed0bb14e8aad0323b79ea07148c5f7ea6aba1401d12acc55",
+      "status": "PASS",
+      "target": 0,
+      "tile_ids_sha256": "150729678d3d96505259c7bee3242a835da248aa5c4cad4b4b62a4922be8e032",
+      "tile_signed_drop": {
+        "actual_near_zero_count": 0,
+        "actual_range": [
+          -0.12157726287841797,
+          0.31606054306030273
+        ],
+        "count": 128,
+        "mae": 4.101544618606567e-06,
+        "pearson": 0.9999999958754346,
+        "pearson_null_reason": null,
+        "predicted_near_zero_count": 0,
+        "predicted_range": [
+          -0.12157630920410156,
+          0.31606197357177734
+        ],
+        "relative_l2": 8.714843311885251e-05,
+        "relative_l2_denominator": 0.640358584274662,
+        "sign_agreement": 1.0,
+        "sign_excluded_count": 0,
+        "sign_included_count": 128,
+        "sign_mismatch_count": 0,
+        "sign_null_reason": null,
+        "sign_threshold": 1e-06
+      }
+    },
+    "perturbed": {
+      "acceptance": {
+        "all_logits_finite": true,
+        "denominator_floor": 1e-08,
+        "full_cpu_4x4_support_validation": "NOT_PERFORMED_IN_THIS_STAGE",
+        "logits_atol": 0.0001,
+        "logits_rtol": 0.001,
+        "predicted_class_same": true,
+        "sign_near_zero_threshold": 1e-06,
+        "tile_signed_drop_relative_l2_max": 0.01
+      },
+      "comparisons": {
+        "original_cpu_vs_mps_fullraw": {
+          "all_five_logits_allclose": true,
+          "atol": 0.0001,
+          "finite": true,
+          "max_abs_logit_difference": 1.430511474609375e-06,
+          "mismatching_logit_count": 0,
+          "predicted_class_same": true,
+          "rtol": 0.001,
+          "shape": [
+            1,
+            5
+          ]
+        },
+        "original_cpu_vs_mps_small": {
+          "all_five_logits_allclose": true,
+          "atol": 0.0001,
+          "finite": true,
+          "max_abs_logit_difference": 1.430511474609375e-06,
+          "mismatching_logit_count": 0,
+          "predicted_class_same": true,
+          "rtol": 0.001,
+          "shape": [
+            1,
+            5
+          ]
+        },
+        "single_first32": {
+          "all_five_logits_allclose": true,
+          "atol": 0.0001,
+          "finite": true,
+          "max_abs_logit_difference": 1.811981201171875e-05,
+          "mismatching_logit_count": 0,
+          "predicted_class_same": true,
+          "rtol": 0.001,
+          "shape": [
+            32,
+            5
+          ]
+        },
+        "tile_128": {
+          "all_five_logits_allclose": true,
+          "atol": 0.0001,
+          "finite": true,
+          "max_abs_logit_difference": 1.811981201171875e-05,
+          "mismatching_logit_count": 0,
+          "predicted_class_same": true,
+          "rtol": 0.001,
+          "shape": [
+            128,
+            5
+          ]
+        }
+      },
+      "full_cpu_4x4_support_validation": "NOT_PERFORMED_IN_THIS_STAGE",
+      "input_sha256": "7b524a39863423a3fdedf73b6612e37e6b89033de1755cb72922679f1869146b",
+      "status": "PASS",
+      "target": 0,
+      "tile_ids_sha256": "150729678d3d96505259c7bee3242a835da248aa5c4cad4b4b62a4922be8e032",
+      "tile_signed_drop": {
+        "actual_near_zero_count": 0,
+        "actual_range": [
+          -0.11995887756347656,
+          0.31763362884521484
+        ],
+        "count": 128,
+        "mae": 5.3942203521728516e-06,
+        "pearson": 0.9999999957227945,
+        "pearson_null_reason": null,
+        "predicted_near_zero_count": 0,
+        "predicted_range": [
+          -0.11995220184326172,
+          0.3176412582397461
+        ],
+        "relative_l2": 0.00011487136374510705,
+        "relative_l2_denominator": 0.6425691128529015,
+        "sign_agreement": 1.0,
+        "sign_excluded_count": 0,
+        "sign_included_count": 128,
+        "sign_mismatch_count": 0,
+        "sign_null_reason": null,
+        "sign_threshold": 1e-06
+      }
+    }
+  },
+  "full_cpu_4x4_final_support_validation": "NOT_PERFORMED_IN_THIS_STAGE",
+  "raw_sources": {
+    "original": {
+      "key": "0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379",
+      "path": "$WORKSPACE/output_mac_stage25/cache/raw/02/0278a65637573745dc90d8a5b65b1dd75034fb8bbb159ac7006bbea94e0c8379.npz",
+      "reuse": null,
+      "sha256": "5df77fedc081ffad175b8d7c52b6f894bacee116d6acf65cb73d0ea64cc817de"
+    },
+    "perturbed": {
+      "key": "21f55de2b5c1e2c1dca521cc12b82e9134ba4a814578c02a8363af1e64d8876e",
+      "path": "$WORKSPACE/output_mac_stage25/cache/raw/21/21f55de2b5c1e2c1dca521cc12b82e9134ba4a814578c02a8363af1e64d8876e.npz",
+      "reuse": null,
+      "sha256": "b59f0a06742117a119dd5e24cc2fc42a4907ad2aca57473d58c654324861ff5f"
+    }
+  },
+  "status": "PASS"
+}

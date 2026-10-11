@@ -1,0 +1,24 @@
+{
+  "status": "B_GATE_ACCEPTED",
+  "recorded_at_utc": "2026-09-30 14:46:24 UTC",
+  "A_status": "PASS",
+  "candidate_probe_status": "PASS",
+  "device": "mps",
+  "evaluation_seed": 42,
+  "candidate_batch_size": 32,
+  "reference_batch_size": 64,
+  "candidate_full_official_single_seconds": 55.67526899999939,
+  "candidate_single_fresh_cache": true,
+  "reference_full_official_single_seconds": 98.79448158299783,
+  "candidate_cpu_mps_two_input_probe_seconds": 181.1581515429716,
+  "B_measured_pre_nine_seconds": 284.9350396679947,
+  "estimated_candidate_nine_seconds": 501.0774209999945,
+  "estimated_reference_nine_seconds": 889.1503342469805,
+  "estimated_B_total_seconds": 1675.1627949149697,
+  "budget_seconds": 10800,
+  "timing_rule": "Both nine-image costs extrapolate from complete original official single-image flows; idle interruption excluded and recorded in resume_record.json",
+  "run_order": [
+    "candidate nine images",
+    "same-device 8x8 nine images"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "frozen_file_sha256": "d94f416adeeb41e1c0631d896b1c83464a509ef58e0465297d166663ace335dc",
+  "generator": "numpy.Generator(PCG64)",
+  "global_numpy_rng_preserved": true,
+  "model_forwards": 0,
+  "records": {
+    "tile2_ids128": {
+      "array_sha256": "4ba76379915e45da482bd471b892dc9459d45ce5d7eb80652b94f3d2fbd7e3d8",
+      "dtype": "<i8",
+      "regeneration": "byte_identical",
+      "shape": [
+        128
+      ],
+      "without_replacement": true
+    },
+    "tile4_ids128": {
+      "array_sha256": "92dad4c6eebb420ce31fbc9d3f2812a95c1a8092042c8b4f8d883c87609f06b7",
+      "dtype": "<i8",
+      "regeneration": "byte_identical",
+      "shape": [
+        128
+      ],
+      "without_replacement": true
+    },
+    "tile8_ids128": {
+      "array_sha256": "e52774edc29c80559e096b0f0719803cd6aab0e521ed0a240beaa9f1cccaf4a9",
+      "dtype": "<i8",
+      "regeneration": "byte_identical",
+      "shape": [
+        128
+      ],
+      "without_replacement": true
+    }
+  },
+  "seeds": {
+    "tile2": 20261004,
+    "tile4": 20261005,
+    "tile8": 20261006
+  },
+  "status": "PASS"
+}

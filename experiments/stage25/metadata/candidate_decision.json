@@ -1,0 +1,21 @@
+{
+  "candidate": "black_occlusion4_soft15",
+  "completed_full9": {
+    "black_occlusion4_post22": {
+      "improved_count": 8,
+      "meets90": false,
+      "meets95": false,
+      "score": 81.47375601709162
+    },
+    "black_occlusion4_soft15": {
+      "improved_count": 9,
+      "meets90": false,
+      "meets95": false,
+      "score": 82.65370613379287
+    }
+  },
+  "screen_decision_sha256": "70e1a4752cc581688319db038d8b68c83c41c6805e47d9afe538a74e05e44b9e",
+  "second_seed_and_candidate_public5": "NOT_PERFORMED",
+  "status": "GAIN_SEED42_ONLY_CONFIRMATION_PENDING",
+  "threshold": "mean>78.621952211343 AND >=6/9 wins; highestmean; exacttiepost22"
+}

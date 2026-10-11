@@ -1,0 +1,24 @@
+{
+  "status": "FROZEN_NOT_SCORED_BUDGET",
+  "scope": "隊內額外五圖診斷；本輪未產生五圖公式分數",
+  "completed_pairs": 0,
+  "planned_pairs": 5,
+  "methods": [
+    "black_occlusion8_signed",
+    "control_ig50_smooth_abs_top25_mean5_top10"
+  ],
+  "primary_method": "black_occlusion8_signed",
+  "reference_method": "control_ig50_smooth_abs_top25_mean5_top10",
+  "device": "mps",
+  "per_image": [],
+  "improved_image_count": 0,
+  "frozen_manifest_sha256": "a99bfda1e0cfd8527b5b14448a09a184464cc21fff6c56c49e91d4ecb5f811aa",
+  "paired_methods_sha256": "9c5943239f166ad76eec0a047c87a660bfa3ef3c178188c7466bc16aed48db1e",
+  "formula_means": null,
+  "reason": "Original data and frozen list are available; conservative prior and current preparation budget leaves42seconds, insufficient for a complete official first pair; no model scoring launched.",
+  "original_data_available": true,
+  "model_scoring_started": false,
+  "remaining_scoring_budget_seconds": 42.0,
+  "C_execution_plan": "C_execution_plan.json",
+  "source_data_frozen_before_scoring": true
+}

@@ -1,0 +1,88 @@
+{
+  "A_confirmation": {
+    "complete": true,
+    "gate_pass": true,
+    "mean_delta": 5.606640703096158,
+    "status": "GAIN_CONFIRMED_TWO_SEEDS_SAME_MPS",
+    "wins": 9
+  },
+  "B_screen": {
+    "best_4x4_soft15_Id1_seed42_reference": 78.19467843751505,
+    "complete_two_methods": true,
+    "eligible_methods": [
+      "black_occlusion2_post22",
+      "black_occlusion2_soft15"
+    ],
+    "gate_pass": true,
+    "next_exploration_priority": "black_occlusion2_soft15",
+    "scope": "Only Id1 seed42; no 2x2 nine-image score is claimed.",
+    "status": "SINGLE_IMAGE_GAIN_REQUIRES_PREFIX3_AND_FULL9"
+  },
+  "checks": {
+    "audit/baseline_reference.json": {
+      "sha256": "202c7af49393381471b5abd9eb942fdc6a8e590b0af5350f7810e556f6978326",
+      "status": "PASS"
+    },
+    "audit/budget_decisions_independent.json": {
+      "sha256": "3a369b0c237307579216d879c0f263353498295828cdc9f9f2f8841323feac17",
+      "status": "PASS"
+    },
+    "audit/complete_cache_audit.json": {
+      "sha256": "4663a319e68111a637cb9da60c361985111c7f9df49489d98d6a643320aee775",
+      "status": "PASS"
+    },
+    "audit/frozen_indices_independent.json": {
+      "sha256": "5e4f3252b999c7b9d39633b6d75b6864847857c2481fc9d14d6dc17790d8bfdf",
+      "status": "PASS"
+    },
+    "audit/linear_toy.json": {
+      "sha256": "2b56cbd82b4be47478013eae8ea2178dd02bf6aa5dfe10456fabca9733560a38",
+      "status": "PASS"
+    },
+    "audit/official_runs_independent.json": {
+      "sha256": "50132a9f17e5a778c3b8dba4464779d2f53354bb8a5000dd34c21a59377b1ac7",
+      "status": "PASS"
+    },
+    "audit/prior_archives.json": {
+      "sha256": "625f9ca03e1bd9b4e7fa566b37a389020cb863fa79df075ef30bf1d41663e77b",
+      "status": "PASS"
+    },
+    "audit/prior_sources.json": {
+      "sha256": "85394790a53b0bdd46972bf8496c5ce9f12d08fe0d8d3a51f94b01890f5e8f8d",
+      "status": "PASS"
+    },
+    "audit/probe_reference_sources.json": {
+      "sha256": "587426554bce4e5554fd3ba0353316284fcebaafb95a1c55ab604f885615342d",
+      "status": "PASS"
+    },
+    "audit/probes_independent.json": {
+      "sha256": "6a0c80785a4cc9ebab15ca49c305a8fc013dd000be0bfd5f085248a4569ea016",
+      "status": "PASS"
+    },
+    "audit/visual_inspection.json": {
+      "sha256": "b7ba9f2e23cbf7269328fb838e8598ec8b0a830676a63aeccc351b63f2059451",
+      "status": "PASS"
+    },
+    "official_sources/source_binding.json": {
+      "sha256": "9905cd3ec5cc944aa5066f423ea436acd251e24365debec8fe0e2672fce10c38",
+      "status": "PASS"
+    },
+    "visuals/qa.json": {
+      "sha256": "2a4430da3ce89141c45d8ea31881e37c6fff681c68a9f7209d7957e5abc3555c",
+      "status": "PASS"
+    }
+  },
+  "created_unix": 1790867941.7927701,
+  "full9_completed_methods": 2,
+  "model_seconds": 6857.047156083019,
+  "phase_seconds": {
+    "A": 4751.447020833002,
+    "B": 2105.600135250017
+  },
+  "preregistered_method_sha256": "fcea08807b916c886454ace41ccb81a4f23eedfde4a81e1a212f9a2ca766bed3",
+  "remaining_model_seconds": 3942.952843916981,
+  "scope": "Source identities, immutable historical bridges, actual completed/partial official flows, saved logits/raw/final, fixed gates, closed clocks and actual image inspection; no model rerun",
+  "single1_completed_methods": 2,
+  "status": "PASS",
+  "verification_seconds": 0.28778754197992384
+}

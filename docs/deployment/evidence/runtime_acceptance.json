@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "date": "2026-10-06",
+  "method": "black_occlusion4_soft15",
+  "images": [
+    {
+      "tag": "ship-xai:20261006-lock-cpu-arm64",
+      "id": "sha256:c42deaab4fc339151646a38c685c85e27fad1308d90e6c068d8013077c2fbc0e",
+      "os": "linux",
+      "architecture": "arm64",
+      "size": 784408563
+    },
+    {
+      "tag": "ship-xai:20261006-lock-cpu-amd64",
+      "id": "sha256:3ff6c37ae87e1681cefc4a5df01b0c2f6ed336b521386a3df36db3ad718f7b3c",
+      "os": "linux",
+      "architecture": "amd64",
+      "size": 848747495
+    }
+  ],
+  "scope": "Actual dual-architecture Linux CPU Docker delivery; arm64 native VM, amd64 emulated CPU smoke",
+  "checks": {
+    "arm64-runtime-versions": {
+      "status": "PASS",
+      "path": "container_tests/arm64-runtime-versions.json",
+      "sha256": "7aba89d323eef4e95a259245b970ad88476948c071cbb951d05899a4a205bcbb"
+    },
+    "amd64-runtime-versions": {
+      "status": "PASS",
+      "path": "container_tests/amd64-runtime-versions.json",
+      "sha256": "bb99629c963b9b36d7bfc387b2fd0451f2c6ab040e91032f256064a69bc02c12"
+    },
+    "arm64-smoke": {
+      "status": "PASS",
+      "path": "container_tests/arm64-smoke.json",
+      "sha256": "6187b6547bd6601d0c0a75f2c63ef69937f78fe0232f344fac404fd0f3c13cb9"
+    },
+    "amd64-smoke": {
+      "status": "PASS",
+      "path": "container_tests/amd64-smoke.json",
+      "sha256": "cf4beb4e1ea8d773d101c93e473f3edd99261a48162881fcfc88a560bff19497"
+    },
+    "arm64-quantus-toy": {
+      "status": "PASS",
+      "path": "container_tests/arm64-quantus-toy.json",
+      "sha256": "1672697c5acc7a0446039c749d94975a9173b0383adc3a2170e68d6f44e24041"
+    },
+    "arm64-saved-trace-replay": {
+      "status": "PASS",
+      "path": "container_tests/arm64-saved-trace-replay.json",
+      "sha256": "b3987f1248ac8d578a7127a4cfb409ac94b8413b465d03cb7cc0f27f24067107"
+    },
+    "arm64-official-model-probe": {
+      "status": "PASS",
+      "path": "container_tests/arm64-official-model-probe.json",
+      "sha256": "2d20c4ef321c1b8a7a7d9e5d3b9c1c6304ba356a3963f9b18a4b1c3fcb1e4f2b"
+    },
+    "arm64-after-load-smoke": {
+      "status": "PASS",
+      "path": "container_tests/arm64-after-load-smoke.json",
+      "sha256": "d36f96a07f039dc00bc773b45dd974d8518ca65cb56c68b6d0e9affd8dd16a6e"
+    },
+    "amd64-after-load-smoke": {
+      "status": "PASS",
+      "path": "container_tests/amd64-after-load-smoke.json",
+      "sha256": "de889aa077985536a6eef6492adf2349454c4e167891f4d3044f4401ea1d691e"
+    }
+  },
+  "pip_check": {
+    "arm64": "PASS",
+    "amd64": "PASS"
+  },
+  "image_tar": {
+    "file": "image.tar",
+    "bytes": 1633193984,
+    "sha256": "b8ec262472a15c161d51df3316348b787677ef0d670d19ae52518d7e2772df0b",
+    "docker_save": "PASS",
+    "docker_load": "PASS",
+    "post_load_smoke": "PASS"
+  },
+  "dependency_policy": {
+    "source": "saved uv.lock Python3.12 branch",
+    "lock_sha256": "73979f989f6b9a363da5f8dfca195882ca7b61458cc0f3b4106e90db0654d862",
+    "all_installed_pins_checked": 38,
+    "torch_cpu_override": "2.13.0+cpu",
+    "torchvision_cpu_override": "0.28.0+cpu",
+    "cuda_dependencies_installed": false,
+    "scope_limit": "Version aligned with saved lock; not unchanged uv sync --frozen or organizer-confirmed evaluation environment"
+  },
+  "official_model_probe": {
+    "device": "arm64 CPU FP32",
+    "cases": 2,
+    "masks_per_case": 128,
+    "official_model_forwards": 6,
+    "sample_forwards": 258,
+    "status": "PASS",
+    "max_target_drop_relative_l2": 0.00010434937085911386,
+    "threshold": 0.01
+  },
+  "saved_trace_replay": {
+    "full_masks_per_case": 9408,
+    "cases": 2,
+    "inference_performed": false,
+    "raw_and_final_fp32_bit_exact": true,
+    "status": "PASS"
+  },
+  "csv": {
+    "seed": 42,
+    "rows": 9,
+    "official_score": 82.65370613379287,
+    "sha256": "8ffa87b767eb614f7a5f022f254dfd7f564ab202423a05086f99ba8494524fb5",
+    "unchanged": true,
+    "source": "Original Mac MPS experiments"
+  },
+  "new_full_nine_image_cpu_scoring": "NOT_PERFORMED",
+  "gpu_jetson_validation": "NOT_PERFORMED",
+  "upload_scope": "No portal upload or capacity acceptance receipt claimed"
+}

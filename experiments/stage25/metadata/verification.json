@@ -1,0 +1,73 @@
+{
+  "A_seconds": 175.80414041600307,
+  "candidate": "black_occlusion4_soft15",
+  "candidate_decision_sha256": "58eb6d027322c27f56f3c10cb87d5c276276f5f30b06d40a16a88093ea66c359",
+  "checks": {
+    "audit/baseline_reference.json": {
+      "sha256": "447b76915b84cc40eed57b85c9b87d130dacd5930fdb6a07aa4e4bfa0d357e4f",
+      "status": "PASS"
+    },
+    "audit/budget_decisions_independent.json": {
+      "sha256": "f117dc635a5c02a7905c092adb7191ab8239d11b33c30f5d61990c3fbc330412",
+      "status": "PASS"
+    },
+    "audit/complete_cache_audit.json": {
+      "sha256": "1276465967b06f5df58decca5f27f498a0bf1ad636d6691e1ee70b503eb2078e",
+      "status": "PASS"
+    },
+    "audit/frozen_indices_independent.json": {
+      "sha256": "f9ff6c8fe4f2ebf0c650d2dfa7623f945ab87ec93179a2608bc06c71656134d0",
+      "status": "PASS"
+    },
+    "audit/frozen_program_audit.json": {
+      "sha256": "1950092ef9b1f92c3ea087ebe8a1747d6e23c5f3f6da41da1f38eefcd334ff3d",
+      "status": "PASS"
+    },
+    "audit/historical_program_binding.json": {
+      "sha256": "983792d7f382e08d795939f2842b54a6de9f630df422ff7a22d868123a7b73de",
+      "status": "PASS"
+    },
+    "audit/linear_toy.json": {
+      "sha256": "949e8a2f63692008b24007bb1eddee9ddf925756a875086b634931ff36d7cd74",
+      "status": "PASS"
+    },
+    "audit/official_runs_independent.json": {
+      "sha256": "ea49733b31ccc94401a677b2a9026a01d1837542390eccdf25fae4d67c8282cf",
+      "status": "PASS"
+    },
+    "audit/prior_archives.json": {
+      "sha256": "ed423b98b54ec8c40b1c8325dbe35ebcc8522bd477b4f003df98428ad929b69f",
+      "status": "PASS"
+    },
+    "audit/prior_source_audit.json": {
+      "sha256": "835f239c0dbc7b87be19a262ec7c1749478093df90a2d58e63a3ed15351f1529",
+      "status": "PASS"
+    },
+    "audit/probe_reference_sources.json": {
+      "sha256": "eb711866eaad2c57417da127719dbcdcff9563ae13ae5f8cdaba7f721b67b7d9",
+      "status": "PASS"
+    },
+    "audit/visual_inspection.json": {
+      "sha256": "6748bd9d432ac0235b41671a6964ad82272b8f102871e4c5f584460af8a97ab4",
+      "status": "PASS"
+    },
+    "official_sources/source_binding.json": {
+      "sha256": "09aee286f1c0b0a66b1f9b75cd1e7e57f7fa99c13487efc916e3cfa04a6561b6",
+      "status": "PASS"
+    },
+    "probes/numerical_verification.json": {
+      "sha256": "5c1674be8cda3283ae73f56efdaa0e085c69b116d663fec781cefabbdc5c73fb",
+      "status": "PASS"
+    }
+  },
+  "created_unix": 1790856297.277568,
+  "model_seconds": 4826.173873874999,
+  "official_full9_runs": 2,
+  "official_prefix3_runs": 2,
+  "preregistered_method_sha256": "50e546bbdaacaeac4fe492bbeaf2e51278cdef4cd557abaed9c8668b62b73dd1",
+  "remaining_model_seconds": 573.8261261250009,
+  "scope": "Saved numeric arrays, formulas, source bindings, actual official flows and gate decisions; no model rerun",
+  "screen_decision_sha256": "70e1a4752cc581688319db038d8b68c83c41c6805e47d9afe538a74e05e44b9e",
+  "status": "PASS",
+  "verification_seconds": 0.31611966699711047
+}

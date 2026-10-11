@@ -1,0 +1,10 @@
+{
+  "historical_this_stage_raw_seconds": 340.0720547079982,
+  "key": "9713bfadad94cac163666a8fc1738fab77ce1445a81c3caacdca8af65b0617eb",
+  "new_cold_seconds": 340.14261116599664,
+  "path": "$WORKSPACE/output_mac_stage26/cache/raw/97/9713bfadad94cac163666a8fc1738fab77ce1445a81c3caacdca8af65b0617eb.npz",
+  "reuse": null,
+  "sha256": "bafa46df723aa1058acbf51487468920df26e44142d782c0ee3603cc465e39b9",
+  "single_conservative_seconds": 381.2530828360468,
+  "status": "COMPLETE"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "preregistered_before_candidate_scores",
+  "method": "rise_cov1024_fixed14_post22",
+  "attribution_version": "stage23-rise-cov1024-fixed14-post22-v1",
+  "source": "Petsiuk, Das and Saenko, RISE, BMVC 2018; this is an independent signed covariance variant, not original RISE",
+  "input": "Each current finite float32 NCHW callback input and supplied integer target, including every Quantus perturbation",
+  "baseline": "Minimum scalar of the complete current CHW tensor",
+  "mask_bank": {
+    "count": 1024,
+    "grid_shape": [1024, 3, 14, 14],
+    "channels": "independent",
+    "generator": "np.random.Generator(np.random.PCG64(20260930))",
+    "sampling": "rng.random((1024,3,14,14)) < 0.5",
+    "grid_dtype": "uint8",
+    "upsampling": "CPU torch.float32 bilinear to (224,224), align_corners=False",
+    "same_bank_for_all_inputs": true
+  },
+  "masked_input": "x_M = b + (x-b)*M; model and masked input on same explicit device in FP32",
+  "raw_formula": "o_ji=1-M_ji; q_i=mean_j(o_ji) over all 1024 masks; D_j=z_target(x)-z_target(x_Mj); a_i=mean_j[(o_ji-q_i)*D_j]/max(q_i*(1-q_i),1e-6)",
+  "accumulation": "CPU float64 global mask sums, then cast raw attribution to float32",
+  "postprocess": "Stage 22 exact complete-CHW abs top25%; per-channel reflect-padded 5x5 mean; complete-CHW abs top10%; signed",
+  "device_profiles": ["cpu", "mps", "cuda"],
+  "allowed_inference_batch_sizes": [32, 64],
+  "scoring": "Unmodified official generator and scorer; evaluation seed 42; official nine images in original order; batch size 1; shuffle false",
+  "candidate_gate": "Strictly higher official nine-image formula mean than same-device 8x8 reference and at least six of nine image rows improved",
+  "budget": "Stage23 B candidate probe, nine images and necessary same-device reference estimated at no more than 3 hours before run",
+  "no_adaptive_tuning": "Do not change mask count, grid, seed, formula or postprocessing after candidate results; do not infer E018 algorithm or claim reproduction"
+}

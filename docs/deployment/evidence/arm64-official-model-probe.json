@@ -1,0 +1,79 @@
+{
+  "actual_logits_sha256": "fd841a792a08761b1d544d1fd3e60ae716501074e56dbc92fe4dcab4806067cc",
+  "cases": {
+    "original": {
+      "atol": 0.0001,
+      "checks": {
+        "finite": true,
+        "masked_all5_close": true,
+        "masked_classes_same": true,
+        "original_all5_close": true,
+        "original_class_same": true,
+        "target_drop_relative_l2_le_1pct": true
+      },
+      "masked_max_abs_difference": 1.33514404296875e-05,
+      "original_max_abs_difference": 4.291534423828125e-06,
+      "rtol": 0.001,
+      "status": "PASS",
+      "target": 0,
+      "target_drop_difference_l2": 7.912911142149724e-05,
+      "target_drop_reference_l2": 0.7583094250595198,
+      "target_drop_relative_l2": 0.00010434937085911386,
+      "target_drop_sign_disagreements": 0
+    },
+    "perturbed": {
+      "atol": 0.0001,
+      "checks": {
+        "finite": true,
+        "masked_all5_close": true,
+        "masked_classes_same": true,
+        "original_all5_close": true,
+        "original_class_same": true,
+        "target_drop_relative_l2_le_1pct": true
+      },
+      "masked_max_abs_difference": 1.52587890625e-05,
+      "original_max_abs_difference": 6.67572021484375e-06,
+      "rtol": 0.001,
+      "status": "PASS",
+      "target": 0,
+      "target_drop_difference_l2": 5.398167304262125e-05,
+      "target_drop_reference_l2": 0.759561176049605,
+      "target_drop_relative_l2": 7.106955271644353e-05,
+      "target_drop_sign_disagreements": 0
+    }
+  },
+  "device": "cpu",
+  "elapsed_seconds": 11.279491860000007,
+  "environment": {
+    "inside_container": true,
+    "interpreter": "/usr/local/bin/python",
+    "machine": "aarch64",
+    "packages": {
+      "Pillow": "12.3.0",
+      "captum": "0.9.0",
+      "kaggle": "0.1.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "quantus": "0.6.0",
+      "scipy": "1.18.0",
+      "torch": "2.13.0+cpu",
+      "torchvision": "0.28.0+cpu"
+    },
+    "platform": "Linux-6.8.0-117-generic-aarch64-with-glibc2.36",
+    "python": "3.12.9 (main, Apr  8 2025, 09:22:41) [GCC 12.2.0]",
+    "torch_cuda_version": null
+  },
+  "indices_seed": 20261005,
+  "mask_batch_size": 64,
+  "precision": "float32",
+  "reference_sha256": "d1b90beda6318e3d72c8490628f19252dc652175609a437511c194d7d61773a7",
+  "scope": "Original and fixed perturbed inputs, each 128 masks; not full nine-image scoring",
+  "source_binding": {
+    "installed_package_root": "/usr/local/lib/python3.12/site-packages/kaggle",
+    "metrix_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+    "official_sources": "PASS",
+    "weights_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473",
+    "wheel_sha256": "43986f644c383f255e73dcbd2305e311f15fd70b4aeec54deb346dab5d5cbfd7"
+  },
+  "status": "PASS"
+}

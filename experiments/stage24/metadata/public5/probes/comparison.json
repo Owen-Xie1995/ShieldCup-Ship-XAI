@@ -1,0 +1,24 @@
+{
+  "all_finite": true,
+  "final_support_iou": 0.9997343075390236,
+  "max_original_logits_absolute_difference": 3.337860107421875e-06,
+  "original_logits_close": true,
+  "predicted_class_same": true,
+  "probe_input_file_sha256": "f98772eb98aa2c50698d3f3ab4b513e785df03cc561f4de7ea28b86315ac6c64",
+  "probe_sources": {
+    "cpu": {
+      "path": "probes/cpu_original.npz",
+      "sha256": "d8b80977667bb89bc2086d4e9a238e4b7b83c217ad027a6a64cd2bb016633b1e",
+      "wall_seconds": 14.20926329199574
+    },
+    "mps": {
+      "path": "probes/mps_original.npz",
+      "sha256": "67ff98230e571590633aed3ab53b5f593e67b35cf8cc04a1d967ee72b898d131",
+      "wall_seconds": 7.791290791996289
+    }
+  },
+  "raw_relative_l2": 0.0005109271145265919,
+  "scope": "one fixed official-model input; no forward probe repeat or extra-five selection",
+  "status": "PASS",
+  "thresholds_sha256": "32b7fdbd971d22d4c904699b1934aaad02be3f78acdfefb69c0037ad800cd5da"
+}

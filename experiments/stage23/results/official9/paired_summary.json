@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "scope": "Independent source, log and same-device official nine-image formula audit",
+  "candidate": {
+    "csv_sha256": "c82e9e973ddf7fb5f65660e9e0eca6dfa94fc765ec55c038febc390901956d1b",
+    "device": "mps",
+    "eval_seed": 42,
+    "sample_count": 9,
+    "official_score": 74.09565904985564,
+    "row_formula_mean": 74.09565904985567,
+    "elapsed_seconds": 474.80134587499197,
+    "run_sha256": "2cd9e958926bd0b76999e2604b2d1bdbf654c404e218a03ff209216b9b1ee4fe",
+    "retained_logs": [
+      {
+        "path": "official9/rise_cov1024_fixed14_post22.log",
+        "sha256": "38707fb91fd11e2f5d36e2c74abd4d6312a9e38177ffb20ab54c473edfcfef9b"
+      }
+    ],
+    "metric_means": {
+      "Faithfulness": -0.020681276710497,
+      "Max_Sensitivity": 0.19248223139180076,
+      "Sparsity": 0.9132172684980868
+    },
+    "contribution_means": {
+      "faithfulness_contribution": 19.58637446579006,
+      "sensitivity_contribution": 27.11276652912299,
+      "sparsity_contribution": 27.396518054942604
+    }
+  },
+  "reference": {
+    "csv_sha256": "c85760376736ffcf0ed597ffb98fb74cc0b0561cc071d464f60baceff603d70f",
+    "device": "mps",
+    "eval_seed": 42,
+    "sample_count": 9,
+    "official_score": 78.62195221134283,
+    "row_formula_mean": 78.62195221134282,
+    "elapsed_seconds": 1039.2980229160166,
+    "run_sha256": "77a7f1528c16d40e8d031192b602abfccea67d3ac1cbdcb9772fd4da7814a747",
+    "retained_logs": [
+      {
+        "path": "official9/black_occlusion8_signed_mps_seed42.log",
+        "sha256": "b4dc919daee5990b9089a55c69ab5b9e969ed5691075dd136d5f111016a850c6"
+      },
+      {
+        "path": "official9/black_occlusion8_signed_mps_seed42.official_stdout.log",
+        "sha256": "926c0f76a8a6ebc709be66564bbb15b4d2e10e860636dc428f19092124f1c843"
+      }
+    ],
+    "metric_means": {
+      "Faithfulness": 0.2478873050875134,
+      "Max_Sensitivity": 0.26677170395851135,
+      "Sparsity": 0.9221927222990074
+    },
+    "contribution_means": {
+      "faithfulness_contribution": 24.957746101750267,
+      "sensitivity_contribution": 25.99842444062233,
+      "sparsity_contribution": 27.66578166897022
+    }
+  },
+  "candidate_minus_reference": -4.526293161487189,
+  "improved_images": 1,
+  "candidate_gate_pass": false,
+  "gate_definition": "strictly higher same-device mean and >=6/9 improved image rows",
+  "next_baseline": "Stage22 black_occlusion8_signed",
+  "official_scorer_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+  "official_generator_sha256": "3f0c8830e590f6ad46934c034a5bf75f2d2b1d89baf2dba6683cdc1d9dc61df1"
+}

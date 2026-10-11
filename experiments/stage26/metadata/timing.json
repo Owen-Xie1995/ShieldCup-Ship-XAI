@@ -1,0 +1,31 @@
+{
+  "B_small_device_probe_seconds": 28.69057304202579,
+  "actual_visual_and_document_wall_seconds": 698.7448517500015,
+  "final_CPU_audit_render_package": "Measured later, outside model ledger",
+  "final_CPU_render_seconds": 3.0857987500203308,
+  "final_CPU_saved_evidence_audit_seconds": 3.482622709008865,
+  "final_verification_timing_source": "verification.json verification_seconds (created after source snapshot)",
+  "initial_instruction_read_not_separately_instrumented": true,
+  "model_close_to_pre_snapshot_finalization_wall_seconds": 780.7634780406952,
+  "model_finished_unix": 1790867126.161872,
+  "model_interval_started_unix": 1790860269.107411,
+  "model_phase_seconds": {
+    "A": 4751.447020833002,
+    "B": 2105.600135250017
+  },
+  "model_remaining_seconds": 3942.952843916981,
+  "model_seconds": 6857.047156083019,
+  "model_timing_source": "budget.json one continuous monotonic ledger",
+  "official_flow_seconds": {
+    "black_occlusion2_post22": 1734.1915010420198,
+    "black_occlusion2_soft15": 2.308632625004975,
+    "black_occlusion4_soft15": 3812.5820565000176,
+    "black_occlusion8_signed": 933.3939927089959
+  },
+  "package_timing_source": "external output_mac_stage26.package_receipt.json package_verification_seconds; no recursive ZIP update",
+  "pre_model_audit_timing_source": "audit/prior_sources.json",
+  "preparation_started_unix": 1790858746.993574,
+  "preparation_wall_seconds": 1522.1138370037079,
+  "status": "MODEL_AND_FINAL_CPU_EVIDENCE_COMPLETE",
+  "visual_and_document_timing_scope": "From root first image-inspection setup until report agent stopped all final document/QA writes; wall time outside model ledger, includes parallel inspections and final document reading."
+}

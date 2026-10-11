@@ -1,0 +1,125 @@
+{
+  "B1_B2_raw_pairing": "72/72 callbacks have identical current input/target/raw key/gradient/raw hashes",
+  "comparisons": {
+    "B2_minus_B1_fixed_raw": {
+      "gate": "strictly positive mean delta and at least 6/9 strictly improved images",
+      "gate_pass": false,
+      "improved_images": 2,
+      "mean_delta": -1.6942868481872086
+    },
+    "gdd_black_post22_minus_occlusion8": {
+      "gate": "strictly positive mean delta and at least 6/9 strictly improved images",
+      "gate_pass": false,
+      "improved_images": 0,
+      "mean_delta": -14.144083693362644
+    },
+    "gdd_black_soft15_minus_occlusion8": {
+      "gate": "strictly positive mean delta and at least 6/9 strictly improved images",
+      "gate_pass": false,
+      "improved_images": 0,
+      "mean_delta": -15.838370541549855
+    }
+  },
+  "gdd_black_post22": {
+    "contribution_means": {
+      "F_contribution": 21.254960741433834,
+      "M_contribution": 15.510253012180328,
+      "S_contribution": 27.71265476436601
+    },
+    "csv": "official9/gdd_black_post22_mps_seed42.csv",
+    "csv_sha256": "3c4fcbafebf0c66227185265c3a9462efc1e2f70dadbad37846c75ae56d29cc2",
+    "formula_mean": 64.47786851798017,
+    "metric_means": {
+      "Faithfulness": 0.0627480370716916,
+      "Max_Sensitivity": 0.9659831325213114,
+      "Sparsity": 0.9237551588122002
+    },
+    "official_score": 64.47786851798017,
+    "row_count": 9,
+    "run_integrity": {
+      "cache_stats": {
+        "final_computed": 48,
+        "final_disk_hits": 6,
+        "final_memory_hits": 18,
+        "raw_computed": 48,
+        "raw_disk_hits": 6,
+        "raw_memory_hits": 18
+      },
+      "callback_count": 72,
+      "elapsed_seconds": 19.29826216699439,
+      "logs": [
+        {
+          "path": "gdd_black_post22_mps_seed42.log",
+          "sha256": "ed9d223e7a94b07d68f462d83835ef0cbfb4ca73b3686867d037938a1a8d718d"
+        }
+      ],
+      "process_elapsed_seconds": 22.65554074998363,
+      "run_sha256": "e056ad606c8e931e38790259c3c8b6c4d24dce836cd3ab6c933c15093c5a3d1d",
+      "score_sha256": "0178b7ca4525f9271278eaa298bc4ab6fcb7eb3f727d7b8c577584037b211b78",
+      "status": "PASS"
+    },
+    "scorer_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda"
+  },
+  "gdd_black_soft15": {
+    "contribution_means": {
+      "F_contribution": 21.41177865366141,
+      "M_contribution": 13.030873636404673,
+      "S_contribution": 28.340929379726877
+    },
+    "csv": "official9/gdd_black_soft15_mps_seed42.csv",
+    "csv_sha256": "e3c9410d39cda2f309f93af68a8ecbe73cae38d4802b1255d0d869676bee8ec2",
+    "formula_mean": 62.783581669792966,
+    "metric_means": {
+      "Faithfulness": 0.07058893268307051,
+      "Max_Sensitivity": 1.131305820412106,
+      "Sparsity": 0.9446976459908958
+    },
+    "official_score": 62.783581669792945,
+    "row_count": 9,
+    "run_integrity": {
+      "cache_stats": {
+        "final_computed": 54,
+        "final_disk_hits": 0,
+        "final_memory_hits": 18,
+        "raw_computed": 0,
+        "raw_disk_hits": 54,
+        "raw_memory_hits": 18
+      },
+      "callback_count": 72,
+      "elapsed_seconds": 17.464539791981224,
+      "logs": [
+        {
+          "path": "gdd_black_soft15_mps_seed42.log",
+          "sha256": "92fc4c67e5be4f571fd0a433da20fcfa2b1bd6f19924df02eeca4f2837b7fce6"
+        }
+      ],
+      "process_elapsed_seconds": 21.276866000000155,
+      "run_sha256": "a6d3c8ded5c4a057856ca8c47de22d1b967125d06dd5a29581fbf73cbd11a86a",
+      "score_sha256": "7331cf0755654d217eb9128d1d4daa9eec826f9006547c2533b1a91f8e0ed7de",
+      "status": "PASS"
+    },
+    "scorer_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda"
+  },
+  "model_forwards": 0,
+  "reference": {
+    "contribution_means": {
+      "F_contribution": 24.957746101750267,
+      "M_contribution": 25.99842444062233,
+      "S_contribution": 27.66578166897022
+    },
+    "csv": "audit/reference/official9/black_occlusion8_signed_mps_seed42.csv",
+    "csv_sha256": "c85760376736ffcf0ed597ffb98fb74cc0b0561cc071d464f60baceff603d70f",
+    "formula_mean": 78.62195221134282,
+    "metric_means": {
+      "Faithfulness": 0.2478873050875134,
+      "Max_Sensitivity": 0.26677170395851135,
+      "Sparsity": 0.9221927222990074
+    },
+    "official_score": 78.62195221134283,
+    "row_count": 9,
+    "scorer_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda"
+  },
+  "selected_candidate": null,
+  "selection_note": "Finite two-variant seed42 exploration; second paired seed still required before retention claim",
+  "status": "PASS"
+}

@@ -1,0 +1,28 @@
+{
+  "active_session": null,
+  "finished_unix": 1790867126.161872,
+  "limit_seconds": 10800.0,
+  "model_seconds": 6857.047156083019,
+  "phase_limits_seconds": {
+    "A": 7200.0,
+    "B": 3600.0
+  },
+  "phase_seconds": {
+    "A": 4751.447020833002,
+    "B": 2105.600135250017
+  },
+  "remaining_seconds": 3942.952843916981,
+  "sessions": [
+    {
+      "elapsed_seconds": 6857.047156083019,
+      "phase_elapsed_seconds": {
+        "A": 4751.447020833002,
+        "B": 2105.600135250017
+      },
+      "pid": 13850,
+      "started_unix": 1790860269.107411,
+      "status": "COMPLETE"
+    }
+  ],
+  "status": "COMPLETE"
+}

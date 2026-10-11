@@ -1,0 +1,68 @@
+{
+  "review_date": "2026-10-11",
+  "team": "破霧者",
+  "institution": "健行科技大學／資訊工程研究所",
+  "paper_and_deck_authors": [
+    "謝富鈞",
+    "陳冠文",
+    "陳永翔"
+  ],
+  "advisor": "吳匡時",
+  "presenter": "謝富鈞",
+  "sources": [
+    {
+      "local_relative_path": "review_v6_20261011/source/主題B_破霧者_健行科技大學_論文修訂版_v6.docx",
+      "bytes": 982540,
+      "sha256": "0364f265f7b5888ddd55eaac0901d458a501b9343529eba2544aef62f58af079",
+      "published_binary": false
+    },
+    {
+      "local_relative_path": "review_v6_20261011/source/主題B_破霧者_健行科技大學_簡報修訂版_v6.pptx",
+      "bytes": 1044672,
+      "sha256": "f7c170c4fd82264953ea73ad215f963b7386ba3cb38dd74ad808d0555c43f1cb",
+      "published_binary": false
+    },
+    {
+      "local_relative_path": "review_v6_20261011/交付/v6定稿檢核與10分鐘講稿紀錄.md",
+      "bytes": 8016,
+      "sha256": "7234269cbd9cd1ee39dd7aef40d4bacbef9420b1fe33318f1f9818c1b849aa1a",
+      "published_binary": false
+    },
+    {
+      "local_relative_path": "review_v6_20261011/交付/v6正篇精簡口述稿_未改原PPT.txt",
+      "bytes": 7267,
+      "sha256": "f5cd1fc140b40608811ba2fcfe67c7e4b4bd2a1ec00bdeb418f9876cba36a07b",
+      "published_binary": false
+    }
+  ],
+  "public_artifacts": {
+    "README.md": "Portfolio reading guide and team attribution",
+    "case-study.md": "Sanitized narrative from Stage23–27 reports, Jetson v2 audit, and team v6 documents",
+    "review-summary.md": "Sanitized summary derived from the v6 review handoff record",
+    "v6-speech.txt": {
+      "source": "review_v6_20261011/交付/v6正篇精簡口述稿_未改原PPT.txt",
+      "bytes_identical_to_source": true,
+      "sha256": "f5cd1fc140b40608811ba2fcfe67c7e4b4bd2a1ec00bdeb418f9876cba36a07b"
+    }
+  },
+  "privacy_review": {
+    "scope": "Office XML, relationship targets, document core metadata, five embedded PPTX workbook ZIPs, and published Markdown/plain text",
+    "original_docx_contact_fields_detected": {
+      "email_count": 1,
+      "mobile_number_count": 1
+    },
+    "original_office_documents_include_competition_illustrations": true,
+    "original_office_documents_modified": false,
+    "office_document_binaries_published": false,
+    "official_template_copies_or_raw_image_files_published": false,
+    "published_audio_render_cache_or_font_files": false,
+    "public_text_private_absolute_paths_removed": true,
+    "pptx_embedded_workbook_flags": []
+  },
+  "verification_limits": [
+    "LOCAL scores are calculations from recorded CSVs, not formal contest rankings",
+    "Changing evaluation seeds on the same nine images is not an independent dataset",
+    "Jetson v2 acceptance was file and static consistency verification, not a Jetson or CUDA run",
+    "Speech timing uses offline machine audio plus planned pauses, not human delivery"
+  ]
+}

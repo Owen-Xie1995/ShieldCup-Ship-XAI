@@ -1,0 +1,9 @@
+{
+  "analytic_gradient_exact": true,
+  "completeness_only_for_this_linear_toy": true,
+  "element_interventions_checked": 108,
+  "parameter_gradients_none": true,
+  "post22_byte_identical": true,
+  "provided_non_argmax_target": 2,
+  "status": "PASS"
+}

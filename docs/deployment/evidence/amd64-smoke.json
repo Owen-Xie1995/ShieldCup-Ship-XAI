@@ -1,0 +1,125 @@
+{
+  "checks": {
+    "eval_fp32": true,
+    "explicit_device": true,
+    "finite_float32": true,
+    "fixed_mask_batch64": true,
+    "input_unchanged": true,
+    "negative_sample1": true,
+    "positive_sample0": true,
+    "python_numpy_torch_rng_unchanged": true,
+    "shape": true,
+    "signed_raw_analytic_exact": true,
+    "supplied_target_not_argmax": true,
+    "target_unchanged": true,
+    "two_original_and_two_mask_batches": true,
+    "two_sample_traces": true
+  },
+  "device": "cpu",
+  "dtype": "float32",
+  "elapsed_seconds": 12.09704142999999,
+  "environment": {
+    "inside_container": true,
+    "interpreter": "/usr/local/bin/python",
+    "machine": "x86_64",
+    "packages": {
+      "Pillow": "12.3.0",
+      "captum": "0.9.0",
+      "kaggle": "0.1.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "quantus": "0.6.0",
+      "scipy": "1.18.0",
+      "torch": "2.13.0+cpu",
+      "torchvision": "0.28.0+cpu"
+    },
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.36",
+    "python": "3.12.9 (main, Apr  8 2025, 01:41:13) [GCC 12.2.0]",
+    "torch_cuda_version": null
+  },
+  "explainer_sha256": "1c036a17eec708b40c4516ad89af1469c6ab7a8189ce5f6ec222a23207ef3fdb",
+  "input_shape": [
+    2,
+    3,
+    8,
+    8
+  ],
+  "inside_container": true,
+  "mask_batch_size": 64,
+  "method": "black_occlusion4_soft15",
+  "official_model_forward_count": 0,
+  "official_model_loaded": false,
+  "output_sha256": "26bc75ef827ede4dc5ee1ca47d0d44678e6fc00f80d48b1621d28b7aebf37a25",
+  "output_shape": [
+    2,
+    3,
+    8,
+    8
+  ],
+  "precision": "float32",
+  "requested_device": "cpu",
+  "rng_unchanged": {
+    "numpy": true,
+    "python": true,
+    "torch_cpu": true
+  },
+  "samples": [
+    {
+      "argmax": 4,
+      "baseline": -2.0,
+      "masks": 12,
+      "negative_final_values": 0,
+      "positive_final_values": 29,
+      "raw_matches_analytic_supplied_target": true,
+      "sample_index": 0,
+      "supplied_target": 0
+    },
+    {
+      "argmax": 4,
+      "baseline": -3.0,
+      "masks": 12,
+      "negative_final_values": 29,
+      "positive_final_values": 0,
+      "raw_matches_analytic_supplied_target": true,
+      "sample_index": 1,
+      "supplied_target": 2
+    }
+  ],
+  "scope": "Source identities and a literal linear toy; no official model inference",
+  "smoke_sha256": "3e70f519d7b91e98196e8fac013288258f8060d0f2bd64d290fa02791746cb0c",
+  "source_binding": {
+    "installed_package_root": "/usr/local/lib/python3.12/site-packages/kaggle",
+    "metrix_sha256": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+    "official_sources": "PASS",
+    "weights_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473",
+    "wheel_sha256": "43986f644c383f255e73dcbd2305e311f15fd70b4aeec54deb346dab5d5cbfd7"
+  },
+  "status": "PASS",
+  "toy_forward_count": 4,
+  "toy_forwards": [
+    {
+      "batch": 1,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "eval": true
+    },
+    {
+      "batch": 12,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "eval": true
+    },
+    {
+      "batch": 1,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "eval": true
+    },
+    {
+      "batch": 12,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "eval": true
+    }
+  ]
+}

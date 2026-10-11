@@ -1,0 +1,15 @@
+{
+  "components_seconds": {
+    "17_remaining_cold_raw": 1216.5680009282078,
+    "historical_same_environment_official_metric_fullflow_3images": 7.423504748992855,
+    "warm_second_method_and_validation_allowance": 60.0
+  },
+  "created_unix": 1790847939.255391,
+  "cumulative_model_seconds": 175.81579741599853,
+  "entry_allowed": true,
+  "measured_estimate_seconds": 1283.9915056772006,
+  "phase": "B_prefix3",
+  "remaining_model_seconds": 5224.18420329201,
+  "safe_estimate_seconds": 1476.5902315287806,
+  "safety_multiplier": 1.15
+}

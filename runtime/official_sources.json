@@ -1,0 +1,12 @@
+{
+  "package_file_sha256": {
+    "__init__.py": "6bf2aa2274543dadad6956cc92b1c2df227a10724a72f1925bb50fe690a2998d",
+    "model/dataset/dataloader.py": "4b915afca476bce57a844b4cd9be1efc7846072131ab44dac7b83a002243b09b",
+    "model/dataset/ship_image_datasets.py": "9827e61a3723ce4c06e68d4b560d94ae83cc03aa1d4a54ec178839a0662a1554",
+    "model/dataset/transforms.py": "26db25f490f727c540a2241ac647bbbd171e0bedca8d30545c6bb27a8bd45cae",
+    "model/model.py": "374e9c7e086aa5801d260a82a17749a46b8fb9ca28c282f0191e5750402d5bc7",
+    "submmit/submmit.py": "3f0c8830e590f6ad46934c034a5bf75f2d2b1d89baf2dba6683cdc1d9dc61df1"
+  },
+  "weight_sha256": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473",
+  "wheel_sha256": "43986f644c383f255e73dcbd2305e311f15fd70b4aeec54deb346dab5d5cbfd7"
+}

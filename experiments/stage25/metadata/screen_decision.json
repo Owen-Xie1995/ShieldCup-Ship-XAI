@@ -1,0 +1,40 @@
+{
+  "cumulative_model_seconds": 1633.1514963749796,
+  "methods": {
+    "black_occlusion4_post22": {
+      "baseline_prefix3_mean": 78.42298065700328,
+      "csv_sha256": "fc41d94041264ca7242538f913c0e9c48b2a78d883e64c8a39fd563f0fee016d",
+      "improved_count": 3,
+      "not_a_full9_score": true,
+      "paired_deltas": [
+        3.7300861185222374,
+        4.71635561557666,
+        1.458123046568403
+      ],
+      "passed": true,
+      "prefix3_mean": 81.72450225055904,
+      "required_improved_count": 2
+    },
+    "black_occlusion4_soft15": {
+      "baseline_prefix3_mean": 78.42298065700328,
+      "csv_sha256": "3a0f908350717b7dd0e03b2038ee915e702bb76b9b34044eb5e3859288e69947",
+      "improved_count": 3,
+      "not_a_full9_score": true,
+      "paired_deltas": [
+        4.906694691574359,
+        5.372836025690006,
+        3.0881390118556737
+      ],
+      "passed": true,
+      "prefix3_mean": 82.87887056670995,
+      "required_improved_count": 2
+    }
+  },
+  "preregistered_method_sha256": "50e546bbdaacaeac4fe492bbeaf2e51278cdef4cd557abaed9c8668b62b73dd1",
+  "qualified_methods": [
+    "black_occlusion4_post22",
+    "black_occlusion4_soft15"
+  ],
+  "rule": "mean strictly higher than historical same-MPS seed42 prefix3 AND at least2/3 improves",
+  "status": "FROZEN"
+}

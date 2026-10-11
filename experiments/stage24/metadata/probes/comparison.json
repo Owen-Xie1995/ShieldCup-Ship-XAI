@@ -1,0 +1,26 @@
+{
+  "acceptance_sha256": "47b4e984b0f32eaf40c6aca15909aef2711c62366b5f06b36528ee1c6566ec05",
+  "cases": {
+    "original": {
+      "class_match": true,
+      "gdd_black_post22_support_iou": 0.992719089224252,
+      "gdd_black_soft15_support_iou": 0.997788099977881,
+      "gradient_relative_l2": 0.004249232021378612,
+      "logit_fail_count": 0,
+      "logit_max_abs_difference": 3.337860107421875e-06,
+      "pass": true,
+      "raw_relative_l2": 0.003735252321691702
+    },
+    "perturbed": {
+      "class_match": true,
+      "gdd_black_post22_support_iou": 0.9997343075390236,
+      "gdd_black_soft15_support_iou": 1.0,
+      "gradient_relative_l2": 0.00036097044787495404,
+      "logit_fail_count": 0,
+      "logit_max_abs_difference": 1.430511474609375e-06,
+      "pass": true,
+      "raw_relative_l2": 0.0005007576596065845
+    }
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,39 @@
+{
+  "actual_frozen_indices_match": "byte_identical",
+  "actual_source": "output_mac_stage25/probes/frozen_indices.npz",
+  "actual_source_file_sha256": "ebac214c59f7b8cadaecb74b8a9f08bc6ca4ec7d7b2fb8563cbb08b77995a5ea",
+  "arrays": {
+    "device_tile_ids": {
+      "dtype": "<i8",
+      "sha256": "150729678d3d96505259c7bee3242a835da248aa5c4cad4b4b62a4922be8e032",
+      "shape": [
+        128
+      ]
+    },
+    "single_indices": {
+      "dtype": "<i8",
+      "sha256": "f5a978f0be2f87b2e85c156f8a443bd6fcb1dced57ea7c85d4e5393ba916c400",
+      "shape": [
+        384
+      ]
+    },
+    "subset50_indices": {
+      "dtype": "<i8",
+      "sha256": "27d92c2b63387d73030af9a58b50a45e24b71660c05e216a48221975e270468f",
+      "shape": [
+        128,
+        50
+      ]
+    }
+  },
+  "file": "audit/independent_frozen_indices.npz",
+  "file_sha256": "f109be17af5241f86c4d81ca72650abab57c8e51013df601b5929e34eb2ac425",
+  "global_numpy_rng_unchanged": true,
+  "model_forwards": 0,
+  "rules": {
+    "device_tile": "PCG64(20261003),128/9408 tile IDs without replacement",
+    "single": "PCG64(20261001), c order0..2 each128/50176 without replacement, CHW offset",
+    "subset50": "PCG64(20261002),128 sequential sets of50/150528 without replacement"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,145 @@
+{
+  "A": {
+    "CPU_single_first32": true,
+    "Pearson_constant": "null_with_reason",
+    "atol": 0.0001,
+    "denominator_floor": 1e-08,
+    "device_tile_count": 128,
+    "device_tile_seed": 20261003,
+    "full_CPU_4x4_support_validation": "NOT_PERFORMED",
+    "group50_seed": 20261002,
+    "group_count": 128,
+    "group_size": 50,
+    "model_seconds_limit": 600,
+    "predicted_class_same": true,
+    "rtol": 0.001,
+    "sign_near_zero_exclusion": 1e-06,
+    "single_count_per_channel": 128,
+    "single_seed": 20261001,
+    "tile_drop_relative_L2_max": 0.01
+  },
+  "B": {
+    "baseline_mean": 78.42298065700328,
+    "device": "mps",
+    "eval_seed": 42,
+    "expected_callbacks": 24,
+    "expected_unique_raw": 18,
+    "images": [
+      {
+        "Id": 1,
+        "filename": "2814884.jpg"
+      },
+      {
+        "Id": 2,
+        "filename": "643776.jpg"
+      },
+      {
+        "Id": 3,
+        "filename": "2839095.jpg"
+      }
+    ],
+    "screen": "mean strictly higher than historical MPS8 prefix3 AND at least2/3pairedwins",
+    "two_methods_both_run": true
+  },
+  "C": {
+    "expected_callbacks": 72,
+    "expected_unique_raw": 54,
+    "full_generator_restarts_image1": true,
+    "mean_strictly_greater_than": 78.621952211343,
+    "only_screen_qualified": true,
+    "public5": "NO_RERUN",
+    "required_paired_wins": 6,
+    "second_seed": "NOT_PERFORMED",
+    "seed": 42,
+    "selection": "highestfullmean; exacttiepost22"
+  },
+  "budget": {
+    "A_included_seconds": 600,
+    "check_each_batch_and_callback": true,
+    "entry_cost_multiplier": 1.15,
+    "model_load_probe_metric_cacheIO_included": true,
+    "model_seconds_total": 5400,
+    "one_cumulative_ledger_and_monotonic_deadline": true,
+    "progress_interval_seconds": 30
+  },
+  "final_methods": {
+    "black_occlusion4_post22": {
+      "channel_reflect_mean5": true,
+      "signed_abs_top10_stable_ceil": true,
+      "signed_abs_top25_stable_ceil": true
+    },
+    "black_occlusion4_soft15": {
+      "Gaussian_abs_float64_sigma": [
+        0,
+        1,
+        1
+      ],
+      "extra_threshold": false,
+      "final": "float32(raw*gate)",
+      "gate": "max(1-tau/max(s,1e-12),0)",
+      "mode": "reflect",
+      "quantile": 0.85,
+      "quantile_method": "linear",
+      "signed_raw": true,
+      "truncate": 4
+    }
+  },
+  "frozen_before_any_official_model_forward": true,
+  "frozen_sampling_files_sha256": {
+    "probes/fixed_inputs.npz": "d193b5468b96c7c3490af02df4fbdf368d034bf702b7f370c162355fc96fa3f6",
+    "probes/frozen_indices.npz": "ebac214c59f7b8cadaecb74b8a9f08bc6ca4ec7d7b2fb8563cbb08b77995a5ea",
+    "probes/frozen_sampling.json": "0d05788023232f944449fa0d0f4f480acf3ae09b486e9e8a3940c9a619f7e23d"
+  },
+  "frozen_unix": 1790847729.6178849,
+  "instruction_sha256": "9a79b2fab05a9a614a19946cdaef7d2a5659878aa139a195e60575b7ebeb6c25",
+  "packages": {
+    "numpy": "2.2.6",
+    "quantus": "0.6.0",
+    "scipy": "1.17.1",
+    "torch": "2.10.0",
+    "torchvision": "0.25.0"
+  },
+  "program_sha256": {
+    "budget.py": "e3adcb4150dbae99ebe3210f64736d6a1a3eafff3bc24c99b06e03a51faf2eef",
+    "cache.py": "c28c435044f8fbd3daef6371ae557bd81b6ffcbdafe977b050c3ddd020aad98a",
+    "common.py": "22c7ab24331e3982e77b266fad2e6d0b2a14fd26814ea5d9d71858aa6b9bde7d",
+    "diagnostic.py": "63e4f146d4eb15ae6ba1c7b4a0a644c0b13035a07a9fafff26c9dcaa1fd1f726",
+    "occlusion4_raw.py": "cd7f21e620b92229e75dc1827d80cdd3ad341f134c18f39e3539db6c7671dcba",
+    "postprocess.py": "b51578f0f18e9de4211b005dbeea62405feb28f639d9ae5c6ca62b9984181fd6",
+    "run_official.py": "a01c3a92d23889dc0c6c06943c56e4bbeef539ff7c852088f103056e72dcd43d",
+    "run_stage25.py": "2108b50208dbe74162b753fa88afbd5acf0fa786e5b787e167ef222fc0752348"
+  },
+  "raw": {
+    "all_five_masked_logits_saved": true,
+    "area": 16,
+    "baseline": "fixed complete current input minimum",
+    "count": 9408,
+    "difference_allocation": "float64 original-minus-masked target /16 then float32 repeated16elements",
+    "fallback": "Recorded OOM only; batch/cache identities separate; renewed device validation required",
+    "inference_batch": [
+      64,
+      32,
+      16
+    ],
+    "input_shape": [
+      1,
+      3,
+      224,
+      224
+    ],
+    "name": "black_occlusion4_signed_v1",
+    "stride": 4,
+    "target": "original supplied target logit",
+    "tile": 4
+  },
+  "schema": 1,
+  "sources": {
+    "baseline_reference": "447b76915b84cc40eed57b85c9b87d130dacd5930fdb6a07aa4e4bfa0d357e4f",
+    "generator": "3f0c8830e590f6ad46934c034a5bf75f2d2b1d89baf2dba6683cdc1d9dc61df1",
+    "probe_reference": "eb711866eaad2c57417da127719dbcdcff9563ae13ae5f8cdaba7f721b67b7d9",
+    "reference_gate": "835f239c0dbc7b87be19a262ec7c1749478093df90a2d58e63a3ed15351f1529",
+    "scorer": "5c89d3321c9328b47c4604ace0feed40d7cb9841843573d79b85838034ee2cda",
+    "test_csv": "292bf8cf64b4db3a64def4a27ec02f082bd7b222e8ae939e2d620d8409a8e83e",
+    "weights": "eede97896edcb34840d998647cfd9db76be8ad82b3c99db7d3375781ab30e473"
+  }
+}

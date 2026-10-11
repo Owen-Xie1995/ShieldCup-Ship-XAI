@@ -1,0 +1,12 @@
+{
+  "all_values_finite_required": true,
+  "final_support_iou_min": 0.95,
+  "ig50_reference_source_sha256": "950d740c3fefebe3349872dcae8960a6b9ec1f01a9c2a63e645aef4140c8eccb",
+  "input": "preserved Stage23 first official original only",
+  "logits_atol": 0.0001,
+  "logits_rtol": 0.001,
+  "predicted_class_same_required": true,
+  "raw_definition": "signed average of 8 fixed noisy zero-baseline IG50 maps",
+  "raw_relative_l2_max": 0.01,
+  "status": "FROZEN_BEFORE_OFFICIAL_MODEL_PROBE"
+}
