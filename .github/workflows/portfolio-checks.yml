@@ -29,5 +29,7 @@ jobs:
         run: python runtime/quick_demo.py
       - name: Source syntax
         run: python tools/check_source_syntax.py
+      - name: Saved paired-result arithmetic
+        run: python tools/check_saved_results.py
       - name: Synthetic package and image audit cases
         run: python tools/jetson_audit/test_tools.py -v
