@@ -1,37 +1,29 @@
-# 求職專案說明
+# 船舶 XAI 專案說明
 
-## 專案定位
+這個專案使用主辦提供的 ResNet50，處理兩個問題：如何解釋模型對指定船舶類別的分數，以及如何讓研究程式在另一個環境中重跑、檢查與交付。
 
-**船舶影像 XAI 實驗與部署工程**：使用固定 ResNet50，設計／比較輸入歸因方法，將 Mac 研究程式整理成 Linux CPU 容器，以可追溯的檔案、CSV 與映像驗收確認交付內容一致。
+## 主要工作
 
-可展示 Python／PyTorch 數值程式、實驗設計、Docker、測試與技術文件能力。分類模型由主辦提供，沒有將使用預訓練權重表述成自行訓練分類器。
-
-## 面試可展示內容
-
-| 工程重點 | 實作證據 | 可以說明的取捨 |
+| 工作 | 可查閱內容 | 需要說清楚的限制 |
 |---|---|---|
-| XAI 契約與數值正確性 | 解釋器、解析 toy | supplied target、FP32、正負號與 tile 分攤假設 |
-| 配對實驗 | Stage25／26 CSV 及逐圖差 | 兩個 seed 各對各自對照；同九張圖的外推限制 |
-| 可重建與交付 | Dockerfile、版本 pins、save／load receipt | CPU 交付與 Jetson GPU 執行是不同驗證範圍 |
-| 輸出保護 | runner、有界快取、來源 hash | 防止誤用歷史答案、覆寫成果或把失敗 CSV 當完成 |
-| 驗收工具 | package／image inspector 及合成測試 | 不執行完整 package 程式，檢查 layer／manifest／CSV |
-| 問題追查 | Max_Sensitivity 邊界修正 | 評分會裁切貢獻的值，不應被 admission 錯拒 |
-| 團隊溝通 | 研究摘要及精簡口述稿 | 說清方法來源、共同作者和實測限制 |
+| 實作 4×4 有號遮蔽與 soft15 | [解釋器](../runtime/src/explainer.py)、[合成示範](../runtime/quick_demo.py) | 區塊內平均分攤不等於逐元素因果效果 |
+| 比較候選方法與對照 | [Stage25](stage25/report.md)、[Stage26](stage26/report.md) | 兩個 seed 都使用同九張圖 |
+| 整理 Linux CPU Docker 環境 | [部署紀錄](deployment/README.md) | CPU 驗證不能代替 Jetson GPU 實測 |
+| 檢查 CSV、提交包與映像 | [驗收案例](jetson_audit/README.md) | 靜態檢查不能證明完整程式已在設備上執行 |
+| 整理團隊研究與發表材料 | [研究案例](publication/case-study.md) | E017 算法與 runner 由隊友提供，論文共同署名 |
 
-## 履歷可用敘述
+前期 RISE 與兩個梯度候選沒有通過比較門檻，結果保留在 [Stage23](stage23/report.md) 和 [Stage24](stage24/report.md)。後續 4×4 soft15 在兩組配對測試各提高 4.03／5.61 分，兩次都是 9/9 張改善；目前沒有獨立影像集可確認泛化效果。
 
-以下對應倉庫可查證工作，使用時依自己的實際角色調整：
+## 展示順序
 
-- 研究並實作單通道 4×4 有號遮蔽與 soft15 歸因；固定九圖、兩個評估 seed 的 Mac MPS 配對測試中，較 8×8 對照提高 4.03／5.61 分，兩次皆 9/9 張改善。
-- 整理 Linux ARM64／AMD64 CPU Docker 交付流程，保存固定相依、來源 SHA-256、save／load／smoke 與小型官方模型 probe 證據。
-- 開發提交包與 Docker／OCI 映像驗收工具，追查 CSV admission 對 Max_Sensitivity 的範圍契約缺陷，以邊界案例和 manifest／layer 測試驗證修正。
+1. 用 [README 結果表](../README.md#實驗結果) 說明問題、對照與樣本範圍。
+2. 執行 `python runtime/quick_demo.py`，展示指定類別與解析答案檢查。
+3. 打開保存的逐圖 CSV、Docker 配方與驗收案例，說明怎麼追查結果和交付內容。
 
-Jetson 實測、完整 2×2 九圖、隱藏集泛化、自行訓練分類模型與正式競賽排名均超過目前證據。E017 由隊友提供，投稿論文保持共同作者歸屬。
+## 履歷描述
 
-## 3 分鐘展示順序
+- 實作單通道 4×4 遮蔽與 soft15 歸因；在固定九圖、兩個評估 seed 的 Mac MPS 配對實驗中，較 8×8 對照分別提高 4.03 與 5.61 分。
+- 整理 Linux ARM64／AMD64 CPU Docker 流程，保存依賴版本、來源 SHA-256 與 save／load／smoke 紀錄。
+- 開發 CSV、提交包及 Docker／OCI 映像檢查工具，修正 Max_Sensitivity 範圍判斷，以邊界案例和映像測試驗證。
 
-1. 從 [主 README](../README.md) 的結果表說明問題、對照與限制。
-2. 執行 `python runtime/quick_demo.py`，說明指定 target 為何不同於 argmax，以及解析答案如何驗證實作。
-3. 展示配對 CSV、Docker 配方及 [驗收案例](jetson_audit/README.md)，說明研究、交付和設備實測範圍。
-
-倉庫原本是私有專案。提供履歷連結前需給招募者存取權，或另行決定公開；本次整理保留既有可見性。
+以上描述應與實際分工一同使用。倉庫目前為私有；提供履歷連結時，需要另外提供讀取權限。模型訓練、Jetson GPU 實測與正式排名未列入成果。
