@@ -4,11 +4,13 @@
 
 ## 不需要競賽資料的示範
 
-由倉庫根目錄依 [主 README](../README.md#快速執行) 安裝示範相依後：
+由倉庫根目錄依 [主 README](../README.md#執行示範) 安裝示範相依後：
 
 ```bash
 python runtime/quick_demo.py
 ```
+
+面試時可改用 `python tools/interview_demo.py`，以精簡文字顯示合成測試與保存的配對分數；`--json` 提供完整報告。這個入口沒有載入官方模型或產生新的九圖評分。
 
 固定線性模型提供解析答案，檢查 supplied target 與 argmax 不同時仍解釋指定類別、正負 raw 歸因精確一致、FP32／NCHW 契約、輸入與 RNG 不變。此示範只需 NumPy、SciPy、PyTorch，沒有讀檔、下載模型或進行官方九圖評分。
 
@@ -23,7 +25,7 @@ attributions = custom_explain_func(model, inputs, targets, "cpu")
 # output: float32 NumPy array, same shape as inputs
 ```
 
-baseline 是當次輸入張量的最小值。每次僅遮蔽一個通道中的 4×4 區塊，使用指定 target 的 logit drop，除以 16 並保留正負號。soft15 用每個樣本、每個通道的空間平滑幅度，取 85% quantile 作門檻，將連續 gate 乘回有號 raw。對 3×224×224 輸入共 9,408 個 masks，固定每批 64。
+baseline 是每張樣本完整 CHW 的最小值。每次僅遮蔽一個通道中的 4×4 區塊，使用指定 target 的 logit drop，除以 16 並保留正負號。soft15 對各通道分別做空間平滑，再以該張圖完整 CHW 的 85% 分位數作共同門檻，將連續 gate 乘回有號 raw。對 3×224×224 輸入共 9,408 個 masks，固定每批 64。
 
 ## 有主辦素材時重建完整 CPU 環境
 

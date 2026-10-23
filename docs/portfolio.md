@@ -17,7 +17,7 @@
 ## 展示順序
 
 1. 用 [README 結果表](../README.md#實驗結果) 說明問題、對照與樣本範圍。
-2. 執行 `python runtime/quick_demo.py`，展示指定類別與解析答案檢查。
+2. 執行 `python tools/interview_demo.py`，展示指定類別、解析答案與保存結果重算。
 3. 打開保存的逐圖 CSV、Docker 配方與驗收案例，說明怎麼追查結果和交付內容。
 
 ## 履歷描述
@@ -26,4 +26,4 @@
 - 整理 Linux ARM64／AMD64 CPU Docker 流程，保存依賴版本、來源 SHA-256 與 save／load／smoke 紀錄。
 - 開發 CSV、提交包及 Docker／OCI 映像檢查工具，修正 Max_Sensitivity 範圍判斷，以邊界案例和映像測試驗證。
 
-以上描述應與實際分工一同使用。倉庫目前為私有；提供履歷連結時，需要另外提供讀取權限。模型訓練、Jetson GPU 實測與正式排名未列入成果。
+完整的帶看流程和技術問答見 [面試展示指南](interview.md)。履歷描述應與實際分工一同使用；模型訓練、Jetson GPU 實測與正式排名未列入成果。
